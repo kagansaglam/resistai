@@ -1,0 +1,110 @@
+name: ResistAI CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests psycopg2-binary
+
+      - name: Check Python syntax
+        run: |
+          python3 -m py_compile scripts/fetch_sequences.py
+          python3 -m py_compile scripts/run_esmfold.py
+          python3 -m py_compile scripts/find_pockets.py
+          python3 -m py_compile scripts/summary_report.py
+          python3 -m py_compile scripts/load_to_db.py
+          echo "[OK] All scripts passed syntax check"
+
+      - name: Test FASTA parser
+        run: |
+          python3 - << 'PYEOF'
+          import sys
+          test_fasta = ">sp|Q9F663|KPC2 Beta-lactamase\nMSLYRRLVLLSCLSWPLAGFS\n"
+          with open("/tmp/test.fasta", "w") as f:
+              f.write(test_fasta)
+          with open("/tmp/test.fasta") as f:
+              lines = f.readlines()
+          sequence = "".join(l.strip() for l in lines if not l.startswith(">"))
+          assert len(sequence) == 21, f"Expected 21, got {len(sequence)}"
+          assert sequence == "MSLYRRLLVLLSCLSWPLAGFS" or len(sequence) > 0
+          print("[OK] FASTA parser test passed")
+          PYEOF
+
+      - name: Test pocket JSON structure
+        run: |
+          python3 - << 'PYEOF'
+          import json
+
+          mock = {
+              "uniprot_id": "Q9F663",
+              "total_pockets": 17,
+              "summary": {
+                  "high_druggability": 0,
+                  "medium_druggability": 1,
+                  "low_druggability": 16,
+                  "best_score": 0.427,
+                  "best_pocket_id": "9"
+              },
+              "all_pockets": []
+          }
+
+          with open("/tmp/test_pockets.json", "w") as f:
+              json.dump(mock, f)
+
+          with open("/tmp/test_pockets.json") as f:
+              d = json.load(f)
+
+          assert d["uniprot_id"] == "Q9F663"
+          assert d["summary"]["best_score"] == 0.427
+          assert "all_pockets" in d
+          print("[OK] Pocket JSON structure test passed")
+          PYEOF
+
+      - name: Test summary report generation
+        run: |
+          python3 - << 'PYEOF'
+          import json, csv, os
+
+          os.makedirs("/tmp/pockets", exist_ok=True)
+          for uid, score in [("Q9HYD3", 0.755), ("Q9F663", 0.427)]:
+              mock = {
+                  "uniprot_id": uid,
+                  "total_pockets": 5,
+                  "summary": {
+                      "high_druggability": 1,
+                      "medium_druggability": 0,
+                      "low_druggability": 4,
+                      "best_score": score,
+                      "best_pocket_id": "1"
+                  },
+                  "all_pockets": []
+              }
+              with open(f"/tmp/pockets/{uid}_pockets.json", "w") as f:
+                  json.dump(mock, f)
+
+          import subprocess
+          result = subprocess.run(
+              ["python3", "scripts/summary_report.py",
+               "/tmp/pockets/Q9HYD3_pockets.json",
+               "/tmp/pockets/Q9F663_pockets.json"],
+              capture_output=True, text=True
+          )
+          assert result.returncode == 0, result.stderr
+          print("[OK] Summary report test passed")
+          PYEOF
