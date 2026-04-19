@@ -1,6 +1,151 @@
 organism,gene,uniprot_id
 Klebsiella pneumoniae,KPC-2,Q9F663
-Escherichia coli,NDM-1,B9A8S5
-Acinetobacter baumannii,OXA-23,Q9KLB7
-Pseudomonas aeruginosa,VIM-2,Q9HYD3
-Enterococcus faecium,VanA,P25051
+Klebsiella pneumoniae,bla,P0AD64
+Klebsiella pneumoniae,bla,Q9AHN9
+Klebsiella pneumoniae,blaNDM-1,C7C422
+Aeromonas hydrophila,cphA,P26918
+Bacillus cereus,Metallo-beta-la,P14488
+Stenotrophomonas maltophilia,Metallo-beta-la,P52700
+Pseudomonas aeruginosa,bla-imp13,Q7WYA8
+Bacillus cereus,blm,P04190
+Serratia marcescens,Metallo-beta-la,P52699
+Elizabethkingia meningoseptica,blaB1,O08498
+Bacteroides fragilis,ccrA,P25910
+Escherichia coli,VIM-2,Q5U7L7
+Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),VIM-1,A0A0F7KYQ8
+Pseudomonas aeruginosa,VIM-7,Q840P9
+Chryseobacterium indologenes,IND-1,Q9X482
+Bacillus sp. (strain 170),Metallo-beta-la,P10425
+Homo sapiens,MBLAC2,Q68D91
+Acinetobacter baumannii,OXA-58,Q2TR58
+Acinetobacter baumannii,OXA-23,Q9L4P2
+Elizabethkingia meningoseptica,blaB4,Q9XBN7
+Elizabethkingia meningoseptica,blaB3,Q9K303
+Elizabethkingia meningoseptica,blaB6,Q9KJB0
+Enterococcus faecalis (strain ATCC 700802 / V583),vanB,Q06893
+Staphylococcus aureus (strain N315),mecA,P60185
+Staphylococcus aureus (strain MW2),mecA,P60186
+Staphylococcus aureus (strain Mu50 / ATCC 700699),mecA,P60184
+Staphylococcus aureus,pbp,P07944
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),eis,P9WFK7
+Pseudomonas aeruginosa,aacC3,P29808
+Salmonella enteritidis,Aminoglycoside,Q9R381
+Enterococcus faecalis (strain ATCC 700802 / V583),aacA-aphD,P0A0C2
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),aac,P9WQG9
+Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh),eis,P9WFK6
+Acinetobacter haemolyticus,Aminoglycoside,Q44057
+Serratia marcescens,Aminoglycoside,Q54441
+Stenotrophomonas maltophilia,Aminoglycoside,Q9RBW7
+Acinetobacter genomosp. 13,Aminoglycoside,Q44245
+Acinetobacter baumannii,Aminoglycoside,Q43899
+Klebsiella aerogenes,aacA7,P50858
+Morganella morganii,aacA7,Q15BH7
+Serratia marcescens,aacA4,P20092
+Citrobacter koseri,aacA1,P10051
+Niallia circulans,aphA4,P00553
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),Putative,P9WI99
+Escherichia coli,aphA1,P00551
+Klebsiella pneumoniae,neo,P00552
+Mammaliicoccus sciuri,aacA-aphD,Q7ATH9
+Staphylococcus warneri,aacA-aphD,Q7ATH7
+Streptomyces ribosidificus,rph,P13250
+Enterococcus faecium,aacA-aphD,Q52S23
+Staphylococcus epidermidis (strain ATCC 35984 / DSM 28319 / BCRC 17069 / CCUG 31568 / BM 3577 / RP62A),aacA-aphD,Q5HMP3
+Staphylococcus aureus (strain Mu50 / ATCC 700699),aacA-aphD,P0A0C0
+Staphylococcus haemolyticus (strain JCSC1435),aacA-aphD,Q4L605
+Staphylococcus aureus,aacA-aphD,P0A0C1
+Streptomyces griseus,aphD,P08077
+Staphylococcus aureus,aphA,P0A3Y6
+Klebsiella pneumoniae,aadB,P0AE05
+Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720),aadA,Q8ZPX9
+Bacillus sp,knt,P05058
+Staphylococcus aureus,knt,P05057
+Escherichia coli,aadA,P0AG05
+Bacillus subtilis (strain 168),aadK,P17585
+Escherichia coli,aadB,P0AE04
+Agrobacterium tumefaciens,Aminoglycoside,P14511
+Klebsiella pneumoniae,aadB,P29806
+Campylobacter jejuni,aadK,P0DTV9
+Shigella flexneri,aadA,P0AG06
+Klebsiella pneumoniae,aadA,P08881
+Staphylococcus aureus,str,P12055
+Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),mexB,P52002
+Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),mexA,P52477
+Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1),oprM,Q51487
+Escherichia coli (strain K12),acrA,P0AE06
+Escherichia coli (strain K12),acrB,P31224
+Escherichia coli (strain K12),tolC,P02930
+Escherichia coli (strain K12),acrZ,P0AAW9
+Escherichia coli O157:H7,acrA,P0AE07
+Escherichia coli (strain K12),acrE,P24180
+Escherichia coli (strain K12),acrF,P24181
+Escherichia coli,bla,Q8KSA6
+Citrobacter amalonaticus,bla,Q9RMT4
+Escherichia coli,bla,A0A649V088
+Escherichia coli,bla,P28585
+Escherichia coli O25b:H4,bla,A0A5R8T042
+Escherichia coli,bla,Q47066
+Escherichia coli,sul1,P0C002
+Escherichia coli,Insertion,P0CF06
+Streptomyces clavuligerus,Beta-lactamase,P35804
+Klebsiella pneumoniae,Beta-lactamase,P05192
+Enterobacter cloacae,ampC,P05364
+Klebsiella aerogenes,blaCMY-10,Q99QC1
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),katG,P9WIE5
+Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh),katG,P9WIE4
+Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97),katG,P46817
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),inhA,P9WGR1
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),katG2,A0QXX7
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),ahpC,P9WQB7
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),inhA,P42829
+Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh),inhA,P9WGR0
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),katG1,A0R609
+Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97),inhA,P0A5Y7
+Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97),mabA,P0A5Y5
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),mabA,P9WGT3
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),rpoB,P9WGY9
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),rpoB,P60281
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),mfd,P9WMQ5
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),helR,A0QUE0
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),carD,P9WJG3
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),carD,A0R561
+Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155),rbpA,A0QZ11
+Escherichia coli,mcr1,A0A0R6L508
+Escherichia coli,mcr2,A0A1C3NEV1
+Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv),gyrA,P9WG47
+Escherichia coli (strain K12),gyrA,P0AES4
+Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4),parC,P72525
+Streptococcus pyogenes serotype M1,gyrA,Q9L7Q5
+Escherichia coli (strain K12),gyrB,P0AES6
+Streptococcus pyogenes serotype M1,parC,Q9L7Q4
+Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4),atpB,P0A2Y8
+Escherichia coli,cat3,P00484
+Staphylococcus aureus,Chloramphenicol,P36883
+Campylobacter coli,Chloramphenicol,P22782
+Escherichia coli,cmlA,P22615
+Streptomyces acrimycini,cat,P20074
+Staphylococcus aureus,cat,P06135
+Staphylococcus intermedius,cat,P25309
+Staphylococcus aureus,cat,P36882
+Haemophilus influenzae,cat-IIH,P22616
+Clostridioides difficile,catD,P11504
+Clostridium butyricum,catB,Q02736
+Staphylococcus aureus,cat,P00486
+Streptococcus agalactiae,cat,Q03058
+Clostridium perfringens,catQ,P26825
+Clostridium perfringens,catP,P26826
+Clostridium perfringens,tetP,Q46306
+Escherichia coli (strain K12),folP,P0AC13
+Neisseria meningitidis serogroup C,folP,P57696
+Streptococcus pneumoniae (strain ATCC BAA-255 / R6),sulA,P59655
+Neisseria meningitidis serogroup B (strain ATCC BAA-335 / MC58),folP,Q51161
+Neisseria meningitidis serogroup A / serotype 4A (strain DSM 15465 / Z2491),folP,Q9JT70
+Staphylococcus aureus,folP,O05701
+Escherichia coli,sul3,C0HMD9
+Escherichia coli,sul2,P0AC11
+Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4),sulA,P05382
+Mycolicibacterium fortuitum,sulI,Q49184
+Streptococcus pyogenes,folP,P0C0G0
+Streptococcus pyogenes,folB,P0C0G4
+Streptococcus pyogenes,folE,P0C0C1
+Streptococcus pyogenes,folK,P0C0G2

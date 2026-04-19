@@ -1,0 +1,902 @@
+[
+  {
+    "uniprot_id": "Q9F663",
+    "gene": "KPC-2",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Carbapenem-hydrolyzing beta-lactamase KPC-2"
+  },
+  {
+    "uniprot_id": "P0AD64",
+    "gene": "bla",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Beta-lactamase SHV-1"
+  },
+  {
+    "uniprot_id": "Q9AHN9",
+    "gene": "bla",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Beta-lactamase SHV-29"
+  },
+  {
+    "uniprot_id": "C7C422",
+    "gene": "blaNDM-1",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P26918",
+    "gene": "cphA",
+    "organism": "Aeromonas hydrophila",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P14488",
+    "gene": "Metallo-beta-la",
+    "organism": "Bacillus cereus",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P52700",
+    "gene": "Metallo-beta-la",
+    "organism": "Stenotrophomonas maltophilia",
+    "protein": "Metallo-beta-lactamase L1 type 3"
+  },
+  {
+    "uniprot_id": "Q7WYA8",
+    "gene": "bla-imp13",
+    "organism": "Pseudomonas aeruginosa",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P04190",
+    "gene": "blm",
+    "organism": "Bacillus cereus",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P52699",
+    "gene": "Metallo-beta-la",
+    "organism": "Serratia marcescens",
+    "protein": "Metallo-beta-lactamase IMP-1"
+  },
+  {
+    "uniprot_id": "O08498",
+    "gene": "blaB1",
+    "organism": "Elizabethkingia meningoseptica",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "P25910",
+    "gene": "ccrA",
+    "organism": "Bacteroides fragilis",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "Q5U7L7",
+    "gene": "VIM-2",
+    "organism": "Escherichia coli",
+    "protein": "Metallo-beta-lactamase VIM-2"
+  },
+  {
+    "uniprot_id": "A0A0F7KYQ8",
+    "gene": "VIM-1",
+    "organism": "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)",
+    "protein": "Metallo-beta-lactamase VIM-1"
+  },
+  {
+    "uniprot_id": "Q840P9",
+    "gene": "VIM-7",
+    "organism": "Pseudomonas aeruginosa",
+    "protein": "Metallo-beta-lactamase VIM-7"
+  },
+  {
+    "uniprot_id": "Q9X482",
+    "gene": "IND-1",
+    "organism": "Chryseobacterium indologenes",
+    "protein": "Metallo-beta-lactamase IND-1"
+  },
+  {
+    "uniprot_id": "P10425",
+    "gene": "Metallo-beta-la",
+    "organism": "Bacillus sp. (strain 170)",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "Q68D91",
+    "gene": "MBLAC2",
+    "organism": "Homo sapiens",
+    "protein": "Acyl-coenzyme A thioesterase MBLAC2"
+  },
+  {
+    "uniprot_id": "Q2TR58",
+    "gene": "OXA-58",
+    "organism": "Acinetobacter baumannii",
+    "protein": "Beta-lactamase OXA-58"
+  },
+  {
+    "uniprot_id": "Q9L4P2",
+    "gene": "OXA-23",
+    "organism": "Acinetobacter baumannii",
+    "protein": "Beta-lactamase OXA-23"
+  },
+  {
+    "uniprot_id": "Q9XBN7",
+    "gene": "blaB4",
+    "organism": "Elizabethkingia meningoseptica",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "Q9K303",
+    "gene": "blaB3",
+    "organism": "Elizabethkingia meningoseptica",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "Q9KJB0",
+    "gene": "blaB6",
+    "organism": "Elizabethkingia meningoseptica",
+    "protein": "Metallo-beta-lactamase type 2"
+  },
+  {
+    "uniprot_id": "Q06893",
+    "gene": "vanB",
+    "organism": "Enterococcus faecalis (strain ATCC 700802 / V583)",
+    "protein": "Vancomycin B-type resistance protein VanB"
+  },
+  {
+    "uniprot_id": "P60185",
+    "gene": "mecA",
+    "organism": "Staphylococcus aureus (strain N315)",
+    "protein": "Adapter protein MecA"
+  },
+  {
+    "uniprot_id": "P60186",
+    "gene": "mecA",
+    "organism": "Staphylococcus aureus (strain MW2)",
+    "protein": "Adapter protein MecA"
+  },
+  {
+    "uniprot_id": "P60184",
+    "gene": "mecA",
+    "organism": "Staphylococcus aureus (strain Mu50 / ATCC 700699)",
+    "protein": "Adapter protein MecA"
+  },
+  {
+    "uniprot_id": "P07944",
+    "gene": "pbp",
+    "organism": "Staphylococcus aureus",
+    "protein": "Beta-lactam-inducible penicillin-binding protein"
+  },
+  {
+    "uniprot_id": "P9WFK7",
+    "gene": "eis",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "N-acetyltransferase Eis"
+  },
+  {
+    "uniprot_id": "P29808",
+    "gene": "aacC3",
+    "organism": "Pseudomonas aeruginosa",
+    "protein": "Aminoglycoside N(3)-acetyltransferase III"
+  },
+  {
+    "uniprot_id": "Q9R381",
+    "gene": "Aminoglycoside",
+    "organism": "Salmonella enteritidis",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "P0A0C2",
+    "gene": "aacA-aphD",
+    "organism": "Enterococcus faecalis (strain ATCC 700802 / V583)",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "P9WQG9",
+    "gene": "aac",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Aminoglycoside 2'-N-acetyltransferase"
+  },
+  {
+    "uniprot_id": "P9WFK6",
+    "gene": "eis",
+    "organism": "Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)",
+    "protein": "N-acetyltransferase Eis"
+  },
+  {
+    "uniprot_id": "Q44057",
+    "gene": "Aminoglycoside",
+    "organism": "Acinetobacter haemolyticus",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "Q54441",
+    "gene": "Aminoglycoside",
+    "organism": "Serratia marcescens",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "Q9RBW7",
+    "gene": "Aminoglycoside",
+    "organism": "Stenotrophomonas maltophilia",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "Q44245",
+    "gene": "Aminoglycoside",
+    "organism": "Acinetobacter genomosp. 13",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "Q43899",
+    "gene": "Aminoglycoside",
+    "organism": "Acinetobacter baumannii",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "P50858",
+    "gene": "aacA7",
+    "organism": "Klebsiella aerogenes",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "Q15BH7",
+    "gene": "aacA7",
+    "organism": "Morganella morganii",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "P20092",
+    "gene": "aacA4",
+    "organism": "Serratia marcescens",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "P10051",
+    "gene": "aacA1",
+    "organism": "Citrobacter koseri",
+    "protein": "Aminoglycoside N(6')-acetyltransferase type 1"
+  },
+  {
+    "uniprot_id": "P00553",
+    "gene": "aphA4",
+    "organism": "Niallia circulans",
+    "protein": "Aminoglycoside 3'-phosphotransferase"
+  },
+  {
+    "uniprot_id": "P9WI99",
+    "gene": "Putative",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Putative aminoglycoside phosphotransferase"
+  },
+  {
+    "uniprot_id": "P00551",
+    "gene": "aphA1",
+    "organism": "Escherichia coli",
+    "protein": "Aminoglycoside 3'-phosphotransferase"
+  },
+  {
+    "uniprot_id": "P00552",
+    "gene": "neo",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Aminoglycoside 3'-phosphotransferase"
+  },
+  {
+    "uniprot_id": "Q7ATH9",
+    "gene": "aacA-aphD",
+    "organism": "Mammaliicoccus sciuri",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "Q7ATH7",
+    "gene": "aacA-aphD",
+    "organism": "Staphylococcus warneri",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "P13250",
+    "gene": "rph",
+    "organism": "Streptomyces ribosidificus",
+    "protein": "Aminoglycoside 3'-phosphotransferase"
+  },
+  {
+    "uniprot_id": "Q52S23",
+    "gene": "aacA-aphD",
+    "organism": "Enterococcus faecium",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "Q5HMP3",
+    "gene": "aacA-aphD",
+    "organism": "Staphylococcus epidermidis (strain ATCC 35984 / DSM 28319 / BCRC 17069 / CCUG 31568 / BM 3577 / RP62A)",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "P0A0C0",
+    "gene": "aacA-aphD",
+    "organism": "Staphylococcus aureus (strain Mu50 / ATCC 700699)",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "Q4L605",
+    "gene": "aacA-aphD",
+    "organism": "Staphylococcus haemolyticus (strain JCSC1435)",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "P0A0C1",
+    "gene": "aacA-aphD",
+    "organism": "Staphylococcus aureus",
+    "protein": "Bifunctional AAC/APH"
+  },
+  {
+    "uniprot_id": "P08077",
+    "gene": "aphD",
+    "organism": "Streptomyces griseus",
+    "protein": "Streptomycin 6-kinase"
+  },
+  {
+    "uniprot_id": "P0A3Y6",
+    "gene": "aphA",
+    "organism": "Staphylococcus aureus",
+    "protein": "Aminoglycoside 3'-phosphotransferase"
+  },
+  {
+    "uniprot_id": "P0AE05",
+    "gene": "aadB",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "2''-aminoglycoside nucleotidyltransferase"
+  },
+  {
+    "uniprot_id": "Q8ZPX9",
+    "gene": "aadA",
+    "organism": "Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)",
+    "protein": "Aminoglycoside (3'') (9) adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P05058",
+    "gene": "knt",
+    "organism": "Bacillus sp",
+    "protein": "Aminoglycoside nucleotidyltransferase (4')"
+  },
+  {
+    "uniprot_id": "P05057",
+    "gene": "knt",
+    "organism": "Staphylococcus aureus",
+    "protein": "Aminoglycoside nucleotidyltransferase (4')"
+  },
+  {
+    "uniprot_id": "P0AG05",
+    "gene": "aadA",
+    "organism": "Escherichia coli",
+    "protein": "Aminoglycoside (3'') (9) adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P17585",
+    "gene": "aadK",
+    "organism": "Bacillus subtilis (strain 168)",
+    "protein": "Aminoglycoside 6-adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P0AE04",
+    "gene": "aadB",
+    "organism": "Escherichia coli",
+    "protein": "2''-aminoglycoside nucleotidyltransferase"
+  },
+  {
+    "uniprot_id": "P14511",
+    "gene": "Aminoglycoside",
+    "organism": "Agrobacterium tumefaciens",
+    "protein": "Aminoglycoside (3'') (9) adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P29806",
+    "gene": "aadB",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "2''-aminoglycoside nucleotidyltransferase"
+  },
+  {
+    "uniprot_id": "P0DTV9",
+    "gene": "aadK",
+    "organism": "Campylobacter jejuni",
+    "protein": "Aminoglycoside 6-adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P0AG06",
+    "gene": "aadA",
+    "organism": "Shigella flexneri",
+    "protein": "Aminoglycoside (3'') (9) adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P08881",
+    "gene": "aadA",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Aminoglycoside (3'') (9) adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P12055",
+    "gene": "str",
+    "organism": "Staphylococcus aureus",
+    "protein": "Aminoglycoside 6-adenylyltransferase"
+  },
+  {
+    "uniprot_id": "P52002",
+    "gene": "mexB",
+    "organism": "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)",
+    "protein": "Multidrug resistance protein MexB"
+  },
+  {
+    "uniprot_id": "P52477",
+    "gene": "mexA",
+    "organism": "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)",
+    "protein": "Multidrug resistance protein MexA"
+  },
+  {
+    "uniprot_id": "Q51487",
+    "gene": "oprM",
+    "organism": "Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)",
+    "protein": "Outer membrane protein OprM"
+  },
+  {
+    "uniprot_id": "P0AE06",
+    "gene": "acrA",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Multidrug efflux pump subunit AcrA"
+  },
+  {
+    "uniprot_id": "P31224",
+    "gene": "acrB",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Multidrug efflux pump subunit AcrB"
+  },
+  {
+    "uniprot_id": "P02930",
+    "gene": "tolC",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Outer membrane protein TolC"
+  },
+  {
+    "uniprot_id": "P0AAW9",
+    "gene": "acrZ",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Multidrug efflux pump accessory protein AcrZ"
+  },
+  {
+    "uniprot_id": "P0AE07",
+    "gene": "acrA",
+    "organism": "Escherichia coli O157:H7",
+    "protein": "Multidrug efflux pump subunit AcrA"
+  },
+  {
+    "uniprot_id": "P24180",
+    "gene": "acrE",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Multidrug export protein AcrE"
+  },
+  {
+    "uniprot_id": "P24181",
+    "gene": "acrF",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Multidrug export protein AcrF"
+  },
+  {
+    "uniprot_id": "Q8KSA6",
+    "gene": "bla",
+    "organism": "Escherichia coli",
+    "protein": "Beta-lactamase CTX-M-25"
+  },
+  {
+    "uniprot_id": "Q9RMT4",
+    "gene": "bla",
+    "organism": "Citrobacter amalonaticus",
+    "protein": "Beta-lactamase CTX-M-8"
+  },
+  {
+    "uniprot_id": "A0A649V088",
+    "gene": "bla",
+    "organism": "Escherichia coli",
+    "protein": "Beta-lactamase CTX-M-14"
+  },
+  {
+    "uniprot_id": "P28585",
+    "gene": "bla",
+    "organism": "Escherichia coli",
+    "protein": "Beta-lactamase CTX-M-1"
+  },
+  {
+    "uniprot_id": "A0A5R8T042",
+    "gene": "bla",
+    "organism": "Escherichia coli O25b:H4",
+    "protein": "Beta-lactamase CTX-M-15"
+  },
+  {
+    "uniprot_id": "Q47066",
+    "gene": "bla",
+    "organism": "Escherichia coli",
+    "protein": "Beta-lactamase Toho-1"
+  },
+  {
+    "uniprot_id": "P0C002",
+    "gene": "sul1",
+    "organism": "Escherichia coli",
+    "protein": "Dihydropteroate synthase type-1"
+  },
+  {
+    "uniprot_id": "P0CF06",
+    "gene": "Insertion",
+    "organism": "Escherichia coli",
+    "protein": "Insertion element IS1 protein InsA"
+  },
+  {
+    "uniprot_id": "P35804",
+    "gene": "Beta-lactamase",
+    "organism": "Streptomyces clavuligerus",
+    "protein": "Beta-lactamase inhibitory protein"
+  },
+  {
+    "uniprot_id": "P05192",
+    "gene": "Beta-lactamase",
+    "organism": "Klebsiella pneumoniae",
+    "protein": "Beta-lactamase"
+  },
+  {
+    "uniprot_id": "P05364",
+    "gene": "ampC",
+    "organism": "Enterobacter cloacae",
+    "protein": "Beta-lactamase"
+  },
+  {
+    "uniprot_id": "Q99QC1",
+    "gene": "blaCMY-10",
+    "organism": "Klebsiella aerogenes",
+    "protein": "Beta-lactamase CMY-10"
+  },
+  {
+    "uniprot_id": "P9WIE5",
+    "gene": "katG",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Catalase-peroxidase"
+  },
+  {
+    "uniprot_id": "P9WIE4",
+    "gene": "katG",
+    "organism": "Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)",
+    "protein": "Catalase-peroxidase"
+  },
+  {
+    "uniprot_id": "P46817",
+    "gene": "katG",
+    "organism": "Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)",
+    "protein": "Catalase-peroxidase"
+  },
+  {
+    "uniprot_id": "P9WGR1",
+    "gene": "inhA",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Enoyl-[acyl-carrier-protein] reductase [NADH]"
+  },
+  {
+    "uniprot_id": "A0QXX7",
+    "gene": "katG2",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "Catalase-peroxidase 2"
+  },
+  {
+    "uniprot_id": "P9WQB7",
+    "gene": "ahpC",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Alkyl hydroperoxide reductase C"
+  },
+  {
+    "uniprot_id": "P42829",
+    "gene": "inhA",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "Enoyl-[acyl-carrier-protein] reductase [NADH]"
+  },
+  {
+    "uniprot_id": "P9WGR0",
+    "gene": "inhA",
+    "organism": "Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)",
+    "protein": "Enoyl-[acyl-carrier-protein] reductase [NADH]"
+  },
+  {
+    "uniprot_id": "A0R609",
+    "gene": "katG1",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "Catalase-peroxidase 1"
+  },
+  {
+    "uniprot_id": "P0A5Y7",
+    "gene": "inhA",
+    "organism": "Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)",
+    "protein": "Enoyl-[acyl-carrier-protein] reductase [NADH]"
+  },
+  {
+    "uniprot_id": "P0A5Y5",
+    "gene": "mabA",
+    "organism": "Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)",
+    "protein": "3-oxoacyl-[acyl-carrier-protein] reductase MabA"
+  },
+  {
+    "uniprot_id": "P9WGT3",
+    "gene": "mabA",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "3-oxoacyl-[acyl-carrier-protein] reductase MabA"
+  },
+  {
+    "uniprot_id": "P9WGY9",
+    "gene": "rpoB",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "DNA-directed RNA polymerase subunit beta"
+  },
+  {
+    "uniprot_id": "P60281",
+    "gene": "rpoB",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "DNA-directed RNA polymerase subunit beta"
+  },
+  {
+    "uniprot_id": "P9WMQ5",
+    "gene": "mfd",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "Transcription-repair-coupling factor"
+  },
+  {
+    "uniprot_id": "A0QUE0",
+    "gene": "helR",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "RNA polymerase recycling motor protein HelD/HelR"
+  },
+  {
+    "uniprot_id": "P9WJG3",
+    "gene": "carD",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "RNA polymerase-binding transcription factor CarD"
+  },
+  {
+    "uniprot_id": "A0R561",
+    "gene": "carD",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "RNA polymerase-binding transcription factor CarD"
+  },
+  {
+    "uniprot_id": "A0QZ11",
+    "gene": "rbpA",
+    "organism": "Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)",
+    "protein": "RNA polymerase-binding protein RbpA"
+  },
+  {
+    "uniprot_id": "A0A0R6L508",
+    "gene": "mcr1",
+    "organism": "Escherichia coli",
+    "protein": "Phosphatidylethanolamine transferase Mcr-1"
+  },
+  {
+    "uniprot_id": "A0A1C3NEV1",
+    "gene": "mcr2",
+    "organism": "Escherichia coli",
+    "protein": "Phosphatidylethanolamine transferase Mcr-2"
+  },
+  {
+    "uniprot_id": "P9WG47",
+    "gene": "gyrA",
+    "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "protein": "DNA gyrase subunit A"
+  },
+  {
+    "uniprot_id": "P0AES4",
+    "gene": "gyrA",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "DNA gyrase subunit A"
+  },
+  {
+    "uniprot_id": "P72525",
+    "gene": "parC",
+    "organism": "Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)",
+    "protein": "DNA topoisomerase 4 subunit A"
+  },
+  {
+    "uniprot_id": "Q9L7Q5",
+    "gene": "gyrA",
+    "organism": "Streptococcus pyogenes serotype M1",
+    "protein": "DNA gyrase subunit A"
+  },
+  {
+    "uniprot_id": "P0AES6",
+    "gene": "gyrB",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "DNA gyrase subunit B"
+  },
+  {
+    "uniprot_id": "Q9L7Q4",
+    "gene": "parC",
+    "organism": "Streptococcus pyogenes serotype M1",
+    "protein": "DNA topoisomerase 4 subunit A"
+  },
+  {
+    "uniprot_id": "P0A2Y8",
+    "gene": "atpB",
+    "organism": "Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)",
+    "protein": "ATP synthase subunit a"
+  },
+  {
+    "uniprot_id": "P00484",
+    "gene": "cat3",
+    "organism": "Escherichia coli",
+    "protein": "Chloramphenicol acetyltransferase 3"
+  },
+  {
+    "uniprot_id": "P36883",
+    "gene": "Chloramphenicol",
+    "organism": "Staphylococcus aureus",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P22782",
+    "gene": "Chloramphenicol",
+    "organism": "Campylobacter coli",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P22615",
+    "gene": "cmlA",
+    "organism": "Escherichia coli",
+    "protein": "Chloramphenicol acetyltransferase 2"
+  },
+  {
+    "uniprot_id": "P20074",
+    "gene": "cat",
+    "organism": "Streptomyces acrimycini",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P06135",
+    "gene": "cat",
+    "organism": "Staphylococcus aureus",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P25309",
+    "gene": "cat",
+    "organism": "Staphylococcus intermedius",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P36882",
+    "gene": "cat",
+    "organism": "Staphylococcus aureus",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P22616",
+    "gene": "cat-IIH",
+    "organism": "Haemophilus influenzae",
+    "protein": "Chloramphenicol acetyltransferase 2"
+  },
+  {
+    "uniprot_id": "P11504",
+    "gene": "catD",
+    "organism": "Clostridioides difficile",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "Q02736",
+    "gene": "catB",
+    "organism": "Clostridium butyricum",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P00486",
+    "gene": "cat",
+    "organism": "Staphylococcus aureus",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "Q03058",
+    "gene": "cat",
+    "organism": "Streptococcus agalactiae",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P26825",
+    "gene": "catQ",
+    "organism": "Clostridium perfringens",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "P26826",
+    "gene": "catP",
+    "organism": "Clostridium perfringens",
+    "protein": "Chloramphenicol acetyltransferase"
+  },
+  {
+    "uniprot_id": "Q46306",
+    "gene": "tetP",
+    "organism": "Clostridium perfringens",
+    "protein": "Tetracycline resistance protein TetP"
+  },
+  {
+    "uniprot_id": "P0AC13",
+    "gene": "folP",
+    "organism": "Escherichia coli (strain K12)",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "P57696",
+    "gene": "folP",
+    "organism": "Neisseria meningitidis serogroup C",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "P59655",
+    "gene": "sulA",
+    "organism": "Streptococcus pneumoniae (strain ATCC BAA-255 / R6)",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "Q51161",
+    "gene": "folP",
+    "organism": "Neisseria meningitidis serogroup B (strain ATCC BAA-335 / MC58)",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "Q9JT70",
+    "gene": "folP",
+    "organism": "Neisseria meningitidis serogroup A / serotype 4A (strain DSM 15465 / Z2491)",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "O05701",
+    "gene": "folP",
+    "organism": "Staphylococcus aureus",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "C0HMD9",
+    "gene": "sul3",
+    "organism": "Escherichia coli",
+    "protein": "Dihydropteroate synthase type-3"
+  },
+  {
+    "uniprot_id": "P0AC11",
+    "gene": "sul2",
+    "organism": "Escherichia coli",
+    "protein": "Dihydropteroate synthase type-2"
+  },
+  {
+    "uniprot_id": "P05382",
+    "gene": "sulA",
+    "organism": "Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "Q49184",
+    "gene": "sulI",
+    "organism": "Mycolicibacterium fortuitum",
+    "protein": "Dihydropteroate synthase type-1"
+  },
+  {
+    "uniprot_id": "P0C0G0",
+    "gene": "folP",
+    "organism": "Streptococcus pyogenes",
+    "protein": "Dihydropteroate synthase"
+  },
+  {
+    "uniprot_id": "P0C0G4",
+    "gene": "folB",
+    "organism": "Streptococcus pyogenes",
+    "protein": "Dihydroneopterin aldolase"
+  },
+  {
+    "uniprot_id": "P0C0C1",
+    "gene": "folE",
+    "organism": "Streptococcus pyogenes",
+    "protein": "GTP cyclohydrolase 1"
+  },
+  {
+    "uniprot_id": "P0C0G2",
+    "gene": "folK",
+    "organism": "Streptococcus pyogenes",
+    "protein": "2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase"
+  }
+]
