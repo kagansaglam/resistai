@@ -94,6 +94,21 @@ ANTHROPIC_API_KEY=your_anthropic_api_key_here
 - Structural biology and drug discovery
 - AI/ML applications in antimicrobial resistance
 
+
+## Results & Figures
+
+### Figure 1 — Druggability Analysis Overview
+![Figure 1](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure1_druggability_analysis.png)
+
+### Figure 2 — Top 20 Most Druggable Proteins
+![Figure 2](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure2_top20_proteins.png)
+
+### Figure 3 — Pocket Distribution Heatmap by Resistance Family
+![Figure 3](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure3_heatmap.png)
+
+### Figure 4 — Organism Distribution & Mean Druggability
+![Figure 4](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure4_organisms.png)
+
 ## Author
 
 Kagan Saglam
