@@ -1,8 +1,14 @@
 work/
 .nextflow/
 .nextflow.log*
-results/
+results/sequences/
+results/structures/
+results/pockets/
+results/pockets_pdb/
 __pycache__/
 *.pyc
 .DS_Store
 .env
+.ipynb_checkpoints/
+*.ipynb
+untitled.py
