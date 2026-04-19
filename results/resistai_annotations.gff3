@@ -1,8 +1,9 @@
 ##gff-version 3
 ##date 2026-04-19
 ##source ResistAI pipeline
+##coordinate-system amino-acid-position
 #
-Q9F663	ResistAI	gene	1	293	.	+	.	ID=Q9F663;Name=KPC-2;organism=Klebsiella pneumoniae
+Q9F663	ResistAI	gene	1	293	.	+	.	ID=Q9F663;Name=KPC-2;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:Q9F663;EMBL:AF297554;coordinate_type=amino_acid
 Q9F663	ResistAI	CDS	1	293	.	+	0	ID=Q9F663_CDS;Parent=Q9F663;product=antibiotic_resistance_protein
 Q9F663	fpocket	binding_site	1	293	0.427	+	.	ID=Q9F663_pocket9;Parent=Q9F663;druggability_score=0.427;druggability_tier=medium
 Q9F663	fpocket	binding_site	1	293	0.08	+	.	ID=Q9F663_pocket16;Parent=Q9F663;druggability_score=0.080;druggability_tier=low
@@ -21,7 +22,7 @@ Q9F663	fpocket	binding_site	1	293	0	+	.	ID=Q9F663_pocket3;Parent=Q9F663;druggabi
 Q9F663	fpocket	binding_site	1	293	0	+	.	ID=Q9F663_pocket7;Parent=Q9F663;druggability_score=0.000;druggability_tier=low
 Q9F663	fpocket	binding_site	1	293	0	+	.	ID=Q9F663_pocket11;Parent=Q9F663;druggability_score=0.000;druggability_tier=low
 Q9F663	fpocket	binding_site	1	293	0	+	.	ID=Q9F663_pocket12;Parent=Q9F663;druggability_score=0.000;druggability_tier=low
-P0AD64	ResistAI	gene	1	286	.	+	.	ID=P0AD64;Name=bla;organism=Klebsiella pneumoniae
+P0AD64	ResistAI	gene	1	286	.	+	.	ID=P0AD64;Name=bla;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P0AD64;EMBL:M59181;coordinate_type=amino_acid
 P0AD64	ResistAI	CDS	1	286	.	+	0	ID=P0AD64_CDS;Parent=P0AD64;product=antibiotic_resistance_protein
 P0AD64	fpocket	binding_site	1	286	0.358	+	.	ID=P0AD64_pocket4;Parent=P0AD64;druggability_score=0.358;druggability_tier=low
 P0AD64	fpocket	binding_site	1	286	0.098	+	.	ID=P0AD64_pocket1;Parent=P0AD64;druggability_score=0.098;druggability_tier=low
@@ -34,7 +35,7 @@ P0AD64	fpocket	binding_site	1	286	0.001	+	.	ID=P0AD64_pocket2;Parent=P0AD64;drug
 P0AD64	fpocket	binding_site	1	286	0.001	+	.	ID=P0AD64_pocket3;Parent=P0AD64;druggability_score=0.001;druggability_tier=low
 P0AD64	fpocket	binding_site	1	286	0.001	+	.	ID=P0AD64_pocket8;Parent=P0AD64;druggability_score=0.001;druggability_tier=low
 P0AD64	fpocket	binding_site	1	286	0	+	.	ID=P0AD64_pocket7;Parent=P0AD64;druggability_score=0.000;druggability_tier=low
-Q9AHN9	ResistAI	gene	1	286	.	+	.	ID=Q9AHN9;Name=bla;organism=Klebsiella pneumoniae
+Q9AHN9	ResistAI	gene	1	286	.	+	.	ID=Q9AHN9;Name=bla;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:Q9AHN9;EMBL:AF301532;coordinate_type=amino_acid
 Q9AHN9	ResistAI	CDS	1	286	.	+	0	ID=Q9AHN9_CDS;Parent=Q9AHN9;product=antibiotic_resistance_protein
 Q9AHN9	fpocket	binding_site	1	286	0.455	+	.	ID=Q9AHN9_pocket11;Parent=Q9AHN9;druggability_score=0.455;druggability_tier=medium
 Q9AHN9	fpocket	binding_site	1	286	0.252	+	.	ID=Q9AHN9_pocket1;Parent=Q9AHN9;druggability_score=0.252;druggability_tier=low
@@ -49,7 +50,7 @@ Q9AHN9	fpocket	binding_site	1	286	0.001	+	.	ID=Q9AHN9_pocket13;Parent=Q9AHN9;dru
 Q9AHN9	fpocket	binding_site	1	286	0	+	.	ID=Q9AHN9_pocket3;Parent=Q9AHN9;druggability_score=0.000;druggability_tier=low
 Q9AHN9	fpocket	binding_site	1	286	0	+	.	ID=Q9AHN9_pocket9;Parent=Q9AHN9;druggability_score=0.000;druggability_tier=low
 Q9AHN9	fpocket	binding_site	1	286	0	+	.	ID=Q9AHN9_pocket12;Parent=Q9AHN9;druggability_score=0.000;druggability_tier=low
-C7C422	ResistAI	gene	1	270	.	+	.	ID=C7C422;Name=blaNDM-1;organism=Klebsiella pneumoniae
+C7C422	ResistAI	gene	1	270	.	+	.	ID=C7C422;Name=blaNDM-1;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:C7C422;EMBL:FN396876;coordinate_type=amino_acid
 C7C422	ResistAI	CDS	1	270	.	+	0	ID=C7C422_CDS;Parent=C7C422;product=antibiotic_resistance_protein
 C7C422	fpocket	binding_site	1	270	0.484	+	.	ID=C7C422_pocket5;Parent=C7C422;druggability_score=0.484;druggability_tier=medium
 C7C422	fpocket	binding_site	1	270	0.185	+	.	ID=C7C422_pocket2;Parent=C7C422;druggability_score=0.185;druggability_tier=low
@@ -69,7 +70,7 @@ C7C422	fpocket	binding_site	1	270	0	+	.	ID=C7C422_pocket11;Parent=C7C422;druggab
 C7C422	fpocket	binding_site	1	270	0	+	.	ID=C7C422_pocket13;Parent=C7C422;druggability_score=0.000;druggability_tier=low
 C7C422	fpocket	binding_site	1	270	0	+	.	ID=C7C422_pocket14;Parent=C7C422;druggability_score=0.000;druggability_tier=low
 C7C422	fpocket	binding_site	1	270	0	+	.	ID=C7C422_pocket18;Parent=C7C422;druggability_score=0.000;druggability_tier=low
-P26918	ResistAI	gene	1	254	.	+	.	ID=P26918;Name=cphA;organism=Aeromonas hydrophila
+P26918	ResistAI	gene	1	254	.	+	.	ID=P26918;Name=cphA;organism=Aeromonas hydrophila;db_xref=ResistAI;UniProt:P26918;EMBL:X57102;coordinate_type=amino_acid
 P26918	ResistAI	CDS	1	254	.	+	0	ID=P26918_CDS;Parent=P26918;product=antibiotic_resistance_protein
 P26918	fpocket	binding_site	1	254	0.407	+	.	ID=P26918_pocket5;Parent=P26918;druggability_score=0.407;druggability_tier=medium
 P26918	fpocket	binding_site	1	254	0.045	+	.	ID=P26918_pocket1;Parent=P26918;druggability_score=0.045;druggability_tier=low
@@ -84,7 +85,7 @@ P26918	fpocket	binding_site	1	254	0	+	.	ID=P26918_pocket7;Parent=P26918;druggabi
 P26918	fpocket	binding_site	1	254	0	+	.	ID=P26918_pocket9;Parent=P26918;druggability_score=0.000;druggability_tier=low
 P26918	fpocket	binding_site	1	254	0	+	.	ID=P26918_pocket11;Parent=P26918;druggability_score=0.000;druggability_tier=low
 P26918	fpocket	binding_site	1	254	0	+	.	ID=P26918_pocket12;Parent=P26918;druggability_score=0.000;druggability_tier=low
-P14488	ResistAI	gene	1	256	.	+	.	ID=P14488;Name=Metallo-beta-la;organism=Bacillus cereus
+P14488	ResistAI	gene	1	256	.	+	.	ID=P14488;Name=Metallo-beta-la;organism=Bacillus cereus;db_xref=ResistAI;UniProt:P14488;EMBL:M19530;coordinate_type=amino_acid
 P14488	ResistAI	CDS	1	256	.	+	0	ID=P14488_CDS;Parent=P14488;product=antibiotic_resistance_protein
 P14488	fpocket	binding_site	1	256	0.791	+	.	ID=P14488_pocket3;Parent=P14488;druggability_score=0.791;druggability_tier=high
 P14488	fpocket	binding_site	1	256	0.24	+	.	ID=P14488_pocket4;Parent=P14488;druggability_score=0.240;druggability_tier=low
@@ -102,7 +103,7 @@ P14488	fpocket	binding_site	1	256	0	+	.	ID=P14488_pocket12;Parent=P14488;druggab
 P14488	fpocket	binding_site	1	256	0	+	.	ID=P14488_pocket13;Parent=P14488;druggability_score=0.000;druggability_tier=low
 P14488	fpocket	binding_site	1	256	0	+	.	ID=P14488_pocket14;Parent=P14488;druggability_score=0.000;druggability_tier=low
 P14488	fpocket	binding_site	1	256	0	+	.	ID=P14488_pocket15;Parent=P14488;druggability_score=0.000;druggability_tier=low
-P52700	ResistAI	gene	1	290	.	+	.	ID=P52700;Name=Metallo-beta-la;organism=Stenotrophomonas maltophilia
+P52700	ResistAI	gene	1	290	.	+	.	ID=P52700;Name=Metallo-beta-la;organism=Stenotrophomonas maltophilia;db_xref=ResistAI;UniProt:P52700;EMBL:X75074;coordinate_type=amino_acid
 P52700	ResistAI	CDS	1	290	.	+	0	ID=P52700_CDS;Parent=P52700;product=antibiotic_resistance_protein
 P52700	fpocket	binding_site	1	290	0.837	+	.	ID=P52700_pocket2;Parent=P52700;druggability_score=0.837;druggability_tier=high
 P52700	fpocket	binding_site	1	290	0.293	+	.	ID=P52700_pocket13;Parent=P52700;druggability_score=0.293;druggability_tier=low
@@ -121,7 +122,7 @@ P52700	fpocket	binding_site	1	290	0.001	+	.	ID=P52700_pocket16;Parent=P52700;dru
 P52700	fpocket	binding_site	1	290	0	+	.	ID=P52700_pocket7;Parent=P52700;druggability_score=0.000;druggability_tier=low
 P52700	fpocket	binding_site	1	290	0	+	.	ID=P52700_pocket12;Parent=P52700;druggability_score=0.000;druggability_tier=low
 P52700	fpocket	binding_site	1	290	0	+	.	ID=P52700_pocket15;Parent=P52700;druggability_score=0.000;druggability_tier=low
-Q7WYA8	ResistAI	gene	1	246	.	+	.	ID=Q7WYA8;Name=bla-imp13;organism=Pseudomonas aeruginosa
+Q7WYA8	ResistAI	gene	1	246	.	+	.	ID=Q7WYA8;Name=bla-imp13;organism=Pseudomonas aeruginosa;db_xref=ResistAI;UniProt:Q7WYA8;EMBL:FJ172674;coordinate_type=amino_acid
 Q7WYA8	ResistAI	CDS	1	246	.	+	0	ID=Q7WYA8_CDS;Parent=Q7WYA8;product=antibiotic_resistance_protein
 Q7WYA8	fpocket	binding_site	1	246	0.558	+	.	ID=Q7WYA8_pocket1;Parent=Q7WYA8;druggability_score=0.558;druggability_tier=medium
 Q7WYA8	fpocket	binding_site	1	246	0.017	+	.	ID=Q7WYA8_pocket16;Parent=Q7WYA8;druggability_score=0.017;druggability_tier=low
@@ -140,7 +141,7 @@ Q7WYA8	fpocket	binding_site	1	246	0	+	.	ID=Q7WYA8_pocket9;Parent=Q7WYA8;druggabi
 Q7WYA8	fpocket	binding_site	1	246	0	+	.	ID=Q7WYA8_pocket13;Parent=Q7WYA8;druggability_score=0.000;druggability_tier=low
 Q7WYA8	fpocket	binding_site	1	246	0	+	.	ID=Q7WYA8_pocket14;Parent=Q7WYA8;druggability_score=0.000;druggability_tier=low
 Q7WYA8	fpocket	binding_site	1	246	0	+	.	ID=Q7WYA8_pocket15;Parent=Q7WYA8;druggability_score=0.000;druggability_tier=low
-P04190	ResistAI	gene	1	257	.	+	.	ID=P04190;Name=blm;organism=Bacillus cereus
+P04190	ResistAI	gene	1	257	.	+	.	ID=P04190;Name=blm;organism=Bacillus cereus;db_xref=ResistAI;UniProt:P04190;EMBL:M11189;coordinate_type=amino_acid
 P04190	ResistAI	CDS	1	257	.	+	0	ID=P04190_CDS;Parent=P04190;product=antibiotic_resistance_protein
 P04190	fpocket	binding_site	1	257	0.081	+	.	ID=P04190_pocket9;Parent=P04190;druggability_score=0.081;druggability_tier=low
 P04190	fpocket	binding_site	1	257	0.079	+	.	ID=P04190_pocket1;Parent=P04190;druggability_score=0.079;druggability_tier=low
@@ -160,7 +161,7 @@ P04190	fpocket	binding_site	1	257	0	+	.	ID=P04190_pocket5;Parent=P04190;druggabi
 P04190	fpocket	binding_site	1	257	0	+	.	ID=P04190_pocket8;Parent=P04190;druggability_score=0.000;druggability_tier=low
 P04190	fpocket	binding_site	1	257	0	+	.	ID=P04190_pocket12;Parent=P04190;druggability_score=0.000;druggability_tier=low
 P04190	fpocket	binding_site	1	257	0	+	.	ID=P04190_pocket18;Parent=P04190;druggability_score=0.000;druggability_tier=low
-P52699	ResistAI	gene	1	246	.	+	.	ID=P52699;Name=Metallo-beta-la;organism=Serratia marcescens
+P52699	ResistAI	gene	1	246	.	+	.	ID=P52699;Name=Metallo-beta-la;organism=Serratia marcescens;db_xref=ResistAI;UniProt:P52699;EMBL:S71932;coordinate_type=amino_acid
 P52699	ResistAI	CDS	1	246	.	+	0	ID=P52699_CDS;Parent=P52699;product=antibiotic_resistance_protein
 P52699	fpocket	binding_site	1	246	0.436	+	.	ID=P52699_pocket9;Parent=P52699;druggability_score=0.436;druggability_tier=medium
 P52699	fpocket	binding_site	1	246	0.047	+	.	ID=P52699_pocket6;Parent=P52699;druggability_score=0.047;druggability_tier=low
@@ -172,7 +173,7 @@ P52699	fpocket	binding_site	1	246	0	+	.	ID=P52699_pocket1;Parent=P52699;druggabi
 P52699	fpocket	binding_site	1	246	0	+	.	ID=P52699_pocket5;Parent=P52699;druggability_score=0.000;druggability_tier=low
 P52699	fpocket	binding_site	1	246	0	+	.	ID=P52699_pocket7;Parent=P52699;druggability_score=0.000;druggability_tier=low
 P52699	fpocket	binding_site	1	246	0	+	.	ID=P52699_pocket10;Parent=P52699;druggability_score=0.000;druggability_tier=low
-O08498	ResistAI	gene	1	249	.	+	.	ID=O08498;Name=blaB1;organism=Elizabethkingia meningoseptica
+O08498	ResistAI	gene	1	249	.	+	.	ID=O08498;Name=blaB1;organism=Elizabethkingia meningoseptica;db_xref=ResistAI;UniProt:O08498;EMBL:X96858;coordinate_type=amino_acid
 O08498	ResistAI	CDS	1	249	.	+	0	ID=O08498_CDS;Parent=O08498;product=antibiotic_resistance_protein
 O08498	fpocket	binding_site	1	249	0.318	+	.	ID=O08498_pocket8;Parent=O08498;druggability_score=0.318;druggability_tier=low
 O08498	fpocket	binding_site	1	249	0.007	+	.	ID=O08498_pocket9;Parent=O08498;druggability_score=0.007;druggability_tier=low
@@ -189,7 +190,7 @@ O08498	fpocket	binding_site	1	249	0	+	.	ID=O08498_pocket11;Parent=O08498;druggab
 O08498	fpocket	binding_site	1	249	0	+	.	ID=O08498_pocket12;Parent=O08498;druggability_score=0.000;druggability_tier=low
 O08498	fpocket	binding_site	1	249	0	+	.	ID=O08498_pocket13;Parent=O08498;druggability_score=0.000;druggability_tier=low
 O08498	fpocket	binding_site	1	249	0	+	.	ID=O08498_pocket15;Parent=O08498;druggability_score=0.000;druggability_tier=low
-P25910	ResistAI	gene	1	249	.	+	.	ID=P25910;Name=ccrA;organism=Bacteroides fragilis
+P25910	ResistAI	gene	1	249	.	+	.	ID=P25910;Name=ccrA;organism=Bacteroides fragilis;db_xref=ResistAI;UniProt:P25910;EMBL:M63556;coordinate_type=amino_acid
 P25910	ResistAI	CDS	1	249	.	+	0	ID=P25910_CDS;Parent=P25910;product=antibiotic_resistance_protein
 P25910	fpocket	binding_site	1	249	0.228	+	.	ID=P25910_pocket1;Parent=P25910;druggability_score=0.228;druggability_tier=low
 P25910	fpocket	binding_site	1	249	0.024	+	.	ID=P25910_pocket10;Parent=P25910;druggability_score=0.024;druggability_tier=low
@@ -201,7 +202,7 @@ P25910	fpocket	binding_site	1	249	0.001	+	.	ID=P25910_pocket6;Parent=P25910;drug
 P25910	fpocket	binding_site	1	249	0.001	+	.	ID=P25910_pocket8;Parent=P25910;druggability_score=0.001;druggability_tier=low
 P25910	fpocket	binding_site	1	249	0.001	+	.	ID=P25910_pocket9;Parent=P25910;druggability_score=0.001;druggability_tier=low
 P25910	fpocket	binding_site	1	249	0	+	.	ID=P25910_pocket7;Parent=P25910;druggability_score=0.000;druggability_tier=low
-Q5U7L7	ResistAI	gene	1	266	.	+	.	ID=Q5U7L7;Name=VIM-2;organism=Escherichia coli
+Q5U7L7	ResistAI	gene	1	266	.	+	.	ID=Q5U7L7;Name=VIM-2;organism=Escherichia coli;db_xref=ResistAI;UniProt:Q5U7L7;EMBL:AY781413;coordinate_type=amino_acid
 Q5U7L7	ResistAI	CDS	1	266	.	+	0	ID=Q5U7L7_CDS;Parent=Q5U7L7;product=antibiotic_resistance_protein
 Q5U7L7	fpocket	binding_site	1	266	0.535	+	.	ID=Q5U7L7_pocket2;Parent=Q5U7L7;druggability_score=0.535;druggability_tier=medium
 Q5U7L7	fpocket	binding_site	1	266	0.023	+	.	ID=Q5U7L7_pocket1;Parent=Q5U7L7;druggability_score=0.023;druggability_tier=low
@@ -218,7 +219,7 @@ Q5U7L7	fpocket	binding_site	1	266	0	+	.	ID=Q5U7L7_pocket3;Parent=Q5U7L7;druggabi
 Q5U7L7	fpocket	binding_site	1	266	0	+	.	ID=Q5U7L7_pocket7;Parent=Q5U7L7;druggability_score=0.000;druggability_tier=low
 Q5U7L7	fpocket	binding_site	1	266	0	+	.	ID=Q5U7L7_pocket11;Parent=Q5U7L7;druggability_score=0.000;druggability_tier=low
 Q5U7L7	fpocket	binding_site	1	266	0	+	.	ID=Q5U7L7_pocket14;Parent=Q5U7L7;druggability_score=0.000;druggability_tier=low
-A0A0F7KYQ8	ResistAI	gene	1	266	.	+	.	ID=A0A0F7KYQ8;Name=VIM-1;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)
+A0A0F7KYQ8	ResistAI	gene	1	266	.	+	.	ID=A0A0F7KYQ8;Name=VIM-1;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1);db_xref=ResistAI;UniProt:A0A0F7KYQ8;EMBL:KP873171;coordinate_type=amino_acid
 A0A0F7KYQ8	ResistAI	CDS	1	266	.	+	0	ID=A0A0F7KYQ8_CDS;Parent=A0A0F7KYQ8;product=antibiotic_resistance_protein
 A0A0F7KYQ8	fpocket	binding_site	1	266	0.253	+	.	ID=A0A0F7KYQ8_pocket2;Parent=A0A0F7KYQ8;druggability_score=0.253;druggability_tier=low
 A0A0F7KYQ8	fpocket	binding_site	1	266	0.101	+	.	ID=A0A0F7KYQ8_pocket4;Parent=A0A0F7KYQ8;druggability_score=0.101;druggability_tier=low
@@ -231,7 +232,7 @@ A0A0F7KYQ8	fpocket	binding_site	1	266	0.002	+	.	ID=A0A0F7KYQ8_pocket11;Parent=A0
 A0A0F7KYQ8	fpocket	binding_site	1	266	0.001	+	.	ID=A0A0F7KYQ8_pocket3;Parent=A0A0F7KYQ8;druggability_score=0.001;druggability_tier=low
 A0A0F7KYQ8	fpocket	binding_site	1	266	0.001	+	.	ID=A0A0F7KYQ8_pocket6;Parent=A0A0F7KYQ8;druggability_score=0.001;druggability_tier=low
 A0A0F7KYQ8	fpocket	binding_site	1	266	0	+	.	ID=A0A0F7KYQ8_pocket7;Parent=A0A0F7KYQ8;druggability_score=0.000;druggability_tier=low
-Q840P9	ResistAI	gene	1	265	.	+	.	ID=Q840P9;Name=VIM-7;organism=Pseudomonas aeruginosa
+Q840P9	ResistAI	gene	1	265	.	+	.	ID=Q840P9;Name=VIM-7;organism=Pseudomonas aeruginosa;db_xref=ResistAI;UniProt:Q840P9;EMBL:AJ536835;coordinate_type=amino_acid
 Q840P9	ResistAI	CDS	1	265	.	+	0	ID=Q840P9_CDS;Parent=Q840P9;product=antibiotic_resistance_protein
 Q840P9	fpocket	binding_site	1	265	0.747	+	.	ID=Q840P9_pocket1;Parent=Q840P9;druggability_score=0.747;druggability_tier=high
 Q840P9	fpocket	binding_site	1	265	0.014	+	.	ID=Q840P9_pocket2;Parent=Q840P9;druggability_score=0.014;druggability_tier=low
@@ -244,7 +245,7 @@ Q840P9	fpocket	binding_site	1	265	0.001	+	.	ID=Q840P9_pocket10;Parent=Q840P9;dru
 Q840P9	fpocket	binding_site	1	265	0	+	.	ID=Q840P9_pocket7;Parent=Q840P9;druggability_score=0.000;druggability_tier=low
 Q840P9	fpocket	binding_site	1	265	0	+	.	ID=Q840P9_pocket9;Parent=Q840P9;druggability_score=0.000;druggability_tier=low
 Q840P9	fpocket	binding_site	1	265	0	+	.	ID=Q840P9_pocket11;Parent=Q840P9;druggability_score=0.000;druggability_tier=low
-Q9X482	ResistAI	gene	1	239	.	+	.	ID=Q9X482;Name=IND-1;organism=Chryseobacterium indologenes
+Q9X482	ResistAI	gene	1	239	.	+	.	ID=Q9X482;Name=IND-1;organism=Chryseobacterium indologenes;db_xref=ResistAI;UniProt:Q9X482;EMBL:AF099139;coordinate_type=amino_acid
 Q9X482	ResistAI	CDS	1	239	.	+	0	ID=Q9X482_CDS;Parent=Q9X482;product=antibiotic_resistance_protein
 Q9X482	fpocket	binding_site	1	239	0.875	+	.	ID=Q9X482_pocket4;Parent=Q9X482;druggability_score=0.875;druggability_tier=high
 Q9X482	fpocket	binding_site	1	239	0.374	+	.	ID=Q9X482_pocket3;Parent=Q9X482;druggability_score=0.374;druggability_tier=low
@@ -264,7 +265,7 @@ Q9X482	fpocket	binding_site	1	239	0.001	+	.	ID=Q9X482_pocket15;Parent=Q9X482;dru
 Q9X482	fpocket	binding_site	1	239	0	+	.	ID=Q9X482_pocket6;Parent=Q9X482;druggability_score=0.000;druggability_tier=low
 Q9X482	fpocket	binding_site	1	239	0	+	.	ID=Q9X482_pocket14;Parent=Q9X482;druggability_score=0.000;druggability_tier=low
 Q9X482	fpocket	binding_site	1	239	0	+	.	ID=Q9X482_pocket18;Parent=Q9X482;druggability_score=0.000;druggability_tier=low
-P10425	ResistAI	gene	1	257	.	+	.	ID=P10425;Name=Metallo-beta-la;organism=Bacillus sp. (strain 170)
+P10425	ResistAI	gene	1	257	.	+	.	ID=P10425;Name=Metallo-beta-la;organism=Bacillus sp. (strain 170);db_xref=ResistAI;UniProt:P10425;EMBL:M15350;coordinate_type=amino_acid
 P10425	ResistAI	CDS	1	257	.	+	0	ID=P10425_CDS;Parent=P10425;product=antibiotic_resistance_protein
 P10425	fpocket	binding_site	1	257	0.027	+	.	ID=P10425_pocket15;Parent=P10425;druggability_score=0.027;druggability_tier=low
 P10425	fpocket	binding_site	1	257	0.005	+	.	ID=P10425_pocket14;Parent=P10425;druggability_score=0.005;druggability_tier=low
@@ -281,7 +282,7 @@ P10425	fpocket	binding_site	1	257	0	+	.	ID=P10425_pocket5;Parent=P10425;druggabi
 P10425	fpocket	binding_site	1	257	0	+	.	ID=P10425_pocket6;Parent=P10425;druggability_score=0.000;druggability_tier=low
 P10425	fpocket	binding_site	1	257	0	+	.	ID=P10425_pocket10;Parent=P10425;druggability_score=0.000;druggability_tier=low
 P10425	fpocket	binding_site	1	257	0	+	.	ID=P10425_pocket12;Parent=P10425;druggability_score=0.000;druggability_tier=low
-Q68D91	ResistAI	gene	1	279	.	+	.	ID=Q68D91;Name=MBLAC2;organism=Homo sapiens
+Q68D91	ResistAI	gene	1	279	.	+	.	ID=Q68D91;Name=MBLAC2;organism=Homo sapiens;db_xref=ResistAI;UniProt:Q68D91;EMBL:AK096942;coordinate_type=amino_acid
 Q68D91	ResistAI	CDS	1	279	.	+	0	ID=Q68D91_CDS;Parent=Q68D91;product=antibiotic_resistance_protein
 Q68D91	fpocket	binding_site	1	279	0.592	+	.	ID=Q68D91_pocket10;Parent=Q68D91;druggability_score=0.592;druggability_tier=medium
 Q68D91	fpocket	binding_site	1	279	0.037	+	.	ID=Q68D91_pocket7;Parent=Q68D91;druggability_score=0.037;druggability_tier=low
@@ -302,7 +303,7 @@ Q68D91	fpocket	binding_site	1	279	0	+	.	ID=Q68D91_pocket15;Parent=Q68D91;druggab
 Q68D91	fpocket	binding_site	1	279	0	+	.	ID=Q68D91_pocket16;Parent=Q68D91;druggability_score=0.000;druggability_tier=low
 Q68D91	fpocket	binding_site	1	279	0	+	.	ID=Q68D91_pocket17;Parent=Q68D91;druggability_score=0.000;druggability_tier=low
 Q68D91	fpocket	binding_site	1	279	0	+	.	ID=Q68D91_pocket18;Parent=Q68D91;druggability_score=0.000;druggability_tier=low
-Q2TR58	ResistAI	gene	1	280	.	+	.	ID=Q2TR58;Name=OXA-58;organism=Acinetobacter baumannii
+Q2TR58	ResistAI	gene	1	280	.	+	.	ID=Q2TR58;Name=OXA-58;organism=Acinetobacter baumannii;db_xref=ResistAI;UniProt:Q2TR58;EMBL:AY665723;coordinate_type=amino_acid
 Q2TR58	ResistAI	CDS	1	280	.	+	0	ID=Q2TR58_CDS;Parent=Q2TR58;product=antibiotic_resistance_protein
 Q2TR58	fpocket	binding_site	1	280	0.946	+	.	ID=Q2TR58_pocket3;Parent=Q2TR58;druggability_score=0.946;druggability_tier=high
 Q2TR58	fpocket	binding_site	1	280	0.419	+	.	ID=Q2TR58_pocket2;Parent=Q2TR58;druggability_score=0.419;druggability_tier=medium
@@ -319,7 +320,7 @@ Q2TR58	fpocket	binding_site	1	280	0	+	.	ID=Q2TR58_pocket8;Parent=Q2TR58;druggabi
 Q2TR58	fpocket	binding_site	1	280	0	+	.	ID=Q2TR58_pocket9;Parent=Q2TR58;druggability_score=0.000;druggability_tier=low
 Q2TR58	fpocket	binding_site	1	280	0	+	.	ID=Q2TR58_pocket10;Parent=Q2TR58;druggability_score=0.000;druggability_tier=low
 Q2TR58	fpocket	binding_site	1	280	0	+	.	ID=Q2TR58_pocket12;Parent=Q2TR58;druggability_score=0.000;druggability_tier=low
-Q9L4P2	ResistAI	gene	1	273	.	+	.	ID=Q9L4P2;Name=OXA-23;organism=Acinetobacter baumannii
+Q9L4P2	ResistAI	gene	1	273	.	+	.	ID=Q9L4P2;Name=OXA-23;organism=Acinetobacter baumannii;db_xref=ResistAI;UniProt:Q9L4P2;EMBL:AY795964;coordinate_type=amino_acid
 Q9L4P2	ResistAI	CDS	1	273	.	+	0	ID=Q9L4P2_CDS;Parent=Q9L4P2;product=antibiotic_resistance_protein
 Q9L4P2	fpocket	binding_site	1	273	0.739	+	.	ID=Q9L4P2_pocket3;Parent=Q9L4P2;druggability_score=0.739;druggability_tier=high
 Q9L4P2	fpocket	binding_site	1	273	0.007	+	.	ID=Q9L4P2_pocket12;Parent=Q9L4P2;druggability_score=0.007;druggability_tier=low
@@ -336,7 +337,7 @@ Q9L4P2	fpocket	binding_site	1	273	0	+	.	ID=Q9L4P2_pocket11;Parent=Q9L4P2;druggab
 Q9L4P2	fpocket	binding_site	1	273	0	+	.	ID=Q9L4P2_pocket13;Parent=Q9L4P2;druggability_score=0.000;druggability_tier=low
 Q9L4P2	fpocket	binding_site	1	273	0	+	.	ID=Q9L4P2_pocket14;Parent=Q9L4P2;druggability_score=0.000;druggability_tier=low
 Q9L4P2	fpocket	binding_site	1	273	0	+	.	ID=Q9L4P2_pocket15;Parent=Q9L4P2;druggability_score=0.000;druggability_tier=low
-Q9XBN7	ResistAI	gene	1	249	.	+	.	ID=Q9XBN7;Name=blaB4;organism=Elizabethkingia meningoseptica
+Q9XBN7	ResistAI	gene	1	249	.	+	.	ID=Q9XBN7;Name=blaB4;organism=Elizabethkingia meningoseptica;db_xref=ResistAI;UniProt:Q9XBN7;EMBL:AF162284;coordinate_type=amino_acid
 Q9XBN7	ResistAI	CDS	1	249	.	+	0	ID=Q9XBN7_CDS;Parent=Q9XBN7;product=antibiotic_resistance_protein
 Q9XBN7	fpocket	binding_site	1	249	0.254	+	.	ID=Q9XBN7_pocket7;Parent=Q9XBN7;druggability_score=0.254;druggability_tier=low
 Q9XBN7	fpocket	binding_site	1	249	0.028	+	.	ID=Q9XBN7_pocket5;Parent=Q9XBN7;druggability_score=0.028;druggability_tier=low
@@ -361,7 +362,7 @@ Q9XBN7	fpocket	binding_site	1	249	0	+	.	ID=Q9XBN7_pocket17;Parent=Q9XBN7;druggab
 Q9XBN7	fpocket	binding_site	1	249	0	+	.	ID=Q9XBN7_pocket19;Parent=Q9XBN7;druggability_score=0.000;druggability_tier=low
 Q9XBN7	fpocket	binding_site	1	249	0	+	.	ID=Q9XBN7_pocket22;Parent=Q9XBN7;druggability_score=0.000;druggability_tier=low
 Q9XBN7	fpocket	binding_site	1	249	0	+	.	ID=Q9XBN7_pocket23;Parent=Q9XBN7;druggability_score=0.000;druggability_tier=low
-Q9K303	ResistAI	gene	1	249	.	+	.	ID=Q9K303;Name=blaB3;organism=Elizabethkingia meningoseptica
+Q9K303	ResistAI	gene	1	249	.	+	.	ID=Q9K303;Name=blaB3;organism=Elizabethkingia meningoseptica;db_xref=ResistAI;UniProt:Q9K303;EMBL:AF189299;coordinate_type=amino_acid
 Q9K303	ResistAI	CDS	1	249	.	+	0	ID=Q9K303_CDS;Parent=Q9K303;product=antibiotic_resistance_protein
 Q9K303	fpocket	binding_site	1	249	0.46	+	.	ID=Q9K303_pocket10;Parent=Q9K303;druggability_score=0.460;druggability_tier=medium
 Q9K303	fpocket	binding_site	1	249	0.02	+	.	ID=Q9K303_pocket11;Parent=Q9K303;druggability_score=0.020;druggability_tier=low
@@ -376,7 +377,7 @@ Q9K303	fpocket	binding_site	1	249	0	+	.	ID=Q9K303_pocket5;Parent=Q9K303;druggabi
 Q9K303	fpocket	binding_site	1	249	0	+	.	ID=Q9K303_pocket6;Parent=Q9K303;druggability_score=0.000;druggability_tier=low
 Q9K303	fpocket	binding_site	1	249	0	+	.	ID=Q9K303_pocket8;Parent=Q9K303;druggability_score=0.000;druggability_tier=low
 Q9K303	fpocket	binding_site	1	249	0	+	.	ID=Q9K303_pocket9;Parent=Q9K303;druggability_score=0.000;druggability_tier=low
-Q9KJB0	ResistAI	gene	1	248	.	+	.	ID=Q9KJB0;Name=blaB6;organism=Elizabethkingia meningoseptica
+Q9KJB0	ResistAI	gene	1	248	.	+	.	ID=Q9KJB0;Name=blaB6;organism=Elizabethkingia meningoseptica;db_xref=ResistAI;UniProt:Q9KJB0;EMBL:AF189302;coordinate_type=amino_acid
 Q9KJB0	ResistAI	CDS	1	248	.	+	0	ID=Q9KJB0_CDS;Parent=Q9KJB0;product=antibiotic_resistance_protein
 Q9KJB0	fpocket	binding_site	1	248	0.601	+	.	ID=Q9KJB0_pocket1;Parent=Q9KJB0;druggability_score=0.601;druggability_tier=medium
 Q9KJB0	fpocket	binding_site	1	248	0.007	+	.	ID=Q9KJB0_pocket12;Parent=Q9KJB0;druggability_score=0.007;druggability_tier=low
@@ -391,7 +392,7 @@ Q9KJB0	fpocket	binding_site	1	248	0	+	.	ID=Q9KJB0_pocket6;Parent=Q9KJB0;druggabi
 Q9KJB0	fpocket	binding_site	1	248	0	+	.	ID=Q9KJB0_pocket8;Parent=Q9KJB0;druggability_score=0.000;druggability_tier=low
 Q9KJB0	fpocket	binding_site	1	248	0	+	.	ID=Q9KJB0_pocket11;Parent=Q9KJB0;druggability_score=0.000;druggability_tier=low
 Q9KJB0	fpocket	binding_site	1	248	0	+	.	ID=Q9KJB0_pocket13;Parent=Q9KJB0;druggability_score=0.000;druggability_tier=low
-Q06893	ResistAI	gene	1	342	.	+	.	ID=Q06893;Name=vanB;organism=Enterococcus faecalis (strain ATCC 700802 / V583)
+Q06893	ResistAI	gene	1	342	.	+	.	ID=Q06893;Name=vanB;organism=Enterococcus faecalis (strain ATCC 700802 / V583);db_xref=ResistAI;UniProt:Q06893;EMBL:U00456;coordinate_type=amino_acid
 Q06893	ResistAI	CDS	1	342	.	+	0	ID=Q06893_CDS;Parent=Q06893;product=antibiotic_resistance_protein
 Q06893	fpocket	binding_site	1	342	0.318	+	.	ID=Q06893_pocket27;Parent=Q06893;druggability_score=0.318;druggability_tier=low
 Q06893	fpocket	binding_site	1	342	0.304	+	.	ID=Q06893_pocket25;Parent=Q06893;druggability_score=0.304;druggability_tier=low
@@ -420,7 +421,7 @@ Q06893	fpocket	binding_site	1	342	0	+	.	ID=Q06893_pocket19;Parent=Q06893;druggab
 Q06893	fpocket	binding_site	1	342	0	+	.	ID=Q06893_pocket20;Parent=Q06893;druggability_score=0.000;druggability_tier=low
 Q06893	fpocket	binding_site	1	342	0	+	.	ID=Q06893_pocket21;Parent=Q06893;druggability_score=0.000;druggability_tier=low
 Q06893	fpocket	binding_site	1	342	0	+	.	ID=Q06893_pocket23;Parent=Q06893;druggability_score=0.000;druggability_tier=low
-P60185	ResistAI	gene	1	239	.	+	.	ID=P60185;Name=mecA;organism=Staphylococcus aureus (strain N315)
+P60185	ResistAI	gene	1	239	.	+	.	ID=P60185;Name=mecA;organism=Staphylococcus aureus (strain N315);db_xref=ResistAI;UniProt:P60185;EMBL:BA000018;coordinate_type=amino_acid
 P60185	ResistAI	CDS	1	239	.	+	0	ID=P60185_CDS;Parent=P60185;product=antibiotic_resistance_protein
 P60185	fpocket	binding_site	1	239	0.728	+	.	ID=P60185_pocket1;Parent=P60185;druggability_score=0.728;druggability_tier=high
 P60185	fpocket	binding_site	1	239	0.131	+	.	ID=P60185_pocket2;Parent=P60185;druggability_score=0.131;druggability_tier=low
@@ -440,7 +441,7 @@ P60185	fpocket	binding_site	1	239	0	+	.	ID=P60185_pocket12;Parent=P60185;druggab
 P60185	fpocket	binding_site	1	239	0	+	.	ID=P60185_pocket14;Parent=P60185;druggability_score=0.000;druggability_tier=low
 P60185	fpocket	binding_site	1	239	0	+	.	ID=P60185_pocket16;Parent=P60185;druggability_score=0.000;druggability_tier=low
 P60185	fpocket	binding_site	1	239	0	+	.	ID=P60185_pocket18;Parent=P60185;druggability_score=0.000;druggability_tier=low
-P60186	ResistAI	gene	1	239	.	+	.	ID=P60186;Name=mecA;organism=Staphylococcus aureus (strain MW2)
+P60186	ResistAI	gene	1	239	.	+	.	ID=P60186;Name=mecA;organism=Staphylococcus aureus (strain MW2);db_xref=ResistAI;UniProt:P60186;EMBL:BA000033;coordinate_type=amino_acid
 P60186	ResistAI	CDS	1	239	.	+	0	ID=P60186_CDS;Parent=P60186;product=antibiotic_resistance_protein
 P60186	fpocket	binding_site	1	239	0.728	+	.	ID=P60186_pocket1;Parent=P60186;druggability_score=0.728;druggability_tier=high
 P60186	fpocket	binding_site	1	239	0.131	+	.	ID=P60186_pocket2;Parent=P60186;druggability_score=0.131;druggability_tier=low
@@ -460,7 +461,7 @@ P60186	fpocket	binding_site	1	239	0	+	.	ID=P60186_pocket12;Parent=P60186;druggab
 P60186	fpocket	binding_site	1	239	0	+	.	ID=P60186_pocket14;Parent=P60186;druggability_score=0.000;druggability_tier=low
 P60186	fpocket	binding_site	1	239	0	+	.	ID=P60186_pocket16;Parent=P60186;druggability_score=0.000;druggability_tier=low
 P60186	fpocket	binding_site	1	239	0	+	.	ID=P60186_pocket18;Parent=P60186;druggability_score=0.000;druggability_tier=low
-P60184	ResistAI	gene	1	239	.	+	.	ID=P60184;Name=mecA;organism=Staphylococcus aureus (strain Mu50 / ATCC 700699)
+P60184	ResistAI	gene	1	239	.	+	.	ID=P60184;Name=mecA;organism=Staphylococcus aureus (strain Mu50 / ATCC 700699);db_xref=ResistAI;UniProt:P60184;EMBL:BA000017;coordinate_type=amino_acid
 P60184	ResistAI	CDS	1	239	.	+	0	ID=P60184_CDS;Parent=P60184;product=antibiotic_resistance_protein
 P60184	fpocket	binding_site	1	239	0.728	+	.	ID=P60184_pocket1;Parent=P60184;druggability_score=0.728;druggability_tier=high
 P60184	fpocket	binding_site	1	239	0.131	+	.	ID=P60184_pocket2;Parent=P60184;druggability_score=0.131;druggability_tier=low
@@ -480,7 +481,7 @@ P60184	fpocket	binding_site	1	239	0	+	.	ID=P60184_pocket12;Parent=P60184;druggab
 P60184	fpocket	binding_site	1	239	0	+	.	ID=P60184_pocket14;Parent=P60184;druggability_score=0.000;druggability_tier=low
 P60184	fpocket	binding_site	1	239	0	+	.	ID=P60184_pocket16;Parent=P60184;druggability_score=0.000;druggability_tier=low
 P60184	fpocket	binding_site	1	239	0	+	.	ID=P60184_pocket18;Parent=P60184;druggability_score=0.000;druggability_tier=low
-P07944	ResistAI	gene	1	670	.	+	.	ID=P07944;Name=pbp;organism=Staphylococcus aureus
+P07944	ResistAI	gene	1	670	.	+	.	ID=P07944;Name=pbp;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P07944;EMBL:Y00688;coordinate_type=amino_acid
 P07944	ResistAI	CDS	1	670	.	+	0	ID=P07944_CDS;Parent=P07944;product=antibiotic_resistance_protein
 P07944	fpocket	binding_site	1	670	0.804	+	.	ID=P07944_pocket2;Parent=P07944;druggability_score=0.804;druggability_tier=high
 P07944	fpocket	binding_site	1	670	0.682	+	.	ID=P07944_pocket1;Parent=P07944;druggability_score=0.682;druggability_tier=medium
@@ -513,7 +514,7 @@ P07944	fpocket	binding_site	1	670	0	+	.	ID=P07944_pocket23;Parent=P07944;druggab
 P07944	fpocket	binding_site	1	670	0	+	.	ID=P07944_pocket27;Parent=P07944;druggability_score=0.000;druggability_tier=low
 P07944	fpocket	binding_site	1	670	0	+	.	ID=P07944_pocket28;Parent=P07944;druggability_score=0.000;druggability_tier=low
 P07944	fpocket	binding_site	1	670	0	+	.	ID=P07944_pocket31;Parent=P07944;druggability_score=0.000;druggability_tier=low
-P9WFK7	ResistAI	gene	1	402	.	+	.	ID=P9WFK7;Name=eis;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WFK7	ResistAI	gene	1	402	.	+	.	ID=P9WFK7;Name=eis;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WFK7;EMBL:AL123456;coordinate_type=amino_acid
 P9WFK7	ResistAI	CDS	1	402	.	+	0	ID=P9WFK7_CDS;Parent=P9WFK7;product=antibiotic_resistance_protein
 P9WFK7	fpocket	binding_site	1	402	0.618	+	.	ID=P9WFK7_pocket5;Parent=P9WFK7;druggability_score=0.618;druggability_tier=medium
 P9WFK7	fpocket	binding_site	1	402	0.007	+	.	ID=P9WFK7_pocket1;Parent=P9WFK7;druggability_score=0.007;druggability_tier=low
@@ -543,7 +544,7 @@ P9WFK7	fpocket	binding_site	1	402	0	+	.	ID=P9WFK7_pocket19;Parent=P9WFK7;druggab
 P9WFK7	fpocket	binding_site	1	402	0	+	.	ID=P9WFK7_pocket20;Parent=P9WFK7;druggability_score=0.000;druggability_tier=low
 P9WFK7	fpocket	binding_site	1	402	0	+	.	ID=P9WFK7_pocket23;Parent=P9WFK7;druggability_score=0.000;druggability_tier=low
 P9WFK7	fpocket	binding_site	1	402	0	+	.	ID=P9WFK7_pocket25;Parent=P9WFK7;druggability_score=0.000;druggability_tier=low
-P29808	ResistAI	gene	1	271	.	+	.	ID=P29808;Name=aacC3;organism=Pseudomonas aeruginosa
+P29808	ResistAI	gene	1	271	.	+	.	ID=P29808;Name=aacC3;organism=Pseudomonas aeruginosa;db_xref=ResistAI;UniProt:P29808;EMBL:X55652;coordinate_type=amino_acid
 P29808	ResistAI	CDS	1	271	.	+	0	ID=P29808_CDS;Parent=P29808;product=antibiotic_resistance_protein
 P29808	fpocket	binding_site	1	271	0.229	+	.	ID=P29808_pocket8;Parent=P29808;druggability_score=0.229;druggability_tier=low
 P29808	fpocket	binding_site	1	271	0.214	+	.	ID=P29808_pocket16;Parent=P29808;druggability_score=0.214;druggability_tier=low
@@ -563,7 +564,7 @@ P29808	fpocket	binding_site	1	271	0	+	.	ID=P29808_pocket6;Parent=P29808;druggabi
 P29808	fpocket	binding_site	1	271	0	+	.	ID=P29808_pocket10;Parent=P29808;druggability_score=0.000;druggability_tier=low
 P29808	fpocket	binding_site	1	271	0	+	.	ID=P29808_pocket13;Parent=P29808;druggability_score=0.000;druggability_tier=low
 P29808	fpocket	binding_site	1	271	0	+	.	ID=P29808_pocket15;Parent=P29808;druggability_score=0.000;druggability_tier=low
-Q9R381	ResistAI	gene	1	145	.	+	.	ID=Q9R381;Name=Aminoglycoside;organism=Salmonella enteritidis
+Q9R381	ResistAI	gene	1	145	.	+	.	ID=Q9R381;Name=Aminoglycoside;organism=Salmonella enteritidis;db_xref=ResistAI;UniProt:Q9R381;EMBL:AF144880;coordinate_type=amino_acid
 Q9R381	ResistAI	CDS	1	145	.	+	0	ID=Q9R381_CDS;Parent=Q9R381;product=antibiotic_resistance_protein
 Q9R381	fpocket	binding_site	1	145	0.1	+	.	ID=Q9R381_pocket14;Parent=Q9R381;druggability_score=0.100;druggability_tier=low
 Q9R381	fpocket	binding_site	1	145	0.005	+	.	ID=Q9R381_pocket12;Parent=Q9R381;druggability_score=0.005;druggability_tier=low
@@ -579,7 +580,7 @@ Q9R381	fpocket	binding_site	1	145	0	+	.	ID=Q9R381_pocket8;Parent=Q9R381;druggabi
 Q9R381	fpocket	binding_site	1	145	0	+	.	ID=Q9R381_pocket9;Parent=Q9R381;druggability_score=0.000;druggability_tier=low
 Q9R381	fpocket	binding_site	1	145	0	+	.	ID=Q9R381_pocket10;Parent=Q9R381;druggability_score=0.000;druggability_tier=low
 Q9R381	fpocket	binding_site	1	145	0	+	.	ID=Q9R381_pocket13;Parent=Q9R381;druggability_score=0.000;druggability_tier=low
-P0A0C2	ResistAI	gene	1	479	.	+	.	ID=P0A0C2;Name=aacA-aphD;organism=Enterococcus faecalis (strain ATCC 700802 / V583)
+P0A0C2	ResistAI	gene	1	479	.	+	.	ID=P0A0C2;Name=aacA-aphD;organism=Enterococcus faecalis (strain ATCC 700802 / V583);db_xref=ResistAI;UniProt:P0A0C2;EMBL:M13771;coordinate_type=amino_acid
 P0A0C2	ResistAI	CDS	1	479	.	+	0	ID=P0A0C2_CDS;Parent=P0A0C2;product=antibiotic_resistance_protein
 P0A0C2	fpocket	binding_site	1	479	0.341	+	.	ID=P0A0C2_pocket32;Parent=P0A0C2;druggability_score=0.341;druggability_tier=low
 P0A0C2	fpocket	binding_site	1	479	0.307	+	.	ID=P0A0C2_pocket31;Parent=P0A0C2;druggability_score=0.307;druggability_tier=low
@@ -613,7 +614,7 @@ P0A0C2	fpocket	binding_site	1	479	0	+	.	ID=P0A0C2_pocket25;Parent=P0A0C2;druggab
 P0A0C2	fpocket	binding_site	1	479	0	+	.	ID=P0A0C2_pocket26;Parent=P0A0C2;druggability_score=0.000;druggability_tier=low
 P0A0C2	fpocket	binding_site	1	479	0	+	.	ID=P0A0C2_pocket27;Parent=P0A0C2;druggability_score=0.000;druggability_tier=low
 P0A0C2	fpocket	binding_site	1	479	0	+	.	ID=P0A0C2_pocket30;Parent=P0A0C2;druggability_score=0.000;druggability_tier=low
-P9WQG9	ResistAI	gene	1	181	.	+	.	ID=P9WQG9;Name=aac;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WQG9	ResistAI	gene	1	181	.	+	.	ID=P9WQG9;Name=aac;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WQG9;EMBL:U72714;coordinate_type=amino_acid
 P9WQG9	ResistAI	CDS	1	181	.	+	0	ID=P9WQG9_CDS;Parent=P9WQG9;product=antibiotic_resistance_protein
 P9WQG9	fpocket	binding_site	1	181	0.461	+	.	ID=P9WQG9_pocket2;Parent=P9WQG9;druggability_score=0.461;druggability_tier=medium
 P9WQG9	fpocket	binding_site	1	181	0.043	+	.	ID=P9WQG9_pocket4;Parent=P9WQG9;druggability_score=0.043;druggability_tier=low
@@ -625,7 +626,7 @@ P9WQG9	fpocket	binding_site	1	181	0.002	+	.	ID=P9WQG9_pocket3;Parent=P9WQG9;drug
 P9WQG9	fpocket	binding_site	1	181	0.001	+	.	ID=P9WQG9_pocket5;Parent=P9WQG9;druggability_score=0.001;druggability_tier=low
 P9WQG9	fpocket	binding_site	1	181	0	+	.	ID=P9WQG9_pocket7;Parent=P9WQG9;druggability_score=0.000;druggability_tier=low
 P9WQG9	fpocket	binding_site	1	181	0	+	.	ID=P9WQG9_pocket9;Parent=P9WQG9;druggability_score=0.000;druggability_tier=low
-P9WFK6	ResistAI	gene	1	402	.	+	.	ID=P9WFK6;Name=eis;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)
+P9WFK6	ResistAI	gene	1	402	.	+	.	ID=P9WFK6;Name=eis;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh);db_xref=ResistAI;UniProt:P9WFK6;EMBL:AE000516;coordinate_type=amino_acid
 P9WFK6	ResistAI	CDS	1	402	.	+	0	ID=P9WFK6_CDS;Parent=P9WFK6;product=antibiotic_resistance_protein
 P9WFK6	fpocket	binding_site	1	402	0.618	+	.	ID=P9WFK6_pocket5;Parent=P9WFK6;druggability_score=0.618;druggability_tier=medium
 P9WFK6	fpocket	binding_site	1	402	0.007	+	.	ID=P9WFK6_pocket1;Parent=P9WFK6;druggability_score=0.007;druggability_tier=low
@@ -655,7 +656,7 @@ P9WFK6	fpocket	binding_site	1	402	0	+	.	ID=P9WFK6_pocket19;Parent=P9WFK6;druggab
 P9WFK6	fpocket	binding_site	1	402	0	+	.	ID=P9WFK6_pocket20;Parent=P9WFK6;druggability_score=0.000;druggability_tier=low
 P9WFK6	fpocket	binding_site	1	402	0	+	.	ID=P9WFK6_pocket23;Parent=P9WFK6;druggability_score=0.000;druggability_tier=low
 P9WFK6	fpocket	binding_site	1	402	0	+	.	ID=P9WFK6_pocket25;Parent=P9WFK6;druggability_score=0.000;druggability_tier=low
-Q44057	ResistAI	gene	1	145	.	+	.	ID=Q44057;Name=Aminoglycoside;organism=Acinetobacter haemolyticus
+Q44057	ResistAI	gene	1	145	.	+	.	ID=Q44057;Name=Aminoglycoside;organism=Acinetobacter haemolyticus;db_xref=ResistAI;UniProt:Q44057;EMBL:L09246;coordinate_type=amino_acid
 Q44057	ResistAI	CDS	1	145	.	+	0	ID=Q44057_CDS;Parent=Q44057;product=antibiotic_resistance_protein
 Q44057	fpocket	binding_site	1	145	0.663	+	.	ID=Q44057_pocket6;Parent=Q44057;druggability_score=0.663;druggability_tier=medium
 Q44057	fpocket	binding_site	1	145	0.02	+	.	ID=Q44057_pocket1;Parent=Q44057;druggability_score=0.020;druggability_tier=low
@@ -666,7 +667,7 @@ Q44057	fpocket	binding_site	1	145	0	+	.	ID=Q44057_pocket5;Parent=Q44057;druggabi
 Q44057	fpocket	binding_site	1	145	0	+	.	ID=Q44057_pocket7;Parent=Q44057;druggability_score=0.000;druggability_tier=low
 Q44057	fpocket	binding_site	1	145	0	+	.	ID=Q44057_pocket8;Parent=Q44057;druggability_score=0.000;druggability_tier=low
 Q44057	fpocket	binding_site	1	145	0	+	.	ID=Q44057_pocket9;Parent=Q44057;druggability_score=0.000;druggability_tier=low
-Q54441	ResistAI	gene	1	146	.	+	.	ID=Q54441;Name=Aminoglycoside;organism=Serratia marcescens
+Q54441	ResistAI	gene	1	146	.	+	.	ID=Q54441;Name=Aminoglycoside;organism=Serratia marcescens;db_xref=ResistAI;UniProt:Q54441;EMBL:M94066;coordinate_type=amino_acid
 Q54441	ResistAI	CDS	1	146	.	+	0	ID=Q54441_CDS;Parent=Q54441;product=antibiotic_resistance_protein
 Q54441	fpocket	binding_site	1	146	0.281	+	.	ID=Q54441_pocket1;Parent=Q54441;druggability_score=0.281;druggability_tier=low
 Q54441	fpocket	binding_site	1	146	0.068	+	.	ID=Q54441_pocket7;Parent=Q54441;druggability_score=0.068;druggability_tier=low
@@ -675,7 +676,7 @@ Q54441	fpocket	binding_site	1	146	0	+	.	ID=Q54441_pocket2;Parent=Q54441;druggabi
 Q54441	fpocket	binding_site	1	146	0	+	.	ID=Q54441_pocket3;Parent=Q54441;druggability_score=0.000;druggability_tier=low
 Q54441	fpocket	binding_site	1	146	0	+	.	ID=Q54441_pocket4;Parent=Q54441;druggability_score=0.000;druggability_tier=low
 Q54441	fpocket	binding_site	1	146	0	+	.	ID=Q54441_pocket6;Parent=Q54441;druggability_score=0.000;druggability_tier=low
-Q9RBW7	ResistAI	gene	1	153	.	+	.	ID=Q9RBW7;Name=Aminoglycoside;organism=Stenotrophomonas maltophilia
+Q9RBW7	ResistAI	gene	1	153	.	+	.	ID=Q9RBW7;Name=Aminoglycoside;organism=Stenotrophomonas maltophilia;db_xref=ResistAI;UniProt:Q9RBW7;EMBL:AF140221;coordinate_type=amino_acid
 Q9RBW7	ResistAI	CDS	1	153	.	+	0	ID=Q9RBW7_CDS;Parent=Q9RBW7;product=antibiotic_resistance_protein
 Q9RBW7	fpocket	binding_site	1	153	0.2	+	.	ID=Q9RBW7_pocket5;Parent=Q9RBW7;druggability_score=0.200;druggability_tier=low
 Q9RBW7	fpocket	binding_site	1	153	0.029	+	.	ID=Q9RBW7_pocket6;Parent=Q9RBW7;druggability_score=0.029;druggability_tier=low
@@ -689,7 +690,7 @@ Q9RBW7	fpocket	binding_site	1	153	0	+	.	ID=Q9RBW7_pocket3;Parent=Q9RBW7;druggabi
 Q9RBW7	fpocket	binding_site	1	153	0	+	.	ID=Q9RBW7_pocket4;Parent=Q9RBW7;druggability_score=0.000;druggability_tier=low
 Q9RBW7	fpocket	binding_site	1	153	0	+	.	ID=Q9RBW7_pocket7;Parent=Q9RBW7;druggability_score=0.000;druggability_tier=low
 Q9RBW7	fpocket	binding_site	1	153	0	+	.	ID=Q9RBW7_pocket12;Parent=Q9RBW7;druggability_score=0.000;druggability_tier=low
-Q44245	ResistAI	gene	1	146	.	+	.	ID=Q44245;Name=Aminoglycoside;organism=Acinetobacter genomosp. 13
+Q44245	ResistAI	gene	1	146	.	+	.	ID=Q44245;Name=Aminoglycoside;organism=Acinetobacter genomosp. 13;db_xref=ResistAI;UniProt:Q44245;EMBL:L29045;coordinate_type=amino_acid
 Q44245	ResistAI	CDS	1	146	.	+	0	ID=Q44245_CDS;Parent=Q44245;product=antibiotic_resistance_protein
 Q44245	fpocket	binding_site	1	146	0.811	+	.	ID=Q44245_pocket10;Parent=Q44245;druggability_score=0.811;druggability_tier=high
 Q44245	fpocket	binding_site	1	146	0.069	+	.	ID=Q44245_pocket4;Parent=Q44245;druggability_score=0.069;druggability_tier=low
@@ -704,7 +705,7 @@ Q44245	fpocket	binding_site	1	146	0	+	.	ID=Q44245_pocket7;Parent=Q44245;druggabi
 Q44245	fpocket	binding_site	1	146	0	+	.	ID=Q44245_pocket9;Parent=Q44245;druggability_score=0.000;druggability_tier=low
 Q44245	fpocket	binding_site	1	146	0	+	.	ID=Q44245_pocket11;Parent=Q44245;druggability_score=0.000;druggability_tier=low
 Q44245	fpocket	binding_site	1	146	0	+	.	ID=Q44245_pocket13;Parent=Q44245;druggability_score=0.000;druggability_tier=low
-Q43899	ResistAI	gene	1	146	.	+	.	ID=Q43899;Name=Aminoglycoside;organism=Acinetobacter baumannii
+Q43899	ResistAI	gene	1	146	.	+	.	ID=Q43899;Name=Aminoglycoside;organism=Acinetobacter baumannii;db_xref=ResistAI;UniProt:Q43899;EMBL:L29044;coordinate_type=amino_acid
 Q43899	ResistAI	CDS	1	146	.	+	0	ID=Q43899_CDS;Parent=Q43899;product=antibiotic_resistance_protein
 Q43899	fpocket	binding_site	1	146	0.816	+	.	ID=Q43899_pocket2;Parent=Q43899;druggability_score=0.816;druggability_tier=high
 Q43899	fpocket	binding_site	1	146	0.029	+	.	ID=Q43899_pocket1;Parent=Q43899;druggability_score=0.029;druggability_tier=low
@@ -715,7 +716,7 @@ Q43899	fpocket	binding_site	1	146	0.001	+	.	ID=Q43899_pocket8;Parent=Q43899;drug
 Q43899	fpocket	binding_site	1	146	0	+	.	ID=Q43899_pocket3;Parent=Q43899;druggability_score=0.000;druggability_tier=low
 Q43899	fpocket	binding_site	1	146	0	+	.	ID=Q43899_pocket4;Parent=Q43899;druggability_score=0.000;druggability_tier=low
 Q43899	fpocket	binding_site	1	146	0	+	.	ID=Q43899_pocket9;Parent=Q43899;druggability_score=0.000;druggability_tier=low
-P50858	ResistAI	gene	1	152	.	+	.	ID=P50858;Name=aacA7;organism=Klebsiella aerogenes
+P50858	ResistAI	gene	1	152	.	+	.	ID=P50858;Name=aacA7;organism=Klebsiella aerogenes;db_xref=ResistAI;UniProt:P50858;EMBL:U13880;coordinate_type=amino_acid
 P50858	ResistAI	CDS	1	152	.	+	0	ID=P50858_CDS;Parent=P50858;product=antibiotic_resistance_protein
 P50858	fpocket	binding_site	1	152	0.544	+	.	ID=P50858_pocket6;Parent=P50858;druggability_score=0.544;druggability_tier=medium
 P50858	fpocket	binding_site	1	152	0.001	+	.	ID=P50858_pocket1;Parent=P50858;druggability_score=0.001;druggability_tier=low
@@ -723,7 +724,7 @@ P50858	fpocket	binding_site	1	152	0	+	.	ID=P50858_pocket2;Parent=P50858;druggabi
 P50858	fpocket	binding_site	1	152	0	+	.	ID=P50858_pocket3;Parent=P50858;druggability_score=0.000;druggability_tier=low
 P50858	fpocket	binding_site	1	152	0	+	.	ID=P50858_pocket4;Parent=P50858;druggability_score=0.000;druggability_tier=low
 P50858	fpocket	binding_site	1	152	0	+	.	ID=P50858_pocket5;Parent=P50858;druggability_score=0.000;druggability_tier=low
-Q15BH7	ResistAI	gene	1	152	.	+	.	ID=Q15BH7;Name=aacA7;organism=Morganella morganii
+Q15BH7	ResistAI	gene	1	152	.	+	.	ID=Q15BH7;Name=aacA7;organism=Morganella morganii;db_xref=ResistAI;UniProt:Q15BH7;EMBL:DQ522239;coordinate_type=amino_acid
 Q15BH7	ResistAI	CDS	1	152	.	+	0	ID=Q15BH7_CDS;Parent=Q15BH7;product=antibiotic_resistance_protein
 Q15BH7	fpocket	binding_site	1	152	0.544	+	.	ID=Q15BH7_pocket6;Parent=Q15BH7;druggability_score=0.544;druggability_tier=medium
 Q15BH7	fpocket	binding_site	1	152	0.001	+	.	ID=Q15BH7_pocket1;Parent=Q15BH7;druggability_score=0.001;druggability_tier=low
@@ -731,7 +732,7 @@ Q15BH7	fpocket	binding_site	1	152	0	+	.	ID=Q15BH7_pocket2;Parent=Q15BH7;druggabi
 Q15BH7	fpocket	binding_site	1	152	0	+	.	ID=Q15BH7_pocket3;Parent=Q15BH7;druggability_score=0.000;druggability_tier=low
 Q15BH7	fpocket	binding_site	1	152	0	+	.	ID=Q15BH7_pocket4;Parent=Q15BH7;druggability_score=0.000;druggability_tier=low
 Q15BH7	fpocket	binding_site	1	152	0	+	.	ID=Q15BH7_pocket5;Parent=Q15BH7;druggability_score=0.000;druggability_tier=low
-P20092	ResistAI	gene	1	201	.	+	.	ID=P20092;Name=aacA4;organism=Serratia marcescens
+P20092	ResistAI	gene	1	201	.	+	.	ID=P20092;Name=aacA4;organism=Serratia marcescens;db_xref=ResistAI;UniProt:P20092;EMBL:M23634;coordinate_type=amino_acid
 P20092	ResistAI	CDS	1	201	.	+	0	ID=P20092_CDS;Parent=P20092;product=antibiotic_resistance_protein
 P20092	fpocket	binding_site	1	201	0.63	+	.	ID=P20092_pocket1;Parent=P20092;druggability_score=0.630;druggability_tier=medium
 P20092	fpocket	binding_site	1	201	0.297	+	.	ID=P20092_pocket7;Parent=P20092;druggability_score=0.297;druggability_tier=low
@@ -743,7 +744,7 @@ P20092	fpocket	binding_site	1	201	0.001	+	.	ID=P20092_pocket8;Parent=P20092;drug
 P20092	fpocket	binding_site	1	201	0	+	.	ID=P20092_pocket6;Parent=P20092;druggability_score=0.000;druggability_tier=low
 P20092	fpocket	binding_site	1	201	0	+	.	ID=P20092_pocket9;Parent=P20092;druggability_score=0.000;druggability_tier=low
 P20092	fpocket	binding_site	1	201	0	+	.	ID=P20092_pocket10;Parent=P20092;druggability_score=0.000;druggability_tier=low
-P10051	ResistAI	gene	1	185	.	+	.	ID=P10051;Name=aacA1;organism=Citrobacter koseri
+P10051	ResistAI	gene	1	185	.	+	.	ID=P10051;Name=aacA1;organism=Citrobacter koseri;db_xref=ResistAI;UniProt:P10051;EMBL:M18967;coordinate_type=amino_acid
 P10051	ResistAI	CDS	1	185	.	+	0	ID=P10051_CDS;Parent=P10051;product=antibiotic_resistance_protein
 P10051	fpocket	binding_site	1	185	0.352	+	.	ID=P10051_pocket1;Parent=P10051;druggability_score=0.352;druggability_tier=low
 P10051	fpocket	binding_site	1	185	0.181	+	.	ID=P10051_pocket4;Parent=P10051;druggability_score=0.181;druggability_tier=low
@@ -755,7 +756,7 @@ P10051	fpocket	binding_site	1	185	0	+	.	ID=P10051_pocket3;Parent=P10051;druggabi
 P10051	fpocket	binding_site	1	185	0	+	.	ID=P10051_pocket7;Parent=P10051;druggability_score=0.000;druggability_tier=low
 P10051	fpocket	binding_site	1	185	0	+	.	ID=P10051_pocket8;Parent=P10051;druggability_score=0.000;druggability_tier=low
 P10051	fpocket	binding_site	1	185	0	+	.	ID=P10051_pocket10;Parent=P10051;druggability_score=0.000;druggability_tier=low
-P00553	ResistAI	gene	1	262	.	+	.	ID=P00553;Name=aphA4;organism=Niallia circulans
+P00553	ResistAI	gene	1	262	.	+	.	ID=P00553;Name=aphA4;organism=Niallia circulans;db_xref=ResistAI;UniProt:P00553;EMBL:X03364;coordinate_type=amino_acid
 P00553	ResistAI	CDS	1	262	.	+	0	ID=P00553_CDS;Parent=P00553;product=antibiotic_resistance_protein
 P00553	fpocket	binding_site	1	262	0.261	+	.	ID=P00553_pocket23;Parent=P00553;druggability_score=0.261;druggability_tier=low
 P00553	fpocket	binding_site	1	262	0.037	+	.	ID=P00553_pocket4;Parent=P00553;druggability_score=0.037;druggability_tier=low
@@ -780,7 +781,7 @@ P00553	fpocket	binding_site	1	262	0	+	.	ID=P00553_pocket12;Parent=P00553;druggab
 P00553	fpocket	binding_site	1	262	0	+	.	ID=P00553_pocket14;Parent=P00553;druggability_score=0.000;druggability_tier=low
 P00553	fpocket	binding_site	1	262	0	+	.	ID=P00553_pocket17;Parent=P00553;druggability_score=0.000;druggability_tier=low
 P00553	fpocket	binding_site	1	262	0	+	.	ID=P00553_pocket21;Parent=P00553;druggability_score=0.000;druggability_tier=low
-P9WI99	ResistAI	gene	1	378	.	+	.	ID=P9WI99;Name=Putative;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WI99	ResistAI	gene	1	378	.	+	.	ID=P9WI99;Name=Putative;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WI99;EMBL:AL123456;coordinate_type=amino_acid
 P9WI99	ResistAI	CDS	1	378	.	+	0	ID=P9WI99_CDS;Parent=P9WI99;product=antibiotic_resistance_protein
 P9WI99	fpocket	binding_site	1	378	0.531	+	.	ID=P9WI99_pocket30;Parent=P9WI99;druggability_score=0.531;druggability_tier=medium
 P9WI99	fpocket	binding_site	1	378	0.142	+	.	ID=P9WI99_pocket1;Parent=P9WI99;druggability_score=0.142;druggability_tier=low
@@ -812,7 +813,7 @@ P9WI99	fpocket	binding_site	1	378	0	+	.	ID=P9WI99_pocket24;Parent=P9WI99;druggab
 P9WI99	fpocket	binding_site	1	378	0	+	.	ID=P9WI99_pocket27;Parent=P9WI99;druggability_score=0.000;druggability_tier=low
 P9WI99	fpocket	binding_site	1	378	0	+	.	ID=P9WI99_pocket28;Parent=P9WI99;druggability_score=0.000;druggability_tier=low
 P9WI99	fpocket	binding_site	1	378	0	+	.	ID=P9WI99_pocket29;Parent=P9WI99;druggability_score=0.000;druggability_tier=low
-P00551	ResistAI	gene	1	271	.	+	.	ID=P00551;Name=aphA1;organism=Escherichia coli
+P00551	ResistAI	gene	1	271	.	+	.	ID=P00551;Name=aphA1;organism=Escherichia coli;db_xref=ResistAI;UniProt:P00551;EMBL:V00359;coordinate_type=amino_acid
 P00551	ResistAI	CDS	1	271	.	+	0	ID=P00551_CDS;Parent=P00551;product=antibiotic_resistance_protein
 P00551	fpocket	binding_site	1	271	0.026	+	.	ID=P00551_pocket9;Parent=P00551;druggability_score=0.026;druggability_tier=low
 P00551	fpocket	binding_site	1	271	0.013	+	.	ID=P00551_pocket12;Parent=P00551;druggability_score=0.013;druggability_tier=low
@@ -828,7 +829,7 @@ P00551	fpocket	binding_site	1	271	0	+	.	ID=P00551_pocket8;Parent=P00551;druggabi
 P00551	fpocket	binding_site	1	271	0	+	.	ID=P00551_pocket10;Parent=P00551;druggability_score=0.000;druggability_tier=low
 P00551	fpocket	binding_site	1	271	0	+	.	ID=P00551_pocket13;Parent=P00551;druggability_score=0.000;druggability_tier=low
 P00551	fpocket	binding_site	1	271	0	+	.	ID=P00551_pocket14;Parent=P00551;druggability_score=0.000;druggability_tier=low
-P00552	ResistAI	gene	1	264	.	+	.	ID=P00552;Name=neo;organism=Klebsiella pneumoniae
+P00552	ResistAI	gene	1	264	.	+	.	ID=P00552;Name=neo;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P00552;EMBL:U00004;coordinate_type=amino_acid
 P00552	ResistAI	CDS	1	264	.	+	0	ID=P00552_CDS;Parent=P00552;product=antibiotic_resistance_protein
 P00552	fpocket	binding_site	1	264	0.214	+	.	ID=P00552_pocket10;Parent=P00552;druggability_score=0.214;druggability_tier=low
 P00552	fpocket	binding_site	1	264	0.165	+	.	ID=P00552_pocket9;Parent=P00552;druggability_score=0.165;druggability_tier=low
@@ -840,7 +841,7 @@ P00552	fpocket	binding_site	1	264	0	+	.	ID=P00552_pocket3;Parent=P00552;druggabi
 P00552	fpocket	binding_site	1	264	0	+	.	ID=P00552_pocket4;Parent=P00552;druggability_score=0.000;druggability_tier=low
 P00552	fpocket	binding_site	1	264	0	+	.	ID=P00552_pocket5;Parent=P00552;druggability_score=0.000;druggability_tier=low
 P00552	fpocket	binding_site	1	264	0	+	.	ID=P00552_pocket6;Parent=P00552;druggability_score=0.000;druggability_tier=low
-Q7ATH9	ResistAI	gene	1	479	.	+	.	ID=Q7ATH9;Name=aacA-aphD;organism=Mammaliicoccus sciuri
+Q7ATH9	ResistAI	gene	1	479	.	+	.	ID=Q7ATH9;Name=aacA-aphD;organism=Mammaliicoccus sciuri;db_xref=ResistAI;UniProt:Q7ATH9;EMBL:AJ536193;coordinate_type=amino_acid
 Q7ATH9	ResistAI	CDS	1	479	.	+	0	ID=Q7ATH9_CDS;Parent=Q7ATH9;product=antibiotic_resistance_protein
 Q7ATH9	fpocket	binding_site	1	479	0.341	+	.	ID=Q7ATH9_pocket32;Parent=Q7ATH9;druggability_score=0.341;druggability_tier=low
 Q7ATH9	fpocket	binding_site	1	479	0.307	+	.	ID=Q7ATH9_pocket31;Parent=Q7ATH9;druggability_score=0.307;druggability_tier=low
@@ -874,7 +875,7 @@ Q7ATH9	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH9_pocket25;Parent=Q7ATH9;druggab
 Q7ATH9	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH9_pocket26;Parent=Q7ATH9;druggability_score=0.000;druggability_tier=low
 Q7ATH9	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH9_pocket27;Parent=Q7ATH9;druggability_score=0.000;druggability_tier=low
 Q7ATH9	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH9_pocket30;Parent=Q7ATH9;druggability_score=0.000;druggability_tier=low
-Q7ATH7	ResistAI	gene	1	479	.	+	.	ID=Q7ATH7;Name=aacA-aphD;organism=Staphylococcus warneri
+Q7ATH7	ResistAI	gene	1	479	.	+	.	ID=Q7ATH7;Name=aacA-aphD;organism=Staphylococcus warneri;db_xref=ResistAI;UniProt:Q7ATH7;EMBL:AJ536195;coordinate_type=amino_acid
 Q7ATH7	ResistAI	CDS	1	479	.	+	0	ID=Q7ATH7_CDS;Parent=Q7ATH7;product=antibiotic_resistance_protein
 Q7ATH7	fpocket	binding_site	1	479	0.341	+	.	ID=Q7ATH7_pocket32;Parent=Q7ATH7;druggability_score=0.341;druggability_tier=low
 Q7ATH7	fpocket	binding_site	1	479	0.307	+	.	ID=Q7ATH7_pocket31;Parent=Q7ATH7;druggability_score=0.307;druggability_tier=low
@@ -908,7 +909,7 @@ Q7ATH7	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH7_pocket25;Parent=Q7ATH7;druggab
 Q7ATH7	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH7_pocket26;Parent=Q7ATH7;druggability_score=0.000;druggability_tier=low
 Q7ATH7	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH7_pocket27;Parent=Q7ATH7;druggability_score=0.000;druggability_tier=low
 Q7ATH7	fpocket	binding_site	1	479	0	+	.	ID=Q7ATH7_pocket30;Parent=Q7ATH7;druggability_score=0.000;druggability_tier=low
-P13250	ResistAI	gene	1	263	.	+	.	ID=P13250;Name=rph;organism=Streptomyces ribosidificus
+P13250	ResistAI	gene	1	263	.	+	.	ID=P13250;Name=rph;organism=Streptomyces ribosidificus;db_xref=ResistAI;UniProt:P13250;EMBL:M22126;coordinate_type=amino_acid
 P13250	ResistAI	CDS	1	263	.	+	0	ID=P13250_CDS;Parent=P13250;product=antibiotic_resistance_protein
 P13250	fpocket	binding_site	1	263	0.31	+	.	ID=P13250_pocket4;Parent=P13250;druggability_score=0.310;druggability_tier=low
 P13250	fpocket	binding_site	1	263	0.002	+	.	ID=P13250_pocket5;Parent=P13250;druggability_score=0.002;druggability_tier=low
@@ -928,7 +929,7 @@ P13250	fpocket	binding_site	1	263	0	+	.	ID=P13250_pocket10;Parent=P13250;druggab
 P13250	fpocket	binding_site	1	263	0	+	.	ID=P13250_pocket13;Parent=P13250;druggability_score=0.000;druggability_tier=low
 P13250	fpocket	binding_site	1	263	0	+	.	ID=P13250_pocket15;Parent=P13250;druggability_score=0.000;druggability_tier=low
 P13250	fpocket	binding_site	1	263	0	+	.	ID=P13250_pocket16;Parent=P13250;druggability_score=0.000;druggability_tier=low
-Q52S23	ResistAI	gene	1	479	.	+	.	ID=Q52S23;Name=aacA-aphD;organism=Enterococcus faecium
+Q52S23	ResistAI	gene	1	479	.	+	.	ID=Q52S23;Name=aacA-aphD;organism=Enterococcus faecium;db_xref=ResistAI;UniProt:Q52S23;EMBL:AY971367;coordinate_type=amino_acid
 Q52S23	ResistAI	CDS	1	479	.	+	0	ID=Q52S23_CDS;Parent=Q52S23;product=antibiotic_resistance_protein
 Q52S23	fpocket	binding_site	1	479	0.341	+	.	ID=Q52S23_pocket32;Parent=Q52S23;druggability_score=0.341;druggability_tier=low
 Q52S23	fpocket	binding_site	1	479	0.307	+	.	ID=Q52S23_pocket31;Parent=Q52S23;druggability_score=0.307;druggability_tier=low
@@ -962,7 +963,7 @@ Q52S23	fpocket	binding_site	1	479	0	+	.	ID=Q52S23_pocket25;Parent=Q52S23;druggab
 Q52S23	fpocket	binding_site	1	479	0	+	.	ID=Q52S23_pocket26;Parent=Q52S23;druggability_score=0.000;druggability_tier=low
 Q52S23	fpocket	binding_site	1	479	0	+	.	ID=Q52S23_pocket27;Parent=Q52S23;druggability_score=0.000;druggability_tier=low
 Q52S23	fpocket	binding_site	1	479	0	+	.	ID=Q52S23_pocket30;Parent=Q52S23;druggability_score=0.000;druggability_tier=low
-Q5HMP3	ResistAI	gene	1	479	.	+	.	ID=Q5HMP3;Name=aacA-aphD;organism=Staphylococcus epidermidis (strain ATCC 35984 / DSM 28319 / BCRC 17069 / CCUG 31568 / BM 3577 / RP62A)
+Q5HMP3	ResistAI	gene	1	479	.	+	.	ID=Q5HMP3;Name=aacA-aphD;organism=Staphylococcus epidermidis (strain ATCC 35984 / DSM 28319 / BCRC 17069 / CCUG 31568 / BM 3577 / RP62A);db_xref=ResistAI;UniProt:Q5HMP3;EMBL:CP000029;coordinate_type=amino_acid
 Q5HMP3	ResistAI	CDS	1	479	.	+	0	ID=Q5HMP3_CDS;Parent=Q5HMP3;product=antibiotic_resistance_protein
 Q5HMP3	fpocket	binding_site	1	479	0.341	+	.	ID=Q5HMP3_pocket32;Parent=Q5HMP3;druggability_score=0.341;druggability_tier=low
 Q5HMP3	fpocket	binding_site	1	479	0.307	+	.	ID=Q5HMP3_pocket31;Parent=Q5HMP3;druggability_score=0.307;druggability_tier=low
@@ -996,7 +997,7 @@ Q5HMP3	fpocket	binding_site	1	479	0	+	.	ID=Q5HMP3_pocket25;Parent=Q5HMP3;druggab
 Q5HMP3	fpocket	binding_site	1	479	0	+	.	ID=Q5HMP3_pocket26;Parent=Q5HMP3;druggability_score=0.000;druggability_tier=low
 Q5HMP3	fpocket	binding_site	1	479	0	+	.	ID=Q5HMP3_pocket27;Parent=Q5HMP3;druggability_score=0.000;druggability_tier=low
 Q5HMP3	fpocket	binding_site	1	479	0	+	.	ID=Q5HMP3_pocket30;Parent=Q5HMP3;druggability_score=0.000;druggability_tier=low
-P0A0C0	ResistAI	gene	1	479	.	+	.	ID=P0A0C0;Name=aacA-aphD;organism=Staphylococcus aureus (strain Mu50 / ATCC 700699)
+P0A0C0	ResistAI	gene	1	479	.	+	.	ID=P0A0C0;Name=aacA-aphD;organism=Staphylococcus aureus (strain Mu50 / ATCC 700699);db_xref=ResistAI;UniProt:P0A0C0;EMBL:AP003367;coordinate_type=amino_acid
 P0A0C0	ResistAI	CDS	1	479	.	+	0	ID=P0A0C0_CDS;Parent=P0A0C0;product=antibiotic_resistance_protein
 P0A0C0	fpocket	binding_site	1	479	0.341	+	.	ID=P0A0C0_pocket32;Parent=P0A0C0;druggability_score=0.341;druggability_tier=low
 P0A0C0	fpocket	binding_site	1	479	0.307	+	.	ID=P0A0C0_pocket31;Parent=P0A0C0;druggability_score=0.307;druggability_tier=low
@@ -1030,7 +1031,7 @@ P0A0C0	fpocket	binding_site	1	479	0	+	.	ID=P0A0C0_pocket25;Parent=P0A0C0;druggab
 P0A0C0	fpocket	binding_site	1	479	0	+	.	ID=P0A0C0_pocket26;Parent=P0A0C0;druggability_score=0.000;druggability_tier=low
 P0A0C0	fpocket	binding_site	1	479	0	+	.	ID=P0A0C0_pocket27;Parent=P0A0C0;druggability_score=0.000;druggability_tier=low
 P0A0C0	fpocket	binding_site	1	479	0	+	.	ID=P0A0C0_pocket30;Parent=P0A0C0;druggability_score=0.000;druggability_tier=low
-Q4L605	ResistAI	gene	1	479	.	+	.	ID=Q4L605;Name=aacA-aphD;organism=Staphylococcus haemolyticus (strain JCSC1435)
+Q4L605	ResistAI	gene	1	479	.	+	.	ID=Q4L605;Name=aacA-aphD;organism=Staphylococcus haemolyticus (strain JCSC1435);db_xref=ResistAI;UniProt:Q4L605;EMBL:AP006716;coordinate_type=amino_acid
 Q4L605	ResistAI	CDS	1	479	.	+	0	ID=Q4L605_CDS;Parent=Q4L605;product=antibiotic_resistance_protein
 Q4L605	fpocket	binding_site	1	479	0.341	+	.	ID=Q4L605_pocket32;Parent=Q4L605;druggability_score=0.341;druggability_tier=low
 Q4L605	fpocket	binding_site	1	479	0.307	+	.	ID=Q4L605_pocket31;Parent=Q4L605;druggability_score=0.307;druggability_tier=low
@@ -1064,7 +1065,7 @@ Q4L605	fpocket	binding_site	1	479	0	+	.	ID=Q4L605_pocket25;Parent=Q4L605;druggab
 Q4L605	fpocket	binding_site	1	479	0	+	.	ID=Q4L605_pocket26;Parent=Q4L605;druggability_score=0.000;druggability_tier=low
 Q4L605	fpocket	binding_site	1	479	0	+	.	ID=Q4L605_pocket27;Parent=Q4L605;druggability_score=0.000;druggability_tier=low
 Q4L605	fpocket	binding_site	1	479	0	+	.	ID=Q4L605_pocket30;Parent=Q4L605;druggability_score=0.000;druggability_tier=low
-P0A0C1	ResistAI	gene	1	479	.	+	.	ID=P0A0C1;Name=aacA-aphD;organism=Staphylococcus aureus
+P0A0C1	ResistAI	gene	1	479	.	+	.	ID=P0A0C1;Name=aacA-aphD;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P0A0C1;EMBL:GU565967;coordinate_type=amino_acid
 P0A0C1	ResistAI	CDS	1	479	.	+	0	ID=P0A0C1_CDS;Parent=P0A0C1;product=antibiotic_resistance_protein
 P0A0C1	fpocket	binding_site	1	479	0.341	+	.	ID=P0A0C1_pocket32;Parent=P0A0C1;druggability_score=0.341;druggability_tier=low
 P0A0C1	fpocket	binding_site	1	479	0.307	+	.	ID=P0A0C1_pocket31;Parent=P0A0C1;druggability_score=0.307;druggability_tier=low
@@ -1098,7 +1099,7 @@ P0A0C1	fpocket	binding_site	1	479	0	+	.	ID=P0A0C1_pocket25;Parent=P0A0C1;druggab
 P0A0C1	fpocket	binding_site	1	479	0	+	.	ID=P0A0C1_pocket26;Parent=P0A0C1;druggability_score=0.000;druggability_tier=low
 P0A0C1	fpocket	binding_site	1	479	0	+	.	ID=P0A0C1_pocket27;Parent=P0A0C1;druggability_score=0.000;druggability_tier=low
 P0A0C1	fpocket	binding_site	1	479	0	+	.	ID=P0A0C1_pocket30;Parent=P0A0C1;druggability_score=0.000;druggability_tier=low
-P08077	ResistAI	gene	1	307	.	+	.	ID=P08077;Name=aphD;organism=Streptomyces griseus
+P08077	ResistAI	gene	1	307	.	+	.	ID=P08077;Name=aphD;organism=Streptomyces griseus;db_xref=ResistAI;UniProt:P08077;EMBL:Y00459;coordinate_type=amino_acid
 P08077	ResistAI	CDS	1	307	.	+	0	ID=P08077_CDS;Parent=P08077;product=antibiotic_resistance_protein
 P08077	fpocket	binding_site	1	307	0.531	+	.	ID=P08077_pocket8;Parent=P08077;druggability_score=0.531;druggability_tier=medium
 P08077	fpocket	binding_site	1	307	0.051	+	.	ID=P08077_pocket11;Parent=P08077;druggability_score=0.051;druggability_tier=low
@@ -1121,7 +1122,7 @@ P08077	fpocket	binding_site	1	307	0	+	.	ID=P08077_pocket15;Parent=P08077;druggab
 P08077	fpocket	binding_site	1	307	0	+	.	ID=P08077_pocket16;Parent=P08077;druggability_score=0.000;druggability_tier=low
 P08077	fpocket	binding_site	1	307	0	+	.	ID=P08077_pocket17;Parent=P08077;druggability_score=0.000;druggability_tier=low
 P08077	fpocket	binding_site	1	307	0	+	.	ID=P08077_pocket18;Parent=P08077;druggability_score=0.000;druggability_tier=low
-P0A3Y6	ResistAI	gene	1	263	.	+	.	ID=P0A3Y6;Name=aphA;organism=Staphylococcus aureus
+P0A3Y6	ResistAI	gene	1	263	.	+	.	ID=P0A3Y6;Name=aphA;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P0A3Y6;EMBL:M36771;coordinate_type=amino_acid
 P0A3Y6	ResistAI	CDS	1	263	.	+	0	ID=P0A3Y6_CDS;Parent=P0A3Y6;product=antibiotic_resistance_protein
 P0A3Y6	fpocket	binding_site	1	263	0.307	+	.	ID=P0A3Y6_pocket6;Parent=P0A3Y6;druggability_score=0.307;druggability_tier=low
 P0A3Y6	fpocket	binding_site	1	263	0.058	+	.	ID=P0A3Y6_pocket21;Parent=P0A3Y6;druggability_score=0.058;druggability_tier=low
@@ -1144,7 +1145,7 @@ P0A3Y6	fpocket	binding_site	1	263	0	+	.	ID=P0A3Y6_pocket9;Parent=P0A3Y6;druggabi
 P0A3Y6	fpocket	binding_site	1	263	0	+	.	ID=P0A3Y6_pocket10;Parent=P0A3Y6;druggability_score=0.000;druggability_tier=low
 P0A3Y6	fpocket	binding_site	1	263	0	+	.	ID=P0A3Y6_pocket19;Parent=P0A3Y6;druggability_score=0.000;druggability_tier=low
 P0A3Y6	fpocket	binding_site	1	263	0	+	.	ID=P0A3Y6_pocket20;Parent=P0A3Y6;druggability_score=0.000;druggability_tier=low
-P0AE05	ResistAI	gene	1	177	.	+	.	ID=P0AE05;Name=aadB;organism=Klebsiella pneumoniae
+P0AE05	ResistAI	gene	1	177	.	+	.	ID=P0AE05;Name=aadB;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P0AE05;EMBL:X12618;coordinate_type=amino_acid
 P0AE05	ResistAI	CDS	1	177	.	+	0	ID=P0AE05_CDS;Parent=P0AE05;product=antibiotic_resistance_protein
 P0AE05	fpocket	binding_site	1	177	0.304	+	.	ID=P0AE05_pocket12;Parent=P0AE05;druggability_score=0.304;druggability_tier=low
 P0AE05	fpocket	binding_site	1	177	0.205	+	.	ID=P0AE05_pocket4;Parent=P0AE05;druggability_score=0.205;druggability_tier=low
@@ -1164,7 +1165,7 @@ P0AE05	fpocket	binding_site	1	177	0	+	.	ID=P0AE05_pocket9;Parent=P0AE05;druggabi
 P0AE05	fpocket	binding_site	1	177	0	+	.	ID=P0AE05_pocket14;Parent=P0AE05;druggability_score=0.000;druggability_tier=low
 P0AE05	fpocket	binding_site	1	177	0	+	.	ID=P0AE05_pocket16;Parent=P0AE05;druggability_score=0.000;druggability_tier=low
 P0AE05	fpocket	binding_site	1	177	0	+	.	ID=P0AE05_pocket17;Parent=P0AE05;druggability_score=0.000;druggability_tier=low
-Q8ZPX9	ResistAI	gene	1	262	.	+	.	ID=Q8ZPX9;Name=aadA;organism=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)
+Q8ZPX9	ResistAI	gene	1	262	.	+	.	ID=Q8ZPX9;Name=aadA;organism=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720);db_xref=ResistAI;UniProt:Q8ZPX9;EMBL:AE006468;coordinate_type=amino_acid
 Q8ZPX9	ResistAI	CDS	1	262	.	+	0	ID=Q8ZPX9_CDS;Parent=Q8ZPX9;product=antibiotic_resistance_protein
 Q8ZPX9	fpocket	binding_site	1	262	0.434	+	.	ID=Q8ZPX9_pocket9;Parent=Q8ZPX9;druggability_score=0.434;druggability_tier=medium
 Q8ZPX9	fpocket	binding_site	1	262	0.32	+	.	ID=Q8ZPX9_pocket8;Parent=Q8ZPX9;druggability_score=0.320;druggability_tier=low
@@ -1177,7 +1178,7 @@ Q8ZPX9	fpocket	binding_site	1	262	0	+	.	ID=Q8ZPX9_pocket1;Parent=Q8ZPX9;druggabi
 Q8ZPX9	fpocket	binding_site	1	262	0	+	.	ID=Q8ZPX9_pocket3;Parent=Q8ZPX9;druggability_score=0.000;druggability_tier=low
 Q8ZPX9	fpocket	binding_site	1	262	0	+	.	ID=Q8ZPX9_pocket4;Parent=Q8ZPX9;druggability_score=0.000;druggability_tier=low
 Q8ZPX9	fpocket	binding_site	1	262	0	+	.	ID=Q8ZPX9_pocket7;Parent=Q8ZPX9;druggability_score=0.000;druggability_tier=low
-P05058	ResistAI	gene	1	253	.	+	.	ID=P05058;Name=knt;organism=Bacillus sp
+P05058	ResistAI	gene	1	253	.	+	.	ID=P05058;Name=knt;organism=Bacillus sp;db_xref=ResistAI;UniProt:P05058;EMBL:K02551;coordinate_type=amino_acid
 P05058	ResistAI	CDS	1	253	.	+	0	ID=P05058_CDS;Parent=P05058;product=antibiotic_resistance_protein
 P05058	fpocket	binding_site	1	253	0.842	+	.	ID=P05058_pocket1;Parent=P05058;druggability_score=0.842;druggability_tier=high
 P05058	fpocket	binding_site	1	253	0.039	+	.	ID=P05058_pocket9;Parent=P05058;druggability_score=0.039;druggability_tier=low
@@ -1199,7 +1200,7 @@ P05058	fpocket	binding_site	1	253	0	+	.	ID=P05058_pocket5;Parent=P05058;druggabi
 P05058	fpocket	binding_site	1	253	0	+	.	ID=P05058_pocket6;Parent=P05058;druggability_score=0.000;druggability_tier=low
 P05058	fpocket	binding_site	1	253	0	+	.	ID=P05058_pocket18;Parent=P05058;druggability_score=0.000;druggability_tier=low
 P05058	fpocket	binding_site	1	253	0	+	.	ID=P05058_pocket19;Parent=P05058;druggability_score=0.000;druggability_tier=low
-P05057	ResistAI	gene	1	253	.	+	.	ID=P05057;Name=knt;organism=Staphylococcus aureus
+P05057	ResistAI	gene	1	253	.	+	.	ID=P05057;Name=knt;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P05057;EMBL:X03408;coordinate_type=amino_acid
 P05057	ResistAI	CDS	1	253	.	+	0	ID=P05057_CDS;Parent=P05057;product=antibiotic_resistance_protein
 P05057	fpocket	binding_site	1	253	0.862	+	.	ID=P05057_pocket1;Parent=P05057;druggability_score=0.862;druggability_tier=high
 P05057	fpocket	binding_site	1	253	0.044	+	.	ID=P05057_pocket5;Parent=P05057;druggability_score=0.044;druggability_tier=low
@@ -1221,7 +1222,7 @@ P05057	fpocket	binding_site	1	253	0	+	.	ID=P05057_pocket12;Parent=P05057;druggab
 P05057	fpocket	binding_site	1	253	0	+	.	ID=P05057_pocket13;Parent=P05057;druggability_score=0.000;druggability_tier=low
 P05057	fpocket	binding_site	1	253	0	+	.	ID=P05057_pocket18;Parent=P05057;druggability_score=0.000;druggability_tier=low
 P05057	fpocket	binding_site	1	253	0	+	.	ID=P05057_pocket20;Parent=P05057;druggability_score=0.000;druggability_tier=low
-P0AG05	ResistAI	gene	1	263	.	+	.	ID=P0AG05;Name=aadA;organism=Escherichia coli
+P0AG05	ResistAI	gene	1	263	.	+	.	ID=P0AG05;Name=aadA;organism=Escherichia coli;db_xref=ResistAI;UniProt:P0AG05;EMBL:X03043;coordinate_type=amino_acid
 P0AG05	ResistAI	CDS	1	263	.	+	0	ID=P0AG05_CDS;Parent=P0AG05;product=antibiotic_resistance_protein
 P0AG05	fpocket	binding_site	1	263	0.076	+	.	ID=P0AG05_pocket10;Parent=P0AG05;druggability_score=0.076;druggability_tier=low
 P0AG05	fpocket	binding_site	1	263	0.075	+	.	ID=P0AG05_pocket4;Parent=P0AG05;druggability_score=0.075;druggability_tier=low
@@ -1240,7 +1241,7 @@ P0AG05	fpocket	binding_site	1	263	0.001	+	.	ID=P0AG05_pocket14;Parent=P0AG05;dru
 P0AG05	fpocket	binding_site	1	263	0	+	.	ID=P0AG05_pocket11;Parent=P0AG05;druggability_score=0.000;druggability_tier=low
 P0AG05	fpocket	binding_site	1	263	0	+	.	ID=P0AG05_pocket15;Parent=P0AG05;druggability_score=0.000;druggability_tier=low
 P0AG05	fpocket	binding_site	1	263	0	+	.	ID=P0AG05_pocket17;Parent=P0AG05;druggability_score=0.000;druggability_tier=low
-P17585	ResistAI	gene	1	284	.	+	.	ID=P17585;Name=aadK;organism=Bacillus subtilis (strain 168)
+P17585	ResistAI	gene	1	284	.	+	.	ID=P17585;Name=aadK;organism=Bacillus subtilis (strain 168);db_xref=ResistAI;UniProt:P17585;EMBL:M26879;coordinate_type=amino_acid
 P17585	ResistAI	CDS	1	284	.	+	0	ID=P17585_CDS;Parent=P17585;product=antibiotic_resistance_protein
 P17585	fpocket	binding_site	1	284	0.399	+	.	ID=P17585_pocket14;Parent=P17585;druggability_score=0.399;druggability_tier=low
 P17585	fpocket	binding_site	1	284	0.17	+	.	ID=P17585_pocket12;Parent=P17585;druggability_score=0.170;druggability_tier=low
@@ -1267,7 +1268,7 @@ P17585	fpocket	binding_site	1	284	0	+	.	ID=P17585_pocket20;Parent=P17585;druggab
 P17585	fpocket	binding_site	1	284	0	+	.	ID=P17585_pocket21;Parent=P17585;druggability_score=0.000;druggability_tier=low
 P17585	fpocket	binding_site	1	284	0	+	.	ID=P17585_pocket22;Parent=P17585;druggability_score=0.000;druggability_tier=low
 P17585	fpocket	binding_site	1	284	0	+	.	ID=P17585_pocket23;Parent=P17585;druggability_score=0.000;druggability_tier=low
-P0AE04	ResistAI	gene	1	177	.	+	.	ID=P0AE04;Name=aadB;organism=Escherichia coli
+P0AE04	ResistAI	gene	1	177	.	+	.	ID=P0AE04;Name=aadB;organism=Escherichia coli;db_xref=ResistAI;UniProt:P0AE04;EMBL:L06418;coordinate_type=amino_acid
 P0AE04	ResistAI	CDS	1	177	.	+	0	ID=P0AE04_CDS;Parent=P0AE04;product=antibiotic_resistance_protein
 P0AE04	fpocket	binding_site	1	177	0.304	+	.	ID=P0AE04_pocket12;Parent=P0AE04;druggability_score=0.304;druggability_tier=low
 P0AE04	fpocket	binding_site	1	177	0.205	+	.	ID=P0AE04_pocket4;Parent=P0AE04;druggability_score=0.205;druggability_tier=low
@@ -1287,7 +1288,7 @@ P0AE04	fpocket	binding_site	1	177	0	+	.	ID=P0AE04_pocket9;Parent=P0AE04;druggabi
 P0AE04	fpocket	binding_site	1	177	0	+	.	ID=P0AE04_pocket14;Parent=P0AE04;druggability_score=0.000;druggability_tier=low
 P0AE04	fpocket	binding_site	1	177	0	+	.	ID=P0AE04_pocket16;Parent=P0AE04;druggability_score=0.000;druggability_tier=low
 P0AE04	fpocket	binding_site	1	177	0	+	.	ID=P0AE04_pocket17;Parent=P0AE04;druggability_score=0.000;druggability_tier=low
-P14511	ResistAI	gene	1	269	.	+	.	ID=P14511;Name=Aminoglycoside;organism=Agrobacterium tumefaciens
+P14511	ResistAI	gene	1	269	.	+	.	ID=P14511;Name=Aminoglycoside;organism=Agrobacterium tumefaciens;db_xref=ResistAI;UniProt:P14511;EMBL:M11444;coordinate_type=amino_acid
 P14511	ResistAI	CDS	1	269	.	+	0	ID=P14511_CDS;Parent=P14511;product=antibiotic_resistance_protein
 P14511	fpocket	binding_site	1	269	0.239	+	.	ID=P14511_pocket2;Parent=P14511;druggability_score=0.239;druggability_tier=low
 P14511	fpocket	binding_site	1	269	0.17	+	.	ID=P14511_pocket19;Parent=P14511;druggability_score=0.170;druggability_tier=low
@@ -1310,7 +1311,7 @@ P14511	fpocket	binding_site	1	269	0	+	.	ID=P14511_pocket7;Parent=P14511;druggabi
 P14511	fpocket	binding_site	1	269	0	+	.	ID=P14511_pocket15;Parent=P14511;druggability_score=0.000;druggability_tier=low
 P14511	fpocket	binding_site	1	269	0	+	.	ID=P14511_pocket18;Parent=P14511;druggability_score=0.000;druggability_tier=low
 P14511	fpocket	binding_site	1	269	0	+	.	ID=P14511_pocket20;Parent=P14511;druggability_score=0.000;druggability_tier=low
-P29806	ResistAI	gene	1	177	.	+	.	ID=P29806;Name=aadB;organism=Klebsiella pneumoniae
+P29806	ResistAI	gene	1	177	.	+	.	ID=P29806;Name=aadB;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P29806;EMBL:X64369;coordinate_type=amino_acid
 P29806	ResistAI	CDS	1	177	.	+	0	ID=P29806_CDS;Parent=P29806;product=antibiotic_resistance_protein
 P29806	fpocket	binding_site	1	177	0.249	+	.	ID=P29806_pocket13;Parent=P29806;druggability_score=0.249;druggability_tier=low
 P29806	fpocket	binding_site	1	177	0.197	+	.	ID=P29806_pocket2;Parent=P29806;druggability_score=0.197;druggability_tier=low
@@ -1329,7 +1330,7 @@ P29806	fpocket	binding_site	1	177	0	+	.	ID=P29806_pocket9;Parent=P29806;druggabi
 P29806	fpocket	binding_site	1	177	0	+	.	ID=P29806_pocket11;Parent=P29806;druggability_score=0.000;druggability_tier=low
 P29806	fpocket	binding_site	1	177	0	+	.	ID=P29806_pocket14;Parent=P29806;druggability_score=0.000;druggability_tier=low
 P29806	fpocket	binding_site	1	177	0	+	.	ID=P29806_pocket17;Parent=P29806;druggability_score=0.000;druggability_tier=low
-P0DTV9	ResistAI	gene	1	288	.	+	.	ID=P0DTV9;Name=aadK;organism=Campylobacter jejuni
+P0DTV9	ResistAI	gene	1	288	.	+	.	ID=P0DTV9;Name=aadK;organism=Campylobacter jejuni;db_xref=ResistAI;UniProt:P0DTV9;EMBL:AY701528;coordinate_type=amino_acid
 P0DTV9	ResistAI	CDS	1	288	.	+	0	ID=P0DTV9_CDS;Parent=P0DTV9;product=antibiotic_resistance_protein
 P0DTV9	fpocket	binding_site	1	288	0.286	+	.	ID=P0DTV9_pocket1;Parent=P0DTV9;druggability_score=0.286;druggability_tier=low
 P0DTV9	fpocket	binding_site	1	288	0.186	+	.	ID=P0DTV9_pocket2;Parent=P0DTV9;druggability_score=0.186;druggability_tier=low
@@ -1348,7 +1349,7 @@ P0DTV9	fpocket	binding_site	1	288	0	+	.	ID=P0DTV9_pocket9;Parent=P0DTV9;druggabi
 P0DTV9	fpocket	binding_site	1	288	0	+	.	ID=P0DTV9_pocket10;Parent=P0DTV9;druggability_score=0.000;druggability_tier=low
 P0DTV9	fpocket	binding_site	1	288	0	+	.	ID=P0DTV9_pocket11;Parent=P0DTV9;druggability_score=0.000;druggability_tier=low
 P0DTV9	fpocket	binding_site	1	288	0	+	.	ID=P0DTV9_pocket14;Parent=P0DTV9;druggability_score=0.000;druggability_tier=low
-P0AG06	ResistAI	gene	1	262	.	+	.	ID=P0AG06;Name=aadA;organism=Shigella flexneri
+P0AG06	ResistAI	gene	1	262	.	+	.	ID=P0AG06;Name=aadA;organism=Shigella flexneri;db_xref=ResistAI;UniProt:P0AG06;EMBL:X03886;coordinate_type=amino_acid
 P0AG06	ResistAI	CDS	1	262	.	+	0	ID=P0AG06_CDS;Parent=P0AG06;product=antibiotic_resistance_protein
 P0AG06	fpocket	binding_site	1	262	0.093	+	.	ID=P0AG06_pocket2;Parent=P0AG06;druggability_score=0.093;druggability_tier=low
 P0AG06	fpocket	binding_site	1	262	0.088	+	.	ID=P0AG06_pocket10;Parent=P0AG06;druggability_score=0.088;druggability_tier=low
@@ -1368,7 +1369,7 @@ P0AG06	fpocket	binding_site	1	262	0	+	.	ID=P0AG06_pocket1;Parent=P0AG06;druggabi
 P0AG06	fpocket	binding_site	1	262	0	+	.	ID=P0AG06_pocket6;Parent=P0AG06;druggability_score=0.000;druggability_tier=low
 P0AG06	fpocket	binding_site	1	262	0	+	.	ID=P0AG06_pocket15;Parent=P0AG06;druggability_score=0.000;druggability_tier=low
 P0AG06	fpocket	binding_site	1	262	0	+	.	ID=P0AG06_pocket17;Parent=P0AG06;druggability_score=0.000;druggability_tier=low
-P08881	ResistAI	gene	1	262	.	+	.	ID=P08881;Name=aadA;organism=Klebsiella pneumoniae
+P08881	ResistAI	gene	1	262	.	+	.	ID=P08881;Name=aadA;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P08881;EMBL:M55547;coordinate_type=amino_acid
 P08881	ResistAI	CDS	1	262	.	+	0	ID=P08881_CDS;Parent=P08881;product=antibiotic_resistance_protein
 P08881	fpocket	binding_site	1	262	0.058	+	.	ID=P08881_pocket14;Parent=P08881;druggability_score=0.058;druggability_tier=low
 P08881	fpocket	binding_site	1	262	0.052	+	.	ID=P08881_pocket8;Parent=P08881;druggability_score=0.052;druggability_tier=low
@@ -1388,7 +1389,7 @@ P08881	fpocket	binding_site	1	262	0.001	+	.	ID=P08881_pocket17;Parent=P08881;dru
 P08881	fpocket	binding_site	1	262	0	+	.	ID=P08881_pocket1;Parent=P08881;druggability_score=0.000;druggability_tier=low
 P08881	fpocket	binding_site	1	262	0	+	.	ID=P08881_pocket5;Parent=P08881;druggability_score=0.000;druggability_tier=low
 P08881	fpocket	binding_site	1	262	0	+	.	ID=P08881_pocket18;Parent=P08881;druggability_score=0.000;druggability_tier=low
-P12055	ResistAI	gene	1	282	.	+	.	ID=P12055;Name=str;organism=Staphylococcus aureus
+P12055	ResistAI	gene	1	282	.	+	.	ID=P12055;Name=str;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P12055;EMBL:X06627;coordinate_type=amino_acid
 P12055	ResistAI	CDS	1	282	.	+	0	ID=P12055_CDS;Parent=P12055;product=antibiotic_resistance_protein
 P12055	fpocket	binding_site	1	282	0.27	+	.	ID=P12055_pocket19;Parent=P12055;druggability_score=0.270;druggability_tier=low
 P12055	fpocket	binding_site	1	282	0.042	+	.	ID=P12055_pocket21;Parent=P12055;druggability_score=0.042;druggability_tier=low
@@ -1411,7 +1412,7 @@ P12055	fpocket	binding_site	1	282	0	+	.	ID=P12055_pocket8;Parent=P12055;druggabi
 P12055	fpocket	binding_site	1	282	0	+	.	ID=P12055_pocket10;Parent=P12055;druggability_score=0.000;druggability_tier=low
 P12055	fpocket	binding_site	1	282	0	+	.	ID=P12055_pocket14;Parent=P12055;druggability_score=0.000;druggability_tier=low
 P12055	fpocket	binding_site	1	282	0	+	.	ID=P12055_pocket16;Parent=P12055;druggability_score=0.000;druggability_tier=low
-P52002	ResistAI	gene	1	1046	.	+	.	ID=P52002;Name=mexB;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)
+P52002	ResistAI	gene	1	1046	.	+	.	ID=P52002;Name=mexB;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1);db_xref=ResistAI;UniProt:P52002;EMBL:L11616;coordinate_type=amino_acid
 P52002	ResistAI	CDS	1	1046	.	+	0	ID=P52002_CDS;Parent=P52002;product=antibiotic_resistance_protein
 P52002	fpocket	binding_site	1	1046	0.755	+	.	ID=P52002_pocket6;Parent=P52002;druggability_score=0.755;druggability_tier=high
 P52002	fpocket	binding_site	1	1046	0.577	+	.	ID=P52002_pocket14;Parent=P52002;druggability_score=0.577;druggability_tier=medium
@@ -1442,7 +1443,7 @@ P52002	fpocket	binding_site	1	1046	0	+	.	ID=P52002_pocket19;Parent=P52002;drugga
 P52002	fpocket	binding_site	1	1046	0	+	.	ID=P52002_pocket20;Parent=P52002;druggability_score=0.000;druggability_tier=low
 P52002	fpocket	binding_site	1	1046	0	+	.	ID=P52002_pocket23;Parent=P52002;druggability_score=0.000;druggability_tier=low
 P52002	fpocket	binding_site	1	1046	0	+	.	ID=P52002_pocket24;Parent=P52002;druggability_score=0.000;druggability_tier=low
-P52477	ResistAI	gene	1	383	.	+	.	ID=P52477;Name=mexA;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)
+P52477	ResistAI	gene	1	383	.	+	.	ID=P52477;Name=mexA;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1);db_xref=ResistAI;UniProt:P52477;EMBL:L11616;coordinate_type=amino_acid
 P52477	ResistAI	CDS	1	383	.	+	0	ID=P52477_CDS;Parent=P52477;product=antibiotic_resistance_protein
 P52477	fpocket	binding_site	1	383	0.836	+	.	ID=P52477_pocket2;Parent=P52477;druggability_score=0.836;druggability_tier=high
 P52477	fpocket	binding_site	1	383	0.179	+	.	ID=P52477_pocket4;Parent=P52477;druggability_score=0.179;druggability_tier=low
@@ -1465,7 +1466,7 @@ P52477	fpocket	binding_site	1	383	0	+	.	ID=P52477_pocket12;Parent=P52477;druggab
 P52477	fpocket	binding_site	1	383	0	+	.	ID=P52477_pocket15;Parent=P52477;druggability_score=0.000;druggability_tier=low
 P52477	fpocket	binding_site	1	383	0	+	.	ID=P52477_pocket18;Parent=P52477;druggability_score=0.000;druggability_tier=low
 P52477	fpocket	binding_site	1	383	0	+	.	ID=P52477_pocket19;Parent=P52477;druggability_score=0.000;druggability_tier=low
-Q51487	ResistAI	gene	1	485	.	+	.	ID=Q51487;Name=oprM;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1)
+Q51487	ResistAI	gene	1	485	.	+	.	ID=Q51487;Name=oprM;organism=Pseudomonas aeruginosa (strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 / LMG 12228 / 1C / PRS 101 / PAO1);db_xref=ResistAI;UniProt:Q51487;EMBL:L23839;coordinate_type=amino_acid
 Q51487	ResistAI	CDS	1	485	.	+	0	ID=Q51487_CDS;Parent=Q51487;product=antibiotic_resistance_protein
 Q51487	fpocket	binding_site	1	485	0.367	+	.	ID=Q51487_pocket3;Parent=Q51487;druggability_score=0.367;druggability_tier=low
 Q51487	fpocket	binding_site	1	485	0.141	+	.	ID=Q51487_pocket18;Parent=Q51487;druggability_score=0.141;druggability_tier=low
@@ -1501,7 +1502,7 @@ Q51487	fpocket	binding_site	1	485	0	+	.	ID=Q51487_pocket23;Parent=Q51487;druggab
 Q51487	fpocket	binding_site	1	485	0	+	.	ID=Q51487_pocket24;Parent=Q51487;druggability_score=0.000;druggability_tier=low
 Q51487	fpocket	binding_site	1	485	0	+	.	ID=Q51487_pocket27;Parent=Q51487;druggability_score=0.000;druggability_tier=low
 Q51487	fpocket	binding_site	1	485	0	+	.	ID=Q51487_pocket30;Parent=Q51487;druggability_score=0.000;druggability_tier=low
-P0AE06	ResistAI	gene	1	397	.	+	.	ID=P0AE06;Name=acrA;organism=Escherichia coli (strain K12)
+P0AE06	ResistAI	gene	1	397	.	+	.	ID=P0AE06;Name=acrA;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P0AE06;EMBL:U00734;coordinate_type=amino_acid
 P0AE06	ResistAI	CDS	1	397	.	+	0	ID=P0AE06_CDS;Parent=P0AE06;product=antibiotic_resistance_protein
 P0AE06	fpocket	binding_site	1	397	0.899	+	.	ID=P0AE06_pocket4;Parent=P0AE06;druggability_score=0.899;druggability_tier=high
 P0AE06	fpocket	binding_site	1	397	0.349	+	.	ID=P0AE06_pocket5;Parent=P0AE06;druggability_score=0.349;druggability_tier=low
@@ -1532,7 +1533,7 @@ P0AE06	fpocket	binding_site	1	397	0	+	.	ID=P0AE06_pocket20;Parent=P0AE06;druggab
 P0AE06	fpocket	binding_site	1	397	0	+	.	ID=P0AE06_pocket21;Parent=P0AE06;druggability_score=0.000;druggability_tier=low
 P0AE06	fpocket	binding_site	1	397	0	+	.	ID=P0AE06_pocket23;Parent=P0AE06;druggability_score=0.000;druggability_tier=low
 P0AE06	fpocket	binding_site	1	397	0	+	.	ID=P0AE06_pocket25;Parent=P0AE06;druggability_score=0.000;druggability_tier=low
-P31224	ResistAI	gene	1	1049	.	+	.	ID=P31224;Name=acrB;organism=Escherichia coli (strain K12)
+P31224	ResistAI	gene	1	1049	.	+	.	ID=P31224;Name=acrB;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P31224;EMBL:M94248;coordinate_type=amino_acid
 P31224	ResistAI	CDS	1	1049	.	+	0	ID=P31224_CDS;Parent=P31224;product=antibiotic_resistance_protein
 P31224	fpocket	binding_site	1	1049	0.924	+	.	ID=P31224_pocket28;Parent=P31224;druggability_score=0.924;druggability_tier=high
 P31224	fpocket	binding_site	1	1049	0.522	+	.	ID=P31224_pocket26;Parent=P31224;druggability_score=0.522;druggability_tier=medium
@@ -1562,14 +1563,14 @@ P31224	fpocket	binding_site	1	1049	0	+	.	ID=P31224_pocket17;Parent=P31224;drugga
 P31224	fpocket	binding_site	1	1049	0	+	.	ID=P31224_pocket18;Parent=P31224;druggability_score=0.000;druggability_tier=low
 P31224	fpocket	binding_site	1	1049	0	+	.	ID=P31224_pocket20;Parent=P31224;druggability_score=0.000;druggability_tier=low
 P31224	fpocket	binding_site	1	1049	0	+	.	ID=P31224_pocket21;Parent=P31224;druggability_score=0.000;druggability_tier=low
-P02930	ResistAI	gene	1	493	.	+	.	ID=P02930;Name=tolC;organism=Escherichia coli (strain K12)
+P02930	ResistAI	gene	1	493	.	+	.	ID=P02930;Name=tolC;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P02930;EMBL:X00016;coordinate_type=amino_acid
 P02930	ResistAI	CDS	1	493	.	+	0	ID=P02930_CDS;Parent=P02930;product=antibiotic_resistance_protein
-P0AAW9	ResistAI	gene	1	49	.	+	.	ID=P0AAW9;Name=acrZ;organism=Escherichia coli (strain K12)
+P0AAW9	ResistAI	gene	1	49	.	+	.	ID=P0AAW9;Name=acrZ;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P0AAW9;EMBL:U00096;coordinate_type=amino_acid
 P0AAW9	ResistAI	CDS	1	49	.	+	0	ID=P0AAW9_CDS;Parent=P0AAW9;product=antibiotic_resistance_protein
 P0AAW9	fpocket	binding_site	1	49	0.889	+	.	ID=P0AAW9_pocket2;Parent=P0AAW9;druggability_score=0.889;druggability_tier=high
 P0AAW9	fpocket	binding_site	1	49	0.001	+	.	ID=P0AAW9_pocket1;Parent=P0AAW9;druggability_score=0.001;druggability_tier=low
 P0AAW9	fpocket	binding_site	1	49	0.001	+	.	ID=P0AAW9_pocket3;Parent=P0AAW9;druggability_score=0.001;druggability_tier=low
-P0AE07	ResistAI	gene	1	397	.	+	.	ID=P0AE07;Name=acrA;organism=Escherichia coli O157:H7
+P0AE07	ResistAI	gene	1	397	.	+	.	ID=P0AE07;Name=acrA;organism=Escherichia coli O157:H7;db_xref=ResistAI;UniProt:P0AE07;EMBL:AE005174;coordinate_type=amino_acid
 P0AE07	ResistAI	CDS	1	397	.	+	0	ID=P0AE07_CDS;Parent=P0AE07;product=antibiotic_resistance_protein
 P0AE07	fpocket	binding_site	1	397	0.899	+	.	ID=P0AE07_pocket4;Parent=P0AE07;druggability_score=0.899;druggability_tier=high
 P0AE07	fpocket	binding_site	1	397	0.349	+	.	ID=P0AE07_pocket5;Parent=P0AE07;druggability_score=0.349;druggability_tier=low
@@ -1600,7 +1601,7 @@ P0AE07	fpocket	binding_site	1	397	0	+	.	ID=P0AE07_pocket20;Parent=P0AE07;druggab
 P0AE07	fpocket	binding_site	1	397	0	+	.	ID=P0AE07_pocket21;Parent=P0AE07;druggability_score=0.000;druggability_tier=low
 P0AE07	fpocket	binding_site	1	397	0	+	.	ID=P0AE07_pocket23;Parent=P0AE07;druggability_score=0.000;druggability_tier=low
 P0AE07	fpocket	binding_site	1	397	0	+	.	ID=P0AE07_pocket25;Parent=P0AE07;druggability_score=0.000;druggability_tier=low
-P24180	ResistAI	gene	1	385	.	+	.	ID=P24180;Name=acrE;organism=Escherichia coli (strain K12)
+P24180	ResistAI	gene	1	385	.	+	.	ID=P24180;Name=acrE;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P24180;EMBL:M96848;coordinate_type=amino_acid
 P24180	ResistAI	CDS	1	385	.	+	0	ID=P24180_CDS;Parent=P24180;product=antibiotic_resistance_protein
 P24180	fpocket	binding_site	1	385	0.449	+	.	ID=P24180_pocket9;Parent=P24180;druggability_score=0.449;druggability_tier=medium
 P24180	fpocket	binding_site	1	385	0.111	+	.	ID=P24180_pocket15;Parent=P24180;druggability_score=0.111;druggability_tier=low
@@ -1627,7 +1628,7 @@ P24180	fpocket	binding_site	1	385	0	+	.	ID=P24180_pocket17;Parent=P24180;druggab
 P24180	fpocket	binding_site	1	385	0	+	.	ID=P24180_pocket18;Parent=P24180;druggability_score=0.000;druggability_tier=low
 P24180	fpocket	binding_site	1	385	0	+	.	ID=P24180_pocket21;Parent=P24180;druggability_score=0.000;druggability_tier=low
 P24180	fpocket	binding_site	1	385	0	+	.	ID=P24180_pocket25;Parent=P24180;druggability_score=0.000;druggability_tier=low
-P24181	ResistAI	gene	1	1034	.	+	.	ID=P24181;Name=acrF;organism=Escherichia coli (strain K12)
+P24181	ResistAI	gene	1	1034	.	+	.	ID=P24181;Name=acrF;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P24181;EMBL:M96848;coordinate_type=amino_acid
 P24181	ResistAI	CDS	1	1034	.	+	0	ID=P24181_CDS;Parent=P24181;product=antibiotic_resistance_protein
 P24181	fpocket	binding_site	1	1034	0.905	+	.	ID=P24181_pocket25;Parent=P24181;druggability_score=0.905;druggability_tier=high
 P24181	fpocket	binding_site	1	1034	0.13	+	.	ID=P24181_pocket10;Parent=P24181;druggability_score=0.130;druggability_tier=low
@@ -1659,7 +1660,7 @@ P24181	fpocket	binding_site	1	1034	0	+	.	ID=P24181_pocket21;Parent=P24181;drugga
 P24181	fpocket	binding_site	1	1034	0	+	.	ID=P24181_pocket22;Parent=P24181;druggability_score=0.000;druggability_tier=low
 P24181	fpocket	binding_site	1	1034	0	+	.	ID=P24181_pocket26;Parent=P24181;druggability_score=0.000;druggability_tier=low
 P24181	fpocket	binding_site	1	1034	0	+	.	ID=P24181_pocket28;Parent=P24181;druggability_score=0.000;druggability_tier=low
-Q8KSA6	ResistAI	gene	1	291	.	+	.	ID=Q8KSA6;Name=bla;organism=Escherichia coli
+Q8KSA6	ResistAI	gene	1	291	.	+	.	ID=Q8KSA6;Name=bla;organism=Escherichia coli;db_xref=ResistAI;UniProt:Q8KSA6;EMBL:AF518567;coordinate_type=amino_acid
 Q8KSA6	ResistAI	CDS	1	291	.	+	0	ID=Q8KSA6_CDS;Parent=Q8KSA6;product=antibiotic_resistance_protein
 Q8KSA6	fpocket	binding_site	1	291	0.731	+	.	ID=Q8KSA6_pocket3;Parent=Q8KSA6;druggability_score=0.731;druggability_tier=high
 Q8KSA6	fpocket	binding_site	1	291	0.055	+	.	ID=Q8KSA6_pocket1;Parent=Q8KSA6;druggability_score=0.055;druggability_tier=low
@@ -1670,7 +1671,7 @@ Q8KSA6	fpocket	binding_site	1	291	0.001	+	.	ID=Q8KSA6_pocket4;Parent=Q8KSA6;drug
 Q8KSA6	fpocket	binding_site	1	291	0.001	+	.	ID=Q8KSA6_pocket8;Parent=Q8KSA6;druggability_score=0.001;druggability_tier=low
 Q8KSA6	fpocket	binding_site	1	291	0.001	+	.	ID=Q8KSA6_pocket9;Parent=Q8KSA6;druggability_score=0.001;druggability_tier=low
 Q8KSA6	fpocket	binding_site	1	291	0	+	.	ID=Q8KSA6_pocket5;Parent=Q8KSA6;druggability_score=0.000;druggability_tier=low
-Q9RMT4	ResistAI	gene	1	291	.	+	.	ID=Q9RMT4;Name=bla;organism=Citrobacter amalonaticus
+Q9RMT4	ResistAI	gene	1	291	.	+	.	ID=Q9RMT4;Name=bla;organism=Citrobacter amalonaticus;db_xref=ResistAI;UniProt:Q9RMT4;EMBL:AF189721;coordinate_type=amino_acid
 Q9RMT4	ResistAI	CDS	1	291	.	+	0	ID=Q9RMT4_CDS;Parent=Q9RMT4;product=antibiotic_resistance_protein
 Q9RMT4	fpocket	binding_site	1	291	0.498	+	.	ID=Q9RMT4_pocket15;Parent=Q9RMT4;druggability_score=0.498;druggability_tier=medium
 Q9RMT4	fpocket	binding_site	1	291	0.014	+	.	ID=Q9RMT4_pocket11;Parent=Q9RMT4;druggability_score=0.014;druggability_tier=low
@@ -1689,7 +1690,7 @@ Q9RMT4	fpocket	binding_site	1	291	0	+	.	ID=Q9RMT4_pocket12;Parent=Q9RMT4;druggab
 Q9RMT4	fpocket	binding_site	1	291	0	+	.	ID=Q9RMT4_pocket13;Parent=Q9RMT4;druggability_score=0.000;druggability_tier=low
 Q9RMT4	fpocket	binding_site	1	291	0	+	.	ID=Q9RMT4_pocket14;Parent=Q9RMT4;druggability_score=0.000;druggability_tier=low
 Q9RMT4	fpocket	binding_site	1	291	0	+	.	ID=Q9RMT4_pocket16;Parent=Q9RMT4;druggability_score=0.000;druggability_tier=low
-A0A649V088	ResistAI	gene	1	291	.	+	.	ID=A0A649V088;Name=bla;organism=Escherichia coli
+A0A649V088	ResistAI	gene	1	291	.	+	.	ID=A0A649V088;Name=bla;organism=Escherichia coli;db_xref=ResistAI;UniProt:A0A649V088;EMBL:MN367307;coordinate_type=amino_acid
 A0A649V088	ResistAI	CDS	1	291	.	+	0	ID=A0A649V088_CDS;Parent=A0A649V088;product=antibiotic_resistance_protein
 A0A649V088	fpocket	binding_site	1	291	0.147	+	.	ID=A0A649V088_pocket11;Parent=A0A649V088;druggability_score=0.147;druggability_tier=low
 A0A649V088	fpocket	binding_site	1	291	0.073	+	.	ID=A0A649V088_pocket5;Parent=A0A649V088;druggability_score=0.073;druggability_tier=low
@@ -1704,7 +1705,7 @@ A0A649V088	fpocket	binding_site	1	291	0	+	.	ID=A0A649V088_pocket7;Parent=A0A649V
 A0A649V088	fpocket	binding_site	1	291	0	+	.	ID=A0A649V088_pocket8;Parent=A0A649V088;druggability_score=0.000;druggability_tier=low
 A0A649V088	fpocket	binding_site	1	291	0	+	.	ID=A0A649V088_pocket10;Parent=A0A649V088;druggability_score=0.000;druggability_tier=low
 A0A649V088	fpocket	binding_site	1	291	0	+	.	ID=A0A649V088_pocket13;Parent=A0A649V088;druggability_score=0.000;druggability_tier=low
-P28585	ResistAI	gene	1	291	.	+	.	ID=P28585;Name=bla;organism=Escherichia coli
+P28585	ResistAI	gene	1	291	.	+	.	ID=P28585;Name=bla;organism=Escherichia coli;db_xref=ResistAI;UniProt:P28585;EMBL:X92506;coordinate_type=amino_acid
 P28585	ResistAI	CDS	1	291	.	+	0	ID=P28585_CDS;Parent=P28585;product=antibiotic_resistance_protein
 P28585	fpocket	binding_site	1	291	0.716	+	.	ID=P28585_pocket3;Parent=P28585;druggability_score=0.716;druggability_tier=high
 P28585	fpocket	binding_site	1	291	0.072	+	.	ID=P28585_pocket1;Parent=P28585;druggability_score=0.072;druggability_tier=low
@@ -1722,7 +1723,7 @@ P28585	fpocket	binding_site	1	291	0	+	.	ID=P28585_pocket11;Parent=P28585;druggab
 P28585	fpocket	binding_site	1	291	0	+	.	ID=P28585_pocket12;Parent=P28585;druggability_score=0.000;druggability_tier=low
 P28585	fpocket	binding_site	1	291	0	+	.	ID=P28585_pocket13;Parent=P28585;druggability_score=0.000;druggability_tier=low
 P28585	fpocket	binding_site	1	291	0	+	.	ID=P28585_pocket14;Parent=P28585;druggability_score=0.000;druggability_tier=low
-A0A5R8T042	ResistAI	gene	1	291	.	+	.	ID=A0A5R8T042;Name=bla;organism=Escherichia coli O25b:H4
+A0A5R8T042	ResistAI	gene	1	291	.	+	.	ID=A0A5R8T042;Name=bla;organism=Escherichia coli O25b:H4;db_xref=ResistAI;UniProt:A0A5R8T042;EMBL:SEWA01000006;coordinate_type=amino_acid
 A0A5R8T042	ResistAI	CDS	1	291	.	+	0	ID=A0A5R8T042_CDS;Parent=A0A5R8T042;product=antibiotic_resistance_protein
 A0A5R8T042	fpocket	binding_site	1	291	0.773	+	.	ID=A0A5R8T042_pocket1;Parent=A0A5R8T042;druggability_score=0.773;druggability_tier=high
 A0A5R8T042	fpocket	binding_site	1	291	0.092	+	.	ID=A0A5R8T042_pocket2;Parent=A0A5R8T042;druggability_score=0.092;druggability_tier=low
@@ -1739,7 +1740,7 @@ A0A5R8T042	fpocket	binding_site	1	291	0	+	.	ID=A0A5R8T042_pocket7;Parent=A0A5R8T
 A0A5R8T042	fpocket	binding_site	1	291	0	+	.	ID=A0A5R8T042_pocket10;Parent=A0A5R8T042;druggability_score=0.000;druggability_tier=low
 A0A5R8T042	fpocket	binding_site	1	291	0	+	.	ID=A0A5R8T042_pocket11;Parent=A0A5R8T042;druggability_score=0.000;druggability_tier=low
 A0A5R8T042	fpocket	binding_site	1	291	0	+	.	ID=A0A5R8T042_pocket15;Parent=A0A5R8T042;druggability_score=0.000;druggability_tier=low
-Q47066	ResistAI	gene	1	291	.	+	.	ID=Q47066;Name=bla;organism=Escherichia coli
+Q47066	ResistAI	gene	1	291	.	+	.	ID=Q47066;Name=bla;organism=Escherichia coli;db_xref=ResistAI;UniProt:Q47066;EMBL:D37830;coordinate_type=amino_acid
 Q47066	ResistAI	CDS	1	291	.	+	0	ID=Q47066_CDS;Parent=Q47066;product=antibiotic_resistance_protein
 Q47066	fpocket	binding_site	1	291	0.379	+	.	ID=Q47066_pocket8;Parent=Q47066;druggability_score=0.379;druggability_tier=low
 Q47066	fpocket	binding_site	1	291	0.078	+	.	ID=Q47066_pocket14;Parent=Q47066;druggability_score=0.078;druggability_tier=low
@@ -1761,7 +1762,7 @@ Q47066	fpocket	binding_site	1	291	0	+	.	ID=Q47066_pocket4;Parent=Q47066;druggabi
 Q47066	fpocket	binding_site	1	291	0	+	.	ID=Q47066_pocket10;Parent=Q47066;druggability_score=0.000;druggability_tier=low
 Q47066	fpocket	binding_site	1	291	0	+	.	ID=Q47066_pocket16;Parent=Q47066;druggability_score=0.000;druggability_tier=low
 Q47066	fpocket	binding_site	1	291	0	+	.	ID=Q47066_pocket20;Parent=Q47066;druggability_score=0.000;druggability_tier=low
-P0C002	ResistAI	gene	1	279	.	+	.	ID=P0C002;Name=sul1;organism=Escherichia coli
+P0C002	ResistAI	gene	1	279	.	+	.	ID=P0C002;Name=sul1;organism=Escherichia coli;db_xref=ResistAI;UniProt:P0C002;EMBL:X12868;coordinate_type=amino_acid
 P0C002	ResistAI	CDS	1	279	.	+	0	ID=P0C002_CDS;Parent=P0C002;product=antibiotic_resistance_protein
 P0C002	fpocket	binding_site	1	279	0.879	+	.	ID=P0C002_pocket3;Parent=P0C002;druggability_score=0.879;druggability_tier=high
 P0C002	fpocket	binding_site	1	279	0.115	+	.	ID=P0C002_pocket1;Parent=P0C002;druggability_score=0.115;druggability_tier=low
@@ -1780,13 +1781,13 @@ P0C002	fpocket	binding_site	1	279	0.001	+	.	ID=P0C002_pocket15;Parent=P0C002;dru
 P0C002	fpocket	binding_site	1	279	0	+	.	ID=P0C002_pocket5;Parent=P0C002;druggability_score=0.000;druggability_tier=low
 P0C002	fpocket	binding_site	1	279	0	+	.	ID=P0C002_pocket16;Parent=P0C002;druggability_score=0.000;druggability_tier=low
 P0C002	fpocket	binding_site	1	279	0	+	.	ID=P0C002_pocket17;Parent=P0C002;druggability_score=0.000;druggability_tier=low
-P0CF06	ResistAI	gene	1	91	.	+	.	ID=P0CF06;Name=Insertion;organism=Escherichia coli
+P0CF06	ResistAI	gene	1	91	.	+	.	ID=P0CF06;Name=Insertion;organism=Escherichia coli;db_xref=ResistAI;UniProt:P0CF06;EMBL:V00609;coordinate_type=amino_acid
 P0CF06	ResistAI	CDS	1	91	.	+	0	ID=P0CF06_CDS;Parent=P0CF06;product=antibiotic_resistance_protein
 P0CF06	fpocket	binding_site	1	91	0.265	+	.	ID=P0CF06_pocket1;Parent=P0CF06;druggability_score=0.265;druggability_tier=low
 P0CF06	fpocket	binding_site	1	91	0.163	+	.	ID=P0CF06_pocket3;Parent=P0CF06;druggability_score=0.163;druggability_tier=low
 P0CF06	fpocket	binding_site	1	91	0	+	.	ID=P0CF06_pocket2;Parent=P0CF06;druggability_score=0.000;druggability_tier=low
 P0CF06	fpocket	binding_site	1	91	0	+	.	ID=P0CF06_pocket4;Parent=P0CF06;druggability_score=0.000;druggability_tier=low
-P35804	ResistAI	gene	1	201	.	+	.	ID=P35804;Name=Beta-lactamase;organism=Streptomyces clavuligerus
+P35804	ResistAI	gene	1	201	.	+	.	ID=P35804;Name=Beta-lactamase;organism=Streptomyces clavuligerus;db_xref=ResistAI;UniProt:P35804;EMBL:M34538;coordinate_type=amino_acid
 P35804	ResistAI	CDS	1	201	.	+	0	ID=P35804_CDS;Parent=P35804;product=antibiotic_resistance_protein
 P35804	fpocket	binding_site	1	201	0.418	+	.	ID=P35804_pocket2;Parent=P35804;druggability_score=0.418;druggability_tier=medium
 P35804	fpocket	binding_site	1	201	0.313	+	.	ID=P35804_pocket7;Parent=P35804;druggability_score=0.313;druggability_tier=low
@@ -1796,7 +1797,7 @@ P35804	fpocket	binding_site	1	201	0	+	.	ID=P35804_pocket1;Parent=P35804;druggabi
 P35804	fpocket	binding_site	1	201	0	+	.	ID=P35804_pocket3;Parent=P35804;druggability_score=0.000;druggability_tier=low
 P35804	fpocket	binding_site	1	201	0	+	.	ID=P35804_pocket5;Parent=P35804;druggability_score=0.000;druggability_tier=low
 P35804	fpocket	binding_site	1	201	0	+	.	ID=P35804_pocket8;Parent=P35804;druggability_score=0.000;druggability_tier=low
-P05192	ResistAI	gene	1	279	.	+	.	ID=P05192;Name=Beta-lactamase;organism=Klebsiella pneumoniae
+P05192	ResistAI	gene	1	279	.	+	.	ID=P05192;Name=Beta-lactamase;organism=Klebsiella pneumoniae;db_xref=ResistAI;UniProt:P05192;EMBL:X04515;coordinate_type=amino_acid
 P05192	ResistAI	CDS	1	279	.	+	0	ID=P05192_CDS;Parent=P05192;product=antibiotic_resistance_protein
 P05192	fpocket	binding_site	1	279	0.388	+	.	ID=P05192_pocket2;Parent=P05192;druggability_score=0.388;druggability_tier=low
 P05192	fpocket	binding_site	1	279	0.126	+	.	ID=P05192_pocket5;Parent=P05192;druggability_score=0.126;druggability_tier=low
@@ -1808,7 +1809,7 @@ P05192	fpocket	binding_site	1	279	0.001	+	.	ID=P05192_pocket4;Parent=P05192;drug
 P05192	fpocket	binding_site	1	279	0.001	+	.	ID=P05192_pocket7;Parent=P05192;druggability_score=0.001;druggability_tier=low
 P05192	fpocket	binding_site	1	279	0	+	.	ID=P05192_pocket1;Parent=P05192;druggability_score=0.000;druggability_tier=low
 P05192	fpocket	binding_site	1	279	0	+	.	ID=P05192_pocket9;Parent=P05192;druggability_score=0.000;druggability_tier=low
-P05364	ResistAI	gene	1	381	.	+	.	ID=P05364;Name=ampC;organism=Enterobacter cloacae
+P05364	ResistAI	gene	1	381	.	+	.	ID=P05364;Name=ampC;organism=Enterobacter cloacae;db_xref=ResistAI;UniProt:P05364;EMBL:X07274;coordinate_type=amino_acid
 P05364	ResistAI	CDS	1	381	.	+	0	ID=P05364_CDS;Parent=P05364;product=antibiotic_resistance_protein
 P05364	fpocket	binding_site	1	381	0.551	+	.	ID=P05364_pocket1;Parent=P05364;druggability_score=0.551;druggability_tier=medium
 P05364	fpocket	binding_site	1	381	0.057	+	.	ID=P05364_pocket3;Parent=P05364;druggability_score=0.057;druggability_tier=low
@@ -1827,7 +1828,7 @@ P05364	fpocket	binding_site	1	381	0	+	.	ID=P05364_pocket12;Parent=P05364;druggab
 P05364	fpocket	binding_site	1	381	0	+	.	ID=P05364_pocket13;Parent=P05364;druggability_score=0.000;druggability_tier=low
 P05364	fpocket	binding_site	1	381	0	+	.	ID=P05364_pocket15;Parent=P05364;druggability_score=0.000;druggability_tier=low
 P05364	fpocket	binding_site	1	381	0	+	.	ID=P05364_pocket17;Parent=P05364;druggability_score=0.000;druggability_tier=low
-Q99QC1	ResistAI	gene	1	382	.	+	.	ID=Q99QC1;Name=blaCMY-10;organism=Klebsiella aerogenes
+Q99QC1	ResistAI	gene	1	382	.	+	.	ID=Q99QC1;Name=blaCMY-10;organism=Klebsiella aerogenes;db_xref=ResistAI;UniProt:Q99QC1;EMBL:AF357598;coordinate_type=amino_acid
 Q99QC1	ResistAI	CDS	1	382	.	+	0	ID=Q99QC1_CDS;Parent=Q99QC1;product=antibiotic_resistance_protein
 Q99QC1	fpocket	binding_site	1	382	0.568	+	.	ID=Q99QC1_pocket1;Parent=Q99QC1;druggability_score=0.568;druggability_tier=medium
 Q99QC1	fpocket	binding_site	1	382	0.391	+	.	ID=Q99QC1_pocket4;Parent=Q99QC1;druggability_score=0.391;druggability_tier=low
@@ -1849,7 +1850,7 @@ Q99QC1	fpocket	binding_site	1	382	0	+	.	ID=Q99QC1_pocket15;Parent=Q99QC1;druggab
 Q99QC1	fpocket	binding_site	1	382	0	+	.	ID=Q99QC1_pocket16;Parent=Q99QC1;druggability_score=0.000;druggability_tier=low
 Q99QC1	fpocket	binding_site	1	382	0	+	.	ID=Q99QC1_pocket17;Parent=Q99QC1;druggability_score=0.000;druggability_tier=low
 Q99QC1	fpocket	binding_site	1	382	0	+	.	ID=Q99QC1_pocket20;Parent=Q99QC1;druggability_score=0.000;druggability_tier=low
-P9WIE5	ResistAI	gene	1	740	.	+	.	ID=P9WIE5;Name=katG;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WIE5	ResistAI	gene	1	740	.	+	.	ID=P9WIE5;Name=katG;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WIE5;EMBL:X68081;coordinate_type=amino_acid
 P9WIE5	ResistAI	CDS	1	740	.	+	0	ID=P9WIE5_CDS;Parent=P9WIE5;product=antibiotic_resistance_protein
 P9WIE5	fpocket	binding_site	1	740	0.908	+	.	ID=P9WIE5_pocket25;Parent=P9WIE5;druggability_score=0.908;druggability_tier=high
 P9WIE5	fpocket	binding_site	1	740	0.852	+	.	ID=P9WIE5_pocket3;Parent=P9WIE5;druggability_score=0.852;druggability_tier=high
@@ -1896,7 +1897,7 @@ P9WIE5	fpocket	binding_site	1	740	0	+	.	ID=P9WIE5_pocket30;Parent=P9WIE5;druggab
 P9WIE5	fpocket	binding_site	1	740	0	+	.	ID=P9WIE5_pocket35;Parent=P9WIE5;druggability_score=0.000;druggability_tier=low
 P9WIE5	fpocket	binding_site	1	740	0	+	.	ID=P9WIE5_pocket37;Parent=P9WIE5;druggability_score=0.000;druggability_tier=low
 P9WIE5	fpocket	binding_site	1	740	0	+	.	ID=P9WIE5_pocket41;Parent=P9WIE5;druggability_score=0.000;druggability_tier=low
-P9WIE4	ResistAI	gene	1	740	.	+	.	ID=P9WIE4;Name=katG;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)
+P9WIE4	ResistAI	gene	1	740	.	+	.	ID=P9WIE4;Name=katG;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh);db_xref=ResistAI;UniProt:P9WIE4;EMBL:AE000516;coordinate_type=amino_acid
 P9WIE4	ResistAI	CDS	1	740	.	+	0	ID=P9WIE4_CDS;Parent=P9WIE4;product=antibiotic_resistance_protein
 P9WIE4	fpocket	binding_site	1	740	0.908	+	.	ID=P9WIE4_pocket25;Parent=P9WIE4;druggability_score=0.908;druggability_tier=high
 P9WIE4	fpocket	binding_site	1	740	0.852	+	.	ID=P9WIE4_pocket3;Parent=P9WIE4;druggability_score=0.852;druggability_tier=high
@@ -1943,7 +1944,7 @@ P9WIE4	fpocket	binding_site	1	740	0	+	.	ID=P9WIE4_pocket30;Parent=P9WIE4;druggab
 P9WIE4	fpocket	binding_site	1	740	0	+	.	ID=P9WIE4_pocket35;Parent=P9WIE4;druggability_score=0.000;druggability_tier=low
 P9WIE4	fpocket	binding_site	1	740	0	+	.	ID=P9WIE4_pocket37;Parent=P9WIE4;druggability_score=0.000;druggability_tier=low
 P9WIE4	fpocket	binding_site	1	740	0	+	.	ID=P9WIE4_pocket41;Parent=P9WIE4;druggability_score=0.000;druggability_tier=low
-P46817	ResistAI	gene	1	740	.	+	.	ID=P46817;Name=katG;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)
+P46817	ResistAI	gene	1	740	.	+	.	ID=P46817;Name=katG;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97);db_xref=ResistAI;UniProt:P46817;EMBL:X83277;coordinate_type=amino_acid
 P46817	ResistAI	CDS	1	740	.	+	0	ID=P46817_CDS;Parent=P46817;product=antibiotic_resistance_protein
 P46817	fpocket	binding_site	1	740	0.908	+	.	ID=P46817_pocket25;Parent=P46817;druggability_score=0.908;druggability_tier=high
 P46817	fpocket	binding_site	1	740	0.852	+	.	ID=P46817_pocket3;Parent=P46817;druggability_score=0.852;druggability_tier=high
@@ -1990,7 +1991,7 @@ P46817	fpocket	binding_site	1	740	0	+	.	ID=P46817_pocket30;Parent=P46817;druggab
 P46817	fpocket	binding_site	1	740	0	+	.	ID=P46817_pocket35;Parent=P46817;druggability_score=0.000;druggability_tier=low
 P46817	fpocket	binding_site	1	740	0	+	.	ID=P46817_pocket37;Parent=P46817;druggability_score=0.000;druggability_tier=low
 P46817	fpocket	binding_site	1	740	0	+	.	ID=P46817_pocket41;Parent=P46817;druggability_score=0.000;druggability_tier=low
-P9WGR1	ResistAI	gene	1	269	.	+	.	ID=P9WGR1;Name=inhA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WGR1	ResistAI	gene	1	269	.	+	.	ID=P9WGR1;Name=inhA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WGR1;EMBL:U02492;coordinate_type=amino_acid
 P9WGR1	ResistAI	CDS	1	269	.	+	0	ID=P9WGR1_CDS;Parent=P9WGR1;product=antibiotic_resistance_protein
 P9WGR1	fpocket	binding_site	1	269	0.983	+	.	ID=P9WGR1_pocket1;Parent=P9WGR1;druggability_score=0.983;druggability_tier=high
 P9WGR1	fpocket	binding_site	1	269	0.663	+	.	ID=P9WGR1_pocket10;Parent=P9WGR1;druggability_score=0.663;druggability_tier=medium
@@ -2006,7 +2007,7 @@ P9WGR1	fpocket	binding_site	1	269	0.001	+	.	ID=P9WGR1_pocket2;Parent=P9WGR1;drug
 P9WGR1	fpocket	binding_site	1	269	0.001	+	.	ID=P9WGR1_pocket6;Parent=P9WGR1;druggability_score=0.001;druggability_tier=low
 P9WGR1	fpocket	binding_site	1	269	0	+	.	ID=P9WGR1_pocket3;Parent=P9WGR1;druggability_score=0.000;druggability_tier=low
 P9WGR1	fpocket	binding_site	1	269	0	+	.	ID=P9WGR1_pocket4;Parent=P9WGR1;druggability_score=0.000;druggability_tier=low
-A0QXX7	ResistAI	gene	1	748	.	+	.	ID=A0QXX7;Name=katG2;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+A0QXX7	ResistAI	gene	1	748	.	+	.	ID=A0QXX7;Name=katG2;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:A0QXX7;EMBL:AJ311851;coordinate_type=amino_acid
 A0QXX7	ResistAI	CDS	1	748	.	+	0	ID=A0QXX7_CDS;Parent=A0QXX7;product=antibiotic_resistance_protein
 A0QXX7	fpocket	binding_site	1	748	0.855	+	.	ID=A0QXX7_pocket32;Parent=A0QXX7;druggability_score=0.855;druggability_tier=high
 A0QXX7	fpocket	binding_site	1	748	0.338	+	.	ID=A0QXX7_pocket6;Parent=A0QXX7;druggability_score=0.338;druggability_tier=low
@@ -2040,7 +2041,7 @@ A0QXX7	fpocket	binding_site	1	748	0	+	.	ID=A0QXX7_pocket23;Parent=A0QXX7;druggab
 A0QXX7	fpocket	binding_site	1	748	0	+	.	ID=A0QXX7_pocket25;Parent=A0QXX7;druggability_score=0.000;druggability_tier=low
 A0QXX7	fpocket	binding_site	1	748	0	+	.	ID=A0QXX7_pocket28;Parent=A0QXX7;druggability_score=0.000;druggability_tier=low
 A0QXX7	fpocket	binding_site	1	748	0	+	.	ID=A0QXX7_pocket29;Parent=A0QXX7;druggability_score=0.000;druggability_tier=low
-P9WQB7	ResistAI	gene	1	195	.	+	.	ID=P9WQB7;Name=ahpC;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WQB7	ResistAI	gene	1	195	.	+	.	ID=P9WQB7;Name=ahpC;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WQB7;EMBL:U18264;coordinate_type=amino_acid
 P9WQB7	ResistAI	CDS	1	195	.	+	0	ID=P9WQB7_CDS;Parent=P9WQB7;product=antibiotic_resistance_protein
 P9WQB7	fpocket	binding_site	1	195	0.288	+	.	ID=P9WQB7_pocket2;Parent=P9WQB7;druggability_score=0.288;druggability_tier=low
 P9WQB7	fpocket	binding_site	1	195	0.002	+	.	ID=P9WQB7_pocket3;Parent=P9WQB7;druggability_score=0.002;druggability_tier=low
@@ -2053,7 +2054,7 @@ P9WQB7	fpocket	binding_site	1	195	0	+	.	ID=P9WQB7_pocket7;Parent=P9WQB7;druggabi
 P9WQB7	fpocket	binding_site	1	195	0	+	.	ID=P9WQB7_pocket8;Parent=P9WQB7;druggability_score=0.000;druggability_tier=low
 P9WQB7	fpocket	binding_site	1	195	0	+	.	ID=P9WQB7_pocket10;Parent=P9WQB7;druggability_score=0.000;druggability_tier=low
 P9WQB7	fpocket	binding_site	1	195	0	+	.	ID=P9WQB7_pocket11;Parent=P9WQB7;druggability_score=0.000;druggability_tier=low
-P42829	ResistAI	gene	1	269	.	+	.	ID=P42829;Name=inhA;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+P42829	ResistAI	gene	1	269	.	+	.	ID=P42829;Name=inhA;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:P42829;EMBL:U02530;coordinate_type=amino_acid
 P42829	ResistAI	CDS	1	269	.	+	0	ID=P42829_CDS;Parent=P42829;product=antibiotic_resistance_protein
 P42829	fpocket	binding_site	1	269	0.973	+	.	ID=P42829_pocket12;Parent=P42829;druggability_score=0.973;druggability_tier=high
 P42829	fpocket	binding_site	1	269	0.599	+	.	ID=P42829_pocket3;Parent=P42829;druggability_score=0.599;druggability_tier=medium
@@ -2070,7 +2071,7 @@ P42829	fpocket	binding_site	1	269	0.001	+	.	ID=P42829_pocket14;Parent=P42829;dru
 P42829	fpocket	binding_site	1	269	0	+	.	ID=P42829_pocket1;Parent=P42829;druggability_score=0.000;druggability_tier=low
 P42829	fpocket	binding_site	1	269	0	+	.	ID=P42829_pocket2;Parent=P42829;druggability_score=0.000;druggability_tier=low
 P42829	fpocket	binding_site	1	269	0	+	.	ID=P42829_pocket6;Parent=P42829;druggability_score=0.000;druggability_tier=low
-P9WGR0	ResistAI	gene	1	269	.	+	.	ID=P9WGR0;Name=inhA;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh)
+P9WGR0	ResistAI	gene	1	269	.	+	.	ID=P9WGR0;Name=inhA;organism=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh);db_xref=ResistAI;UniProt:P9WGR0;EMBL:AE000516;coordinate_type=amino_acid
 P9WGR0	ResistAI	CDS	1	269	.	+	0	ID=P9WGR0_CDS;Parent=P9WGR0;product=antibiotic_resistance_protein
 P9WGR0	fpocket	binding_site	1	269	0.983	+	.	ID=P9WGR0_pocket1;Parent=P9WGR0;druggability_score=0.983;druggability_tier=high
 P9WGR0	fpocket	binding_site	1	269	0.663	+	.	ID=P9WGR0_pocket10;Parent=P9WGR0;druggability_score=0.663;druggability_tier=medium
@@ -2086,9 +2087,9 @@ P9WGR0	fpocket	binding_site	1	269	0.001	+	.	ID=P9WGR0_pocket2;Parent=P9WGR0;drug
 P9WGR0	fpocket	binding_site	1	269	0.001	+	.	ID=P9WGR0_pocket6;Parent=P9WGR0;druggability_score=0.001;druggability_tier=low
 P9WGR0	fpocket	binding_site	1	269	0	+	.	ID=P9WGR0_pocket3;Parent=P9WGR0;druggability_score=0.000;druggability_tier=low
 P9WGR0	fpocket	binding_site	1	269	0	+	.	ID=P9WGR0_pocket4;Parent=P9WGR0;druggability_score=0.000;druggability_tier=low
-A0R609	ResistAI	gene	1	739	.	+	.	ID=A0R609;Name=katG1;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+A0R609	ResistAI	gene	1	739	.	+	.	ID=A0R609;Name=katG1;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:A0R609;EMBL:X98718;coordinate_type=amino_acid
 A0R609	ResistAI	CDS	1	739	.	+	0	ID=A0R609_CDS;Parent=A0R609;product=antibiotic_resistance_protein
-P0A5Y7	ResistAI	gene	1	269	.	+	.	ID=P0A5Y7;Name=inhA;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)
+P0A5Y7	ResistAI	gene	1	269	.	+	.	ID=P0A5Y7;Name=inhA;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97);db_xref=ResistAI;UniProt:P0A5Y7;EMBL:U41388;coordinate_type=amino_acid
 P0A5Y7	ResistAI	CDS	1	269	.	+	0	ID=P0A5Y7_CDS;Parent=P0A5Y7;product=antibiotic_resistance_protein
 P0A5Y7	fpocket	binding_site	1	269	0.983	+	.	ID=P0A5Y7_pocket1;Parent=P0A5Y7;druggability_score=0.983;druggability_tier=high
 P0A5Y7	fpocket	binding_site	1	269	0.663	+	.	ID=P0A5Y7_pocket10;Parent=P0A5Y7;druggability_score=0.663;druggability_tier=medium
@@ -2104,7 +2105,7 @@ P0A5Y7	fpocket	binding_site	1	269	0.001	+	.	ID=P0A5Y7_pocket2;Parent=P0A5Y7;drug
 P0A5Y7	fpocket	binding_site	1	269	0.001	+	.	ID=P0A5Y7_pocket6;Parent=P0A5Y7;druggability_score=0.001;druggability_tier=low
 P0A5Y7	fpocket	binding_site	1	269	0	+	.	ID=P0A5Y7_pocket3;Parent=P0A5Y7;druggability_score=0.000;druggability_tier=low
 P0A5Y7	fpocket	binding_site	1	269	0	+	.	ID=P0A5Y7_pocket4;Parent=P0A5Y7;druggability_score=0.000;druggability_tier=low
-P0A5Y5	ResistAI	gene	1	247	.	+	.	ID=P0A5Y5;Name=mabA;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97)
+P0A5Y5	ResistAI	gene	1	247	.	+	.	ID=P0A5Y5;Name=mabA;organism=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97);db_xref=ResistAI;UniProt:P0A5Y5;EMBL:U41388;coordinate_type=amino_acid
 P0A5Y5	ResistAI	CDS	1	247	.	+	0	ID=P0A5Y5_CDS;Parent=P0A5Y5;product=antibiotic_resistance_protein
 P0A5Y5	fpocket	binding_site	1	247	0.787	+	.	ID=P0A5Y5_pocket11;Parent=P0A5Y5;druggability_score=0.787;druggability_tier=high
 P0A5Y5	fpocket	binding_site	1	247	0.089	+	.	ID=P0A5Y5_pocket5;Parent=P0A5Y5;druggability_score=0.089;druggability_tier=low
@@ -2123,7 +2124,7 @@ P0A5Y5	fpocket	binding_site	1	247	0	+	.	ID=P0A5Y5_pocket8;Parent=P0A5Y5;druggabi
 P0A5Y5	fpocket	binding_site	1	247	0	+	.	ID=P0A5Y5_pocket10;Parent=P0A5Y5;druggability_score=0.000;druggability_tier=low
 P0A5Y5	fpocket	binding_site	1	247	0	+	.	ID=P0A5Y5_pocket14;Parent=P0A5Y5;druggability_score=0.000;druggability_tier=low
 P0A5Y5	fpocket	binding_site	1	247	0	+	.	ID=P0A5Y5_pocket16;Parent=P0A5Y5;druggability_score=0.000;druggability_tier=low
-P9WGT3	ResistAI	gene	1	247	.	+	.	ID=P9WGT3;Name=mabA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WGT3	ResistAI	gene	1	247	.	+	.	ID=P9WGT3;Name=mabA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WGT3;EMBL:U66801;coordinate_type=amino_acid
 P9WGT3	ResistAI	CDS	1	247	.	+	0	ID=P9WGT3_CDS;Parent=P9WGT3;product=antibiotic_resistance_protein
 P9WGT3	fpocket	binding_site	1	247	0.787	+	.	ID=P9WGT3_pocket11;Parent=P9WGT3;druggability_score=0.787;druggability_tier=high
 P9WGT3	fpocket	binding_site	1	247	0.089	+	.	ID=P9WGT3_pocket5;Parent=P9WGT3;druggability_score=0.089;druggability_tier=low
@@ -2142,7 +2143,7 @@ P9WGT3	fpocket	binding_site	1	247	0	+	.	ID=P9WGT3_pocket8;Parent=P9WGT3;druggabi
 P9WGT3	fpocket	binding_site	1	247	0	+	.	ID=P9WGT3_pocket10;Parent=P9WGT3;druggability_score=0.000;druggability_tier=low
 P9WGT3	fpocket	binding_site	1	247	0	+	.	ID=P9WGT3_pocket14;Parent=P9WGT3;druggability_score=0.000;druggability_tier=low
 P9WGT3	fpocket	binding_site	1	247	0	+	.	ID=P9WGT3_pocket16;Parent=P9WGT3;druggability_score=0.000;druggability_tier=low
-P9WGY9	ResistAI	gene	1	1178	.	+	.	ID=P9WGY9;Name=rpoB;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WGY9	ResistAI	gene	1	1178	.	+	.	ID=P9WGY9;Name=rpoB;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WGY9;EMBL:L27989;coordinate_type=amino_acid
 P9WGY9	ResistAI	CDS	1	1178	.	+	0	ID=P9WGY9_CDS;Parent=P9WGY9;product=antibiotic_resistance_protein
 P9WGY9	fpocket	binding_site	1	1178	0.287	+	.	ID=P9WGY9_pocket34;Parent=P9WGY9;druggability_score=0.287;druggability_tier=low
 P9WGY9	fpocket	binding_site	1	1178	0.159	+	.	ID=P9WGY9_pocket32;Parent=P9WGY9;druggability_score=0.159;druggability_tier=low
@@ -2178,7 +2179,7 @@ P9WGY9	fpocket	binding_site	1	1178	0	+	.	ID=P9WGY9_pocket24;Parent=P9WGY9;drugga
 P9WGY9	fpocket	binding_site	1	1178	0	+	.	ID=P9WGY9_pocket26;Parent=P9WGY9;druggability_score=0.000;druggability_tier=low
 P9WGY9	fpocket	binding_site	1	1178	0	+	.	ID=P9WGY9_pocket27;Parent=P9WGY9;druggability_score=0.000;druggability_tier=low
 P9WGY9	fpocket	binding_site	1	1178	0	+	.	ID=P9WGY9_pocket28;Parent=P9WGY9;druggability_score=0.000;druggability_tier=low
-P60281	ResistAI	gene	1	1169	.	+	.	ID=P60281;Name=rpoB;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+P60281	ResistAI	gene	1	1169	.	+	.	ID=P60281;Name=rpoB;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:P60281;EMBL:AJ605718;coordinate_type=amino_acid
 P60281	ResistAI	CDS	1	1169	.	+	0	ID=P60281_CDS;Parent=P60281;product=antibiotic_resistance_protein
 P60281	fpocket	binding_site	1	1169	0.5	+	.	ID=P60281_pocket32;Parent=P60281;druggability_score=0.500;druggability_tier=medium
 P60281	fpocket	binding_site	1	1169	0.395	+	.	ID=P60281_pocket22;Parent=P60281;druggability_score=0.395;druggability_tier=low
@@ -2212,9 +2213,9 @@ P60281	fpocket	binding_site	1	1169	0	+	.	ID=P60281_pocket25;Parent=P60281;drugga
 P60281	fpocket	binding_site	1	1169	0	+	.	ID=P60281_pocket26;Parent=P60281;druggability_score=0.000;druggability_tier=low
 P60281	fpocket	binding_site	1	1169	0	+	.	ID=P60281_pocket28;Parent=P60281;druggability_score=0.000;druggability_tier=low
 P60281	fpocket	binding_site	1	1169	0	+	.	ID=P60281_pocket31;Parent=P60281;druggability_score=0.000;druggability_tier=low
-P9WMQ5	ResistAI	gene	1	1234	.	+	.	ID=P9WMQ5;Name=mfd;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WMQ5	ResistAI	gene	1	1234	.	+	.	ID=P9WMQ5;Name=mfd;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WMQ5;EMBL:AL123456;coordinate_type=amino_acid
 P9WMQ5	ResistAI	CDS	1	1234	.	+	0	ID=P9WMQ5_CDS;Parent=P9WMQ5;product=antibiotic_resistance_protein
-A0QUE0	ResistAI	gene	1	736	.	+	.	ID=A0QUE0;Name=helR;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+A0QUE0	ResistAI	gene	1	736	.	+	.	ID=A0QUE0;Name=helR;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:A0QUE0;EMBL:CP000480;coordinate_type=amino_acid
 A0QUE0	ResistAI	CDS	1	736	.	+	0	ID=A0QUE0_CDS;Parent=A0QUE0;product=antibiotic_resistance_protein
 A0QUE0	fpocket	binding_site	1	736	0.477	+	.	ID=A0QUE0_pocket9;Parent=A0QUE0;druggability_score=0.477;druggability_tier=medium
 A0QUE0	fpocket	binding_site	1	736	0.157	+	.	ID=A0QUE0_pocket6;Parent=A0QUE0;druggability_score=0.157;druggability_tier=low
@@ -2245,7 +2246,7 @@ A0QUE0	fpocket	binding_site	1	736	0	+	.	ID=A0QUE0_pocket5;Parent=A0QUE0;druggabi
 A0QUE0	fpocket	binding_site	1	736	0	+	.	ID=A0QUE0_pocket10;Parent=A0QUE0;druggability_score=0.000;druggability_tier=low
 A0QUE0	fpocket	binding_site	1	736	0	+	.	ID=A0QUE0_pocket13;Parent=A0QUE0;druggability_score=0.000;druggability_tier=low
 A0QUE0	fpocket	binding_site	1	736	0	+	.	ID=A0QUE0_pocket26;Parent=A0QUE0;druggability_score=0.000;druggability_tier=low
-P9WJG3	ResistAI	gene	1	162	.	+	.	ID=P9WJG3;Name=carD;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WJG3	ResistAI	gene	1	162	.	+	.	ID=P9WJG3;Name=carD;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WJG3;EMBL:AL123456;coordinate_type=amino_acid
 P9WJG3	ResistAI	CDS	1	162	.	+	0	ID=P9WJG3_CDS;Parent=P9WJG3;product=antibiotic_resistance_protein
 P9WJG3	fpocket	binding_site	1	162	0.126	+	.	ID=P9WJG3_pocket9;Parent=P9WJG3;druggability_score=0.126;druggability_tier=low
 P9WJG3	fpocket	binding_site	1	162	0.012	+	.	ID=P9WJG3_pocket1;Parent=P9WJG3;druggability_score=0.012;druggability_tier=low
@@ -2256,7 +2257,7 @@ P9WJG3	fpocket	binding_site	1	162	0.001	+	.	ID=P9WJG3_pocket4;Parent=P9WJG3;drug
 P9WJG3	fpocket	binding_site	1	162	0	+	.	ID=P9WJG3_pocket5;Parent=P9WJG3;druggability_score=0.000;druggability_tier=low
 P9WJG3	fpocket	binding_site	1	162	0	+	.	ID=P9WJG3_pocket6;Parent=P9WJG3;druggability_score=0.000;druggability_tier=low
 P9WJG3	fpocket	binding_site	1	162	0	+	.	ID=P9WJG3_pocket7;Parent=P9WJG3;druggability_score=0.000;druggability_tier=low
-A0R561	ResistAI	gene	1	162	.	+	.	ID=A0R561;Name=carD;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+A0R561	ResistAI	gene	1	162	.	+	.	ID=A0R561;Name=carD;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:A0R561;EMBL:CP000480;coordinate_type=amino_acid
 A0R561	ResistAI	CDS	1	162	.	+	0	ID=A0R561_CDS;Parent=A0R561;product=antibiotic_resistance_protein
 A0R561	fpocket	binding_site	1	162	0.334	+	.	ID=A0R561_pocket2;Parent=A0R561;druggability_score=0.334;druggability_tier=low
 A0R561	fpocket	binding_site	1	162	0.033	+	.	ID=A0R561_pocket3;Parent=A0R561;druggability_score=0.033;druggability_tier=low
@@ -2268,7 +2269,7 @@ A0R561	fpocket	binding_site	1	162	0.003	+	.	ID=A0R561_pocket9;Parent=A0R561;drug
 A0R561	fpocket	binding_site	1	162	0.002	+	.	ID=A0R561_pocket5;Parent=A0R561;druggability_score=0.002;druggability_tier=low
 A0R561	fpocket	binding_site	1	162	0	+	.	ID=A0R561_pocket6;Parent=A0R561;druggability_score=0.000;druggability_tier=low
 A0R561	fpocket	binding_site	1	162	0	+	.	ID=A0R561_pocket10;Parent=A0R561;druggability_score=0.000;druggability_tier=low
-A0QZ11	ResistAI	gene	1	114	.	+	.	ID=A0QZ11;Name=rbpA;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)
+A0QZ11	ResistAI	gene	1	114	.	+	.	ID=A0QZ11;Name=rbpA;organism=Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155);db_xref=ResistAI;UniProt:A0QZ11;EMBL:HQ203032;coordinate_type=amino_acid
 A0QZ11	ResistAI	CDS	1	114	.	+	0	ID=A0QZ11_CDS;Parent=A0QZ11;product=antibiotic_resistance_protein
 A0QZ11	fpocket	binding_site	1	114	0.766	+	.	ID=A0QZ11_pocket10;Parent=A0QZ11;druggability_score=0.766;druggability_tier=high
 A0QZ11	fpocket	binding_site	1	114	0.031	+	.	ID=A0QZ11_pocket9;Parent=A0QZ11;druggability_score=0.031;druggability_tier=low
@@ -2282,7 +2283,7 @@ A0QZ11	fpocket	binding_site	1	114	0.001	+	.	ID=A0QZ11_pocket5;Parent=A0QZ11;drug
 A0QZ11	fpocket	binding_site	1	114	0.001	+	.	ID=A0QZ11_pocket6;Parent=A0QZ11;druggability_score=0.001;druggability_tier=low
 A0QZ11	fpocket	binding_site	1	114	0.001	+	.	ID=A0QZ11_pocket8;Parent=A0QZ11;druggability_score=0.001;druggability_tier=low
 A0QZ11	fpocket	binding_site	1	114	0	+	.	ID=A0QZ11_pocket3;Parent=A0QZ11;druggability_score=0.000;druggability_tier=low
-A0A0R6L508	ResistAI	gene	1	541	.	+	.	ID=A0A0R6L508;Name=mcr1;organism=Escherichia coli
+A0A0R6L508	ResistAI	gene	1	541	.	+	.	ID=A0A0R6L508;Name=mcr1;organism=Escherichia coli;db_xref=ResistAI;UniProt:A0A0R6L508;EMBL:KP347127;coordinate_type=amino_acid
 A0A0R6L508	ResistAI	CDS	1	541	.	+	0	ID=A0A0R6L508_CDS;Parent=A0A0R6L508;product=antibiotic_resistance_protein
 A0A0R6L508	fpocket	binding_site	1	541	0.654	+	.	ID=A0A0R6L508_pocket10;Parent=A0A0R6L508;druggability_score=0.654;druggability_tier=medium
 A0A0R6L508	fpocket	binding_site	1	541	0.607	+	.	ID=A0A0R6L508_pocket16;Parent=A0A0R6L508;druggability_score=0.607;druggability_tier=medium
@@ -2319,7 +2320,7 @@ A0A0R6L508	fpocket	binding_site	1	541	0	+	.	ID=A0A0R6L508_pocket22;Parent=A0A0R6
 A0A0R6L508	fpocket	binding_site	1	541	0	+	.	ID=A0A0R6L508_pocket26;Parent=A0A0R6L508;druggability_score=0.000;druggability_tier=low
 A0A0R6L508	fpocket	binding_site	1	541	0	+	.	ID=A0A0R6L508_pocket28;Parent=A0A0R6L508;druggability_score=0.000;druggability_tier=low
 A0A0R6L508	fpocket	binding_site	1	541	0	+	.	ID=A0A0R6L508_pocket29;Parent=A0A0R6L508;druggability_score=0.000;druggability_tier=low
-A0A1C3NEV1	ResistAI	gene	1	538	.	+	.	ID=A0A1C3NEV1;Name=mcr2;organism=Escherichia coli
+A0A1C3NEV1	ResistAI	gene	1	538	.	+	.	ID=A0A1C3NEV1;Name=mcr2;organism=Escherichia coli;db_xref=ResistAI;UniProt:A0A1C3NEV1;EMBL:LT598652;coordinate_type=amino_acid
 A0A1C3NEV1	ResistAI	CDS	1	538	.	+	0	ID=A0A1C3NEV1_CDS;Parent=A0A1C3NEV1;product=antibiotic_resistance_protein
 A0A1C3NEV1	fpocket	binding_site	1	538	0.457	+	.	ID=A0A1C3NEV1_pocket4;Parent=A0A1C3NEV1;druggability_score=0.457;druggability_tier=medium
 A0A1C3NEV1	fpocket	binding_site	1	538	0.034	+	.	ID=A0A1C3NEV1_pocket25;Parent=A0A1C3NEV1;druggability_score=0.034;druggability_tier=low
@@ -2351,7 +2352,7 @@ A0A1C3NEV1	fpocket	binding_site	1	538	0	+	.	ID=A0A1C3NEV1_pocket21;Parent=A0A1C3
 A0A1C3NEV1	fpocket	binding_site	1	538	0	+	.	ID=A0A1C3NEV1_pocket22;Parent=A0A1C3NEV1;druggability_score=0.000;druggability_tier=low
 A0A1C3NEV1	fpocket	binding_site	1	538	0	+	.	ID=A0A1C3NEV1_pocket26;Parent=A0A1C3NEV1;druggability_score=0.000;druggability_tier=low
 A0A1C3NEV1	fpocket	binding_site	1	538	0	+	.	ID=A0A1C3NEV1_pocket27;Parent=A0A1C3NEV1;druggability_score=0.000;druggability_tier=low
-P9WG47	ResistAI	gene	1	838	.	+	.	ID=P9WG47;Name=gyrA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)
+P9WG47	ResistAI	gene	1	838	.	+	.	ID=P9WG47;Name=gyrA;organism=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv);db_xref=ResistAI;UniProt:P9WG47;EMBL:L27512;coordinate_type=amino_acid
 P9WG47	ResistAI	CDS	1	838	.	+	0	ID=P9WG47_CDS;Parent=P9WG47;product=antibiotic_resistance_protein
 P9WG47	fpocket	binding_site	1	838	0.174	+	.	ID=P9WG47_pocket24;Parent=P9WG47;druggability_score=0.174;druggability_tier=low
 P9WG47	fpocket	binding_site	1	838	0.086	+	.	ID=P9WG47_pocket23;Parent=P9WG47;druggability_score=0.086;druggability_tier=low
@@ -2377,9 +2378,9 @@ P9WG47	fpocket	binding_site	1	838	0	+	.	ID=P9WG47_pocket16;Parent=P9WG47;druggab
 P9WG47	fpocket	binding_site	1	838	0	+	.	ID=P9WG47_pocket17;Parent=P9WG47;druggability_score=0.000;druggability_tier=low
 P9WG47	fpocket	binding_site	1	838	0	+	.	ID=P9WG47_pocket19;Parent=P9WG47;druggability_score=0.000;druggability_tier=low
 P9WG47	fpocket	binding_site	1	838	0	+	.	ID=P9WG47_pocket22;Parent=P9WG47;druggability_score=0.000;druggability_tier=low
-P0AES4	ResistAI	gene	1	875	.	+	.	ID=P0AES4;Name=gyrA;organism=Escherichia coli (strain K12)
+P0AES4	ResistAI	gene	1	875	.	+	.	ID=P0AES4;Name=gyrA;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P0AES4;EMBL:X06373;coordinate_type=amino_acid
 P0AES4	ResistAI	CDS	1	875	.	+	0	ID=P0AES4_CDS;Parent=P0AES4;product=antibiotic_resistance_protein
-P72525	ResistAI	gene	1	823	.	+	.	ID=P72525;Name=parC;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)
+P72525	ResistAI	gene	1	823	.	+	.	ID=P72525;Name=parC;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4);db_xref=ResistAI;UniProt:P72525;EMBL:Z67739;coordinate_type=amino_acid
 P72525	ResistAI	CDS	1	823	.	+	0	ID=P72525_CDS;Parent=P72525;product=antibiotic_resistance_protein
 P72525	fpocket	binding_site	1	823	0.416	+	.	ID=P72525_pocket12;Parent=P72525;druggability_score=0.416;druggability_tier=medium
 P72525	fpocket	binding_site	1	823	0.381	+	.	ID=P72525_pocket3;Parent=P72525;druggability_score=0.381;druggability_tier=low
@@ -2402,7 +2403,7 @@ P72525	fpocket	binding_site	1	823	0	+	.	ID=P72525_pocket15;Parent=P72525;druggab
 P72525	fpocket	binding_site	1	823	0	+	.	ID=P72525_pocket17;Parent=P72525;druggability_score=0.000;druggability_tier=low
 P72525	fpocket	binding_site	1	823	0	+	.	ID=P72525_pocket18;Parent=P72525;druggability_score=0.000;druggability_tier=low
 P72525	fpocket	binding_site	1	823	0	+	.	ID=P72525_pocket21;Parent=P72525;druggability_score=0.000;druggability_tier=low
-Q9L7Q5	ResistAI	gene	1	828	.	+	.	ID=Q9L7Q5;Name=gyrA;organism=Streptococcus pyogenes serotype M1
+Q9L7Q5	ResistAI	gene	1	828	.	+	.	ID=Q9L7Q5;Name=gyrA;organism=Streptococcus pyogenes serotype M1;db_xref=ResistAI;UniProt:Q9L7Q5;EMBL:AF220945;coordinate_type=amino_acid
 Q9L7Q5	ResistAI	CDS	1	828	.	+	0	ID=Q9L7Q5_CDS;Parent=Q9L7Q5;product=antibiotic_resistance_protein
 Q9L7Q5	fpocket	binding_site	1	828	0.429	+	.	ID=Q9L7Q5_pocket22;Parent=Q9L7Q5;druggability_score=0.429;druggability_tier=medium
 Q9L7Q5	fpocket	binding_site	1	828	0.094	+	.	ID=Q9L7Q5_pocket18;Parent=Q9L7Q5;druggability_score=0.094;druggability_tier=low
@@ -2428,9 +2429,9 @@ Q9L7Q5	fpocket	binding_site	1	828	0	+	.	ID=Q9L7Q5_pocket17;Parent=Q9L7Q5;druggab
 Q9L7Q5	fpocket	binding_site	1	828	0	+	.	ID=Q9L7Q5_pocket19;Parent=Q9L7Q5;druggability_score=0.000;druggability_tier=low
 Q9L7Q5	fpocket	binding_site	1	828	0	+	.	ID=Q9L7Q5_pocket21;Parent=Q9L7Q5;druggability_score=0.000;druggability_tier=low
 Q9L7Q5	fpocket	binding_site	1	828	0	+	.	ID=Q9L7Q5_pocket23;Parent=Q9L7Q5;druggability_score=0.000;druggability_tier=low
-P0AES6	ResistAI	gene	1	804	.	+	.	ID=P0AES6;Name=gyrB;organism=Escherichia coli (strain K12)
+P0AES6	ResistAI	gene	1	804	.	+	.	ID=P0AES6;Name=gyrB;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P0AES6;EMBL:X04341;coordinate_type=amino_acid
 P0AES6	ResistAI	CDS	1	804	.	+	0	ID=P0AES6_CDS;Parent=P0AES6;product=antibiotic_resistance_protein
-Q9L7Q4	ResistAI	gene	1	819	.	+	.	ID=Q9L7Q4;Name=parC;organism=Streptococcus pyogenes serotype M1
+Q9L7Q4	ResistAI	gene	1	819	.	+	.	ID=Q9L7Q4;Name=parC;organism=Streptococcus pyogenes serotype M1;db_xref=ResistAI;UniProt:Q9L7Q4;EMBL:AF220946;coordinate_type=amino_acid
 Q9L7Q4	ResistAI	CDS	1	819	.	+	0	ID=Q9L7Q4_CDS;Parent=Q9L7Q4;product=antibiotic_resistance_protein
 Q9L7Q4	fpocket	binding_site	1	819	0.56	+	.	ID=Q9L7Q4_pocket28;Parent=Q9L7Q4;druggability_score=0.560;druggability_tier=medium
 Q9L7Q4	fpocket	binding_site	1	819	0.164	+	.	ID=Q9L7Q4_pocket14;Parent=Q9L7Q4;druggability_score=0.164;druggability_tier=low
@@ -2461,9 +2462,9 @@ Q9L7Q4	fpocket	binding_site	1	819	0	+	.	ID=Q9L7Q4_pocket17;Parent=Q9L7Q4;druggab
 Q9L7Q4	fpocket	binding_site	1	819	0	+	.	ID=Q9L7Q4_pocket21;Parent=Q9L7Q4;druggability_score=0.000;druggability_tier=low
 Q9L7Q4	fpocket	binding_site	1	819	0	+	.	ID=Q9L7Q4_pocket22;Parent=Q9L7Q4;druggability_score=0.000;druggability_tier=low
 Q9L7Q4	fpocket	binding_site	1	819	0	+	.	ID=Q9L7Q4_pocket27;Parent=Q9L7Q4;druggability_score=0.000;druggability_tier=low
-P0A2Y8	ResistAI	gene	1	238	.	+	.	ID=P0A2Y8;Name=atpB;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)
+P0A2Y8	ResistAI	gene	1	238	.	+	.	ID=P0A2Y8;Name=atpB;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4);db_xref=ResistAI;UniProt:P0A2Y8;EMBL:AF171002;coordinate_type=amino_acid
 P0A2Y8	ResistAI	CDS	1	238	.	+	0	ID=P0A2Y8_CDS;Parent=P0A2Y8;product=antibiotic_resistance_protein
-P00484	ResistAI	gene	1	213	.	+	.	ID=P00484;Name=cat3;organism=Escherichia coli
+P00484	ResistAI	gene	1	213	.	+	.	ID=P00484;Name=cat3;organism=Escherichia coli;db_xref=ResistAI;UniProt:P00484;EMBL:X07848;coordinate_type=amino_acid
 P00484	ResistAI	CDS	1	213	.	+	0	ID=P00484_CDS;Parent=P00484;product=antibiotic_resistance_protein
 P00484	fpocket	binding_site	1	213	0.872	+	.	ID=P00484_pocket3;Parent=P00484;druggability_score=0.872;druggability_tier=high
 P00484	fpocket	binding_site	1	213	0.053	+	.	ID=P00484_pocket7;Parent=P00484;druggability_score=0.053;druggability_tier=low
@@ -2480,7 +2481,7 @@ P00484	fpocket	binding_site	1	213	0	+	.	ID=P00484_pocket10;Parent=P00484;druggab
 P00484	fpocket	binding_site	1	213	0	+	.	ID=P00484_pocket12;Parent=P00484;druggability_score=0.000;druggability_tier=low
 P00484	fpocket	binding_site	1	213	0	+	.	ID=P00484_pocket14;Parent=P00484;druggability_score=0.000;druggability_tier=low
 P00484	fpocket	binding_site	1	213	0	+	.	ID=P00484_pocket15;Parent=P00484;druggability_score=0.000;druggability_tier=low
-P36883	ResistAI	gene	1	209	.	+	.	ID=P36883;Name=Chloramphenicol;organism=Staphylococcus aureus
+P36883	ResistAI	gene	1	209	.	+	.	ID=P36883;Name=Chloramphenicol;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P36883;EMBL:M58516;coordinate_type=amino_acid
 P36883	ResistAI	CDS	1	209	.	+	0	ID=P36883_CDS;Parent=P36883;product=antibiotic_resistance_protein
 P36883	fpocket	binding_site	1	209	0.397	+	.	ID=P36883_pocket4;Parent=P36883;druggability_score=0.397;druggability_tier=low
 P36883	fpocket	binding_site	1	209	0.314	+	.	ID=P36883_pocket1;Parent=P36883;druggability_score=0.314;druggability_tier=low
@@ -2494,7 +2495,7 @@ P36883	fpocket	binding_site	1	209	0	+	.	ID=P36883_pocket6;Parent=P36883;druggabi
 P36883	fpocket	binding_site	1	209	0	+	.	ID=P36883_pocket8;Parent=P36883;druggability_score=0.000;druggability_tier=low
 P36883	fpocket	binding_site	1	209	0	+	.	ID=P36883_pocket10;Parent=P36883;druggability_score=0.000;druggability_tier=low
 P36883	fpocket	binding_site	1	209	0	+	.	ID=P36883_pocket11;Parent=P36883;druggability_score=0.000;druggability_tier=low
-P22782	ResistAI	gene	1	207	.	+	.	ID=P22782;Name=Chloramphenicol;organism=Campylobacter coli
+P22782	ResistAI	gene	1	207	.	+	.	ID=P22782;Name=Chloramphenicol;organism=Campylobacter coli;db_xref=ResistAI;UniProt:P22782;EMBL:M35190;coordinate_type=amino_acid
 P22782	ResistAI	CDS	1	207	.	+	0	ID=P22782_CDS;Parent=P22782;product=antibiotic_resistance_protein
 P22782	fpocket	binding_site	1	207	0.815	+	.	ID=P22782_pocket1;Parent=P22782;druggability_score=0.815;druggability_tier=high
 P22782	fpocket	binding_site	1	207	0.169	+	.	ID=P22782_pocket9;Parent=P22782;druggability_score=0.169;druggability_tier=low
@@ -2514,7 +2515,7 @@ P22782	fpocket	binding_site	1	207	0.001	+	.	ID=P22782_pocket17;Parent=P22782;dru
 P22782	fpocket	binding_site	1	207	0	+	.	ID=P22782_pocket3;Parent=P22782;druggability_score=0.000;druggability_tier=low
 P22782	fpocket	binding_site	1	207	0	+	.	ID=P22782_pocket5;Parent=P22782;druggability_score=0.000;druggability_tier=low
 P22782	fpocket	binding_site	1	207	0	+	.	ID=P22782_pocket6;Parent=P22782;druggability_score=0.000;druggability_tier=low
-P22615	ResistAI	gene	1	213	.	+	.	ID=P22615;Name=cmlA;organism=Escherichia coli
+P22615	ResistAI	gene	1	213	.	+	.	ID=P22615;Name=cmlA;organism=Escherichia coli;db_xref=ResistAI;UniProt:P22615;EMBL:X53796;coordinate_type=amino_acid
 P22615	ResistAI	CDS	1	213	.	+	0	ID=P22615_CDS;Parent=P22615;product=antibiotic_resistance_protein
 P22615	fpocket	binding_site	1	213	0.873	+	.	ID=P22615_pocket5;Parent=P22615;druggability_score=0.873;druggability_tier=high
 P22615	fpocket	binding_site	1	213	0.724	+	.	ID=P22615_pocket4;Parent=P22615;druggability_score=0.724;druggability_tier=high
@@ -2530,7 +2531,7 @@ P22615	fpocket	binding_site	1	213	0	+	.	ID=P22615_pocket10;Parent=P22615;druggab
 P22615	fpocket	binding_site	1	213	0	+	.	ID=P22615_pocket12;Parent=P22615;druggability_score=0.000;druggability_tier=low
 P22615	fpocket	binding_site	1	213	0	+	.	ID=P22615_pocket13;Parent=P22615;druggability_score=0.000;druggability_tier=low
 P22615	fpocket	binding_site	1	213	0	+	.	ID=P22615_pocket14;Parent=P22615;druggability_score=0.000;druggability_tier=low
-P20074	ResistAI	gene	1	220	.	+	.	ID=P20074;Name=cat;organism=Streptomyces acrimycini
+P20074	ResistAI	gene	1	220	.	+	.	ID=P20074;Name=cat;organism=Streptomyces acrimycini;db_xref=ResistAI;UniProt:P20074;coordinate_type=amino_acid
 P20074	ResistAI	CDS	1	220	.	+	0	ID=P20074_CDS;Parent=P20074;product=antibiotic_resistance_protein
 P20074	fpocket	binding_site	1	220	0.205	+	.	ID=P20074_pocket2;Parent=P20074;druggability_score=0.205;druggability_tier=low
 P20074	fpocket	binding_site	1	220	0.054	+	.	ID=P20074_pocket3;Parent=P20074;druggability_score=0.054;druggability_tier=low
@@ -2548,7 +2549,7 @@ P20074	fpocket	binding_site	1	220	0.001	+	.	ID=P20074_pocket16;Parent=P20074;dru
 P20074	fpocket	binding_site	1	220	0	+	.	ID=P20074_pocket5;Parent=P20074;druggability_score=0.000;druggability_tier=low
 P20074	fpocket	binding_site	1	220	0	+	.	ID=P20074_pocket7;Parent=P20074;druggability_score=0.000;druggability_tier=low
 P20074	fpocket	binding_site	1	220	0	+	.	ID=P20074_pocket10;Parent=P20074;druggability_score=0.000;druggability_tier=low
-P06135	ResistAI	gene	1	215	.	+	.	ID=P06135;Name=cat;organism=Staphylococcus aureus
+P06135	ResistAI	gene	1	215	.	+	.	ID=P06135;Name=cat;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P06135;EMBL:X02872;coordinate_type=amino_acid
 P06135	ResistAI	CDS	1	215	.	+	0	ID=P06135_CDS;Parent=P06135;product=antibiotic_resistance_protein
 P06135	fpocket	binding_site	1	215	0.492	+	.	ID=P06135_pocket1;Parent=P06135;druggability_score=0.492;druggability_tier=medium
 P06135	fpocket	binding_site	1	215	0.017	+	.	ID=P06135_pocket2;Parent=P06135;druggability_score=0.017;druggability_tier=low
@@ -2565,7 +2566,7 @@ P06135	fpocket	binding_site	1	215	0	+	.	ID=P06135_pocket9;Parent=P06135;druggabi
 P06135	fpocket	binding_site	1	215	0	+	.	ID=P06135_pocket10;Parent=P06135;druggability_score=0.000;druggability_tier=low
 P06135	fpocket	binding_site	1	215	0	+	.	ID=P06135_pocket13;Parent=P06135;druggability_score=0.000;druggability_tier=low
 P06135	fpocket	binding_site	1	215	0	+	.	ID=P06135_pocket14;Parent=P06135;druggability_score=0.000;druggability_tier=low
-P25309	ResistAI	gene	1	215	.	+	.	ID=P25309;Name=cat;organism=Staphylococcus intermedius
+P25309	ResistAI	gene	1	215	.	+	.	ID=P25309;Name=cat;organism=Staphylococcus intermedius;db_xref=ResistAI;UniProt:P25309;EMBL:M64281;coordinate_type=amino_acid
 P25309	ResistAI	CDS	1	215	.	+	0	ID=P25309_CDS;Parent=P25309;product=antibiotic_resistance_protein
 P25309	fpocket	binding_site	1	215	0.59	+	.	ID=P25309_pocket1;Parent=P25309;druggability_score=0.590;druggability_tier=medium
 P25309	fpocket	binding_site	1	215	0.112	+	.	ID=P25309_pocket3;Parent=P25309;druggability_score=0.112;druggability_tier=low
@@ -2585,7 +2586,7 @@ P25309	fpocket	binding_site	1	215	0	+	.	ID=P25309_pocket13;Parent=P25309;druggab
 P25309	fpocket	binding_site	1	215	0	+	.	ID=P25309_pocket14;Parent=P25309;druggability_score=0.000;druggability_tier=low
 P25309	fpocket	binding_site	1	215	0	+	.	ID=P25309_pocket16;Parent=P25309;druggability_score=0.000;druggability_tier=low
 P25309	fpocket	binding_site	1	215	0	+	.	ID=P25309_pocket18;Parent=P25309;druggability_score=0.000;druggability_tier=low
-P36882	ResistAI	gene	1	215	.	+	.	ID=P36882;Name=cat;organism=Staphylococcus aureus
+P36882	ResistAI	gene	1	215	.	+	.	ID=P36882;Name=cat;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P36882;EMBL:X60827;coordinate_type=amino_acid
 P36882	ResistAI	CDS	1	215	.	+	0	ID=P36882_CDS;Parent=P36882;product=antibiotic_resistance_protein
 P36882	fpocket	binding_site	1	215	0.848	+	.	ID=P36882_pocket1;Parent=P36882;druggability_score=0.848;druggability_tier=high
 P36882	fpocket	binding_site	1	215	0.015	+	.	ID=P36882_pocket7;Parent=P36882;druggability_score=0.015;druggability_tier=low
@@ -2603,7 +2604,7 @@ P36882	fpocket	binding_site	1	215	0	+	.	ID=P36882_pocket6;Parent=P36882;druggabi
 P36882	fpocket	binding_site	1	215	0	+	.	ID=P36882_pocket10;Parent=P36882;druggability_score=0.000;druggability_tier=low
 P36882	fpocket	binding_site	1	215	0	+	.	ID=P36882_pocket11;Parent=P36882;druggability_score=0.000;druggability_tier=low
 P36882	fpocket	binding_site	1	215	0	+	.	ID=P36882_pocket16;Parent=P36882;druggability_score=0.000;druggability_tier=low
-P22616	ResistAI	gene	1	213	.	+	.	ID=P22616;Name=cat-IIH;organism=Haemophilus influenzae
+P22616	ResistAI	gene	1	213	.	+	.	ID=P22616;Name=cat-IIH;organism=Haemophilus influenzae;db_xref=ResistAI;UniProt:P22616;EMBL:X53797;coordinate_type=amino_acid
 P22616	ResistAI	CDS	1	213	.	+	0	ID=P22616_CDS;Parent=P22616;product=antibiotic_resistance_protein
 P22616	fpocket	binding_site	1	213	0.926	+	.	ID=P22616_pocket1;Parent=P22616;druggability_score=0.926;druggability_tier=high
 P22616	fpocket	binding_site	1	213	0.277	+	.	ID=P22616_pocket5;Parent=P22616;druggability_score=0.277;druggability_tier=low
@@ -2619,7 +2620,7 @@ P22616	fpocket	binding_site	1	213	0	+	.	ID=P22616_pocket3;Parent=P22616;druggabi
 P22616	fpocket	binding_site	1	213	0	+	.	ID=P22616_pocket6;Parent=P22616;druggability_score=0.000;druggability_tier=low
 P22616	fpocket	binding_site	1	213	0	+	.	ID=P22616_pocket9;Parent=P22616;druggability_score=0.000;druggability_tier=low
 P22616	fpocket	binding_site	1	213	0	+	.	ID=P22616_pocket13;Parent=P22616;druggability_score=0.000;druggability_tier=low
-P11504	ResistAI	gene	1	212	.	+	.	ID=P11504;Name=catD;organism=Clostridioides difficile
+P11504	ResistAI	gene	1	212	.	+	.	ID=P11504;Name=catD;organism=Clostridioides difficile;db_xref=ResistAI;UniProt:P11504;EMBL:X15100;coordinate_type=amino_acid
 P11504	ResistAI	CDS	1	212	.	+	0	ID=P11504_CDS;Parent=P11504;product=antibiotic_resistance_protein
 P11504	fpocket	binding_site	1	212	0.155	+	.	ID=P11504_pocket4;Parent=P11504;druggability_score=0.155;druggability_tier=low
 P11504	fpocket	binding_site	1	212	0.081	+	.	ID=P11504_pocket7;Parent=P11504;druggability_score=0.081;druggability_tier=low
@@ -2634,7 +2635,7 @@ P11504	fpocket	binding_site	1	212	0.001	+	.	ID=P11504_pocket13;Parent=P11504;dru
 P11504	fpocket	binding_site	1	212	0	+	.	ID=P11504_pocket3;Parent=P11504;druggability_score=0.000;druggability_tier=low
 P11504	fpocket	binding_site	1	212	0	+	.	ID=P11504_pocket5;Parent=P11504;druggability_score=0.000;druggability_tier=low
 P11504	fpocket	binding_site	1	212	0	+	.	ID=P11504_pocket8;Parent=P11504;druggability_score=0.000;druggability_tier=low
-Q02736	ResistAI	gene	1	219	.	+	.	ID=Q02736;Name=catB;organism=Clostridium butyricum
+Q02736	ResistAI	gene	1	219	.	+	.	ID=Q02736;Name=catB;organism=Clostridium butyricum;db_xref=ResistAI;UniProt:Q02736;EMBL:M93113;coordinate_type=amino_acid
 Q02736	ResistAI	CDS	1	219	.	+	0	ID=Q02736_CDS;Parent=Q02736;product=antibiotic_resistance_protein
 Q02736	fpocket	binding_site	1	219	0.939	+	.	ID=Q02736_pocket1;Parent=Q02736;druggability_score=0.939;druggability_tier=high
 Q02736	fpocket	binding_site	1	219	0.009	+	.	ID=Q02736_pocket10;Parent=Q02736;druggability_score=0.009;druggability_tier=low
@@ -2646,7 +2647,7 @@ Q02736	fpocket	binding_site	1	219	0	+	.	ID=Q02736_pocket5;Parent=Q02736;druggabi
 Q02736	fpocket	binding_site	1	219	0	+	.	ID=Q02736_pocket6;Parent=Q02736;druggability_score=0.000;druggability_tier=low
 Q02736	fpocket	binding_site	1	219	0	+	.	ID=Q02736_pocket7;Parent=Q02736;druggability_score=0.000;druggability_tier=low
 Q02736	fpocket	binding_site	1	219	0	+	.	ID=Q02736_pocket9;Parent=Q02736;druggability_score=0.000;druggability_tier=low
-P00486	ResistAI	gene	1	215	.	+	.	ID=P00486;Name=cat;organism=Staphylococcus aureus
+P00486	ResistAI	gene	1	215	.	+	.	ID=P00486;Name=cat;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:P00486;EMBL:M16192;coordinate_type=amino_acid
 P00486	ResistAI	CDS	1	215	.	+	0	ID=P00486_CDS;Parent=P00486;product=antibiotic_resistance_protein
 P00486	fpocket	binding_site	1	215	0.904	+	.	ID=P00486_pocket1;Parent=P00486;druggability_score=0.904;druggability_tier=high
 P00486	fpocket	binding_site	1	215	0.012	+	.	ID=P00486_pocket13;Parent=P00486;druggability_score=0.012;druggability_tier=low
@@ -2664,7 +2665,7 @@ P00486	fpocket	binding_site	1	215	0	+	.	ID=P00486_pocket7;Parent=P00486;druggabi
 P00486	fpocket	binding_site	1	215	0	+	.	ID=P00486_pocket9;Parent=P00486;druggability_score=0.000;druggability_tier=low
 P00486	fpocket	binding_site	1	215	0	+	.	ID=P00486_pocket14;Parent=P00486;druggability_score=0.000;druggability_tier=low
 P00486	fpocket	binding_site	1	215	0	+	.	ID=P00486_pocket15;Parent=P00486;druggability_score=0.000;druggability_tier=low
-Q03058	ResistAI	gene	1	215	.	+	.	ID=Q03058;Name=cat;organism=Streptococcus agalactiae
+Q03058	ResistAI	gene	1	215	.	+	.	ID=Q03058;Name=cat;organism=Streptococcus agalactiae;db_xref=ResistAI;UniProt:Q03058;EMBL:X65462;coordinate_type=amino_acid
 Q03058	ResistAI	CDS	1	215	.	+	0	ID=Q03058_CDS;Parent=Q03058;product=antibiotic_resistance_protein
 Q03058	fpocket	binding_site	1	215	0.61	+	.	ID=Q03058_pocket2;Parent=Q03058;druggability_score=0.610;druggability_tier=medium
 Q03058	fpocket	binding_site	1	215	0.009	+	.	ID=Q03058_pocket14;Parent=Q03058;druggability_score=0.009;druggability_tier=low
@@ -2681,7 +2682,7 @@ Q03058	fpocket	binding_site	1	215	0	+	.	ID=Q03058_pocket7;Parent=Q03058;druggabi
 Q03058	fpocket	binding_site	1	215	0	+	.	ID=Q03058_pocket9;Parent=Q03058;druggability_score=0.000;druggability_tier=low
 Q03058	fpocket	binding_site	1	215	0	+	.	ID=Q03058_pocket11;Parent=Q03058;druggability_score=0.000;druggability_tier=low
 Q03058	fpocket	binding_site	1	215	0	+	.	ID=Q03058_pocket12;Parent=Q03058;druggability_score=0.000;druggability_tier=low
-P26825	ResistAI	gene	1	219	.	+	.	ID=P26825;Name=catQ;organism=Clostridium perfringens
+P26825	ResistAI	gene	1	219	.	+	.	ID=P26825;Name=catQ;organism=Clostridium perfringens;db_xref=ResistAI;UniProt:P26825;EMBL:M55620;coordinate_type=amino_acid
 P26825	ResistAI	CDS	1	219	.	+	0	ID=P26825_CDS;Parent=P26825;product=antibiotic_resistance_protein
 P26825	fpocket	binding_site	1	219	0.611	+	.	ID=P26825_pocket4;Parent=P26825;druggability_score=0.611;druggability_tier=medium
 P26825	fpocket	binding_site	1	219	0.131	+	.	ID=P26825_pocket1;Parent=P26825;druggability_score=0.131;druggability_tier=low
@@ -2695,7 +2696,7 @@ P26825	fpocket	binding_site	1	219	0.001	+	.	ID=P26825_pocket2;Parent=P26825;drug
 P26825	fpocket	binding_site	1	219	0	+	.	ID=P26825_pocket7;Parent=P26825;druggability_score=0.000;druggability_tier=low
 P26825	fpocket	binding_site	1	219	0	+	.	ID=P26825_pocket8;Parent=P26825;druggability_score=0.000;druggability_tier=low
 P26825	fpocket	binding_site	1	219	0	+	.	ID=P26825_pocket12;Parent=P26825;druggability_score=0.000;druggability_tier=low
-P26826	ResistAI	gene	1	207	.	+	.	ID=P26826;Name=catP;organism=Clostridium perfringens
+P26826	ResistAI	gene	1	207	.	+	.	ID=P26826;Name=catP;organism=Clostridium perfringens;db_xref=ResistAI;UniProt:P26826;EMBL:M74769;coordinate_type=amino_acid
 P26826	ResistAI	CDS	1	207	.	+	0	ID=P26826_CDS;Parent=P26826;product=antibiotic_resistance_protein
 P26826	fpocket	binding_site	1	207	0.24	+	.	ID=P26826_pocket1;Parent=P26826;druggability_score=0.240;druggability_tier=low
 P26826	fpocket	binding_site	1	207	0.022	+	.	ID=P26826_pocket9;Parent=P26826;druggability_score=0.022;druggability_tier=low
@@ -2707,7 +2708,7 @@ P26826	fpocket	binding_site	1	207	0.001	+	.	ID=P26826_pocket2;Parent=P26826;drug
 P26826	fpocket	binding_site	1	207	0.001	+	.	ID=P26826_pocket4;Parent=P26826;druggability_score=0.001;druggability_tier=low
 P26826	fpocket	binding_site	1	207	0	+	.	ID=P26826_pocket3;Parent=P26826;druggability_score=0.000;druggability_tier=low
 P26826	fpocket	binding_site	1	207	0	+	.	ID=P26826_pocket10;Parent=P26826;druggability_score=0.000;druggability_tier=low
-Q46306	ResistAI	gene	1	652	.	+	.	ID=Q46306;Name=tetP;organism=Clostridium perfringens
+Q46306	ResistAI	gene	1	652	.	+	.	ID=Q46306;Name=tetP;organism=Clostridium perfringens;db_xref=ResistAI;UniProt:Q46306;EMBL:L20800;coordinate_type=amino_acid
 Q46306	ResistAI	CDS	1	652	.	+	0	ID=Q46306_CDS;Parent=Q46306;product=antibiotic_resistance_protein
 Q46306	fpocket	binding_site	1	652	0.799	+	.	ID=Q46306_pocket1;Parent=Q46306;druggability_score=0.799;druggability_tier=high
 Q46306	fpocket	binding_site	1	652	0.092	+	.	ID=Q46306_pocket4;Parent=Q46306;druggability_score=0.092;druggability_tier=low
@@ -2732,7 +2733,7 @@ Q46306	fpocket	binding_site	1	652	0	+	.	ID=Q46306_pocket14;Parent=Q46306;druggab
 Q46306	fpocket	binding_site	1	652	0	+	.	ID=Q46306_pocket20;Parent=Q46306;druggability_score=0.000;druggability_tier=low
 Q46306	fpocket	binding_site	1	652	0	+	.	ID=Q46306_pocket21;Parent=Q46306;druggability_score=0.000;druggability_tier=low
 Q46306	fpocket	binding_site	1	652	0	+	.	ID=Q46306_pocket23;Parent=Q46306;druggability_score=0.000;druggability_tier=low
-P0AC13	ResistAI	gene	1	282	.	+	.	ID=P0AC13;Name=folP;organism=Escherichia coli (strain K12)
+P0AC13	ResistAI	gene	1	282	.	+	.	ID=P0AC13;Name=folP;organism=Escherichia coli (strain K12);db_xref=ResistAI;UniProt:P0AC13;EMBL:X68776;coordinate_type=amino_acid
 P0AC13	ResistAI	CDS	1	282	.	+	0	ID=P0AC13_CDS;Parent=P0AC13;product=antibiotic_resistance_protein
 P0AC13	fpocket	binding_site	1	282	0.417	+	.	ID=P0AC13_pocket12;Parent=P0AC13;druggability_score=0.417;druggability_tier=medium
 P0AC13	fpocket	binding_site	1	282	0.373	+	.	ID=P0AC13_pocket16;Parent=P0AC13;druggability_score=0.373;druggability_tier=low
@@ -2755,7 +2756,7 @@ P0AC13	fpocket	binding_site	1	282	0	+	.	ID=P0AC13_pocket5;Parent=P0AC13;druggabi
 P0AC13	fpocket	binding_site	1	282	0	+	.	ID=P0AC13_pocket8;Parent=P0AC13;druggability_score=0.000;druggability_tier=low
 P0AC13	fpocket	binding_site	1	282	0	+	.	ID=P0AC13_pocket10;Parent=P0AC13;druggability_score=0.000;druggability_tier=low
 P0AC13	fpocket	binding_site	1	282	0	+	.	ID=P0AC13_pocket17;Parent=P0AC13;druggability_score=0.000;druggability_tier=low
-P57696	ResistAI	gene	1	283	.	+	.	ID=P57696;Name=folP;organism=Neisseria meningitidis serogroup C
+P57696	ResistAI	gene	1	283	.	+	.	ID=P57696;Name=folP;organism=Neisseria meningitidis serogroup C;db_xref=ResistAI;UniProt:P57696;EMBL:X68063;coordinate_type=amino_acid
 P57696	ResistAI	CDS	1	283	.	+	0	ID=P57696_CDS;Parent=P57696;product=antibiotic_resistance_protein
 P57696	fpocket	binding_site	1	283	0.438	+	.	ID=P57696_pocket14;Parent=P57696;druggability_score=0.438;druggability_tier=medium
 P57696	fpocket	binding_site	1	283	0.122	+	.	ID=P57696_pocket7;Parent=P57696;druggability_score=0.122;druggability_tier=low
@@ -2774,7 +2775,7 @@ P57696	fpocket	binding_site	1	283	0	+	.	ID=P57696_pocket6;Parent=P57696;druggabi
 P57696	fpocket	binding_site	1	283	0	+	.	ID=P57696_pocket8;Parent=P57696;druggability_score=0.000;druggability_tier=low
 P57696	fpocket	binding_site	1	283	0	+	.	ID=P57696_pocket9;Parent=P57696;druggability_score=0.000;druggability_tier=low
 P57696	fpocket	binding_site	1	283	0	+	.	ID=P57696_pocket11;Parent=P57696;druggability_score=0.000;druggability_tier=low
-P59655	ResistAI	gene	1	314	.	+	.	ID=P59655;Name=sulA;organism=Streptococcus pneumoniae (strain ATCC BAA-255 / R6)
+P59655	ResistAI	gene	1	314	.	+	.	ID=P59655;Name=sulA;organism=Streptococcus pneumoniae (strain ATCC BAA-255 / R6);db_xref=ResistAI;UniProt:P59655;EMBL:AE007317;coordinate_type=amino_acid
 P59655	ResistAI	CDS	1	314	.	+	0	ID=P59655_CDS;Parent=P59655;product=antibiotic_resistance_protein
 P59655	fpocket	binding_site	1	314	0.724	+	.	ID=P59655_pocket13;Parent=P59655;druggability_score=0.724;druggability_tier=high
 P59655	fpocket	binding_site	1	314	0.543	+	.	ID=P59655_pocket3;Parent=P59655;druggability_score=0.543;druggability_tier=medium
@@ -2802,7 +2803,7 @@ P59655	fpocket	binding_site	1	314	0	+	.	ID=P59655_pocket16;Parent=P59655;druggab
 P59655	fpocket	binding_site	1	314	0	+	.	ID=P59655_pocket17;Parent=P59655;druggability_score=0.000;druggability_tier=low
 P59655	fpocket	binding_site	1	314	0	+	.	ID=P59655_pocket18;Parent=P59655;druggability_score=0.000;druggability_tier=low
 P59655	fpocket	binding_site	1	314	0	+	.	ID=P59655_pocket20;Parent=P59655;druggability_score=0.000;druggability_tier=low
-Q51161	ResistAI	gene	1	285	.	+	.	ID=Q51161;Name=folP;organism=Neisseria meningitidis serogroup B (strain ATCC BAA-335 / MC58)
+Q51161	ResistAI	gene	1	285	.	+	.	ID=Q51161;Name=folP;organism=Neisseria meningitidis serogroup B (strain ATCC BAA-335 / MC58);db_xref=ResistAI;UniProt:Q51161;EMBL:X68062;coordinate_type=amino_acid
 Q51161	ResistAI	CDS	1	285	.	+	0	ID=Q51161_CDS;Parent=Q51161;product=antibiotic_resistance_protein
 Q51161	fpocket	binding_site	1	285	0.172	+	.	ID=Q51161_pocket7;Parent=Q51161;druggability_score=0.172;druggability_tier=low
 Q51161	fpocket	binding_site	1	285	0.05	+	.	ID=Q51161_pocket19;Parent=Q51161;druggability_score=0.050;druggability_tier=low
@@ -2824,7 +2825,7 @@ Q51161	fpocket	binding_site	1	285	0	+	.	ID=Q51161_pocket13;Parent=Q51161;druggab
 Q51161	fpocket	binding_site	1	285	0	+	.	ID=Q51161_pocket14;Parent=Q51161;druggability_score=0.000;druggability_tier=low
 Q51161	fpocket	binding_site	1	285	0	+	.	ID=Q51161_pocket17;Parent=Q51161;druggability_score=0.000;druggability_tier=low
 Q51161	fpocket	binding_site	1	285	0	+	.	ID=Q51161_pocket20;Parent=Q51161;druggability_score=0.000;druggability_tier=low
-Q9JT70	ResistAI	gene	1	283	.	+	.	ID=Q9JT70;Name=folP;organism=Neisseria meningitidis serogroup A / serotype 4A (strain DSM 15465 / Z2491)
+Q9JT70	ResistAI	gene	1	283	.	+	.	ID=Q9JT70;Name=folP;organism=Neisseria meningitidis serogroup A / serotype 4A (strain DSM 15465 / Z2491);db_xref=ResistAI;UniProt:Q9JT70;EMBL:X68065;coordinate_type=amino_acid
 Q9JT70	ResistAI	CDS	1	283	.	+	0	ID=Q9JT70_CDS;Parent=Q9JT70;product=antibiotic_resistance_protein
 Q9JT70	fpocket	binding_site	1	283	0.56	+	.	ID=Q9JT70_pocket14;Parent=Q9JT70;druggability_score=0.560;druggability_tier=medium
 Q9JT70	fpocket	binding_site	1	283	0.388	+	.	ID=Q9JT70_pocket3;Parent=Q9JT70;druggability_score=0.388;druggability_tier=low
@@ -2840,7 +2841,7 @@ Q9JT70	fpocket	binding_site	1	283	0	+	.	ID=Q9JT70_pocket7;Parent=Q9JT70;druggabi
 Q9JT70	fpocket	binding_site	1	283	0	+	.	ID=Q9JT70_pocket9;Parent=Q9JT70;druggability_score=0.000;druggability_tier=low
 Q9JT70	fpocket	binding_site	1	283	0	+	.	ID=Q9JT70_pocket11;Parent=Q9JT70;druggability_score=0.000;druggability_tier=low
 Q9JT70	fpocket	binding_site	1	283	0	+	.	ID=Q9JT70_pocket13;Parent=Q9JT70;druggability_score=0.000;druggability_tier=low
-O05701	ResistAI	gene	1	267	.	+	.	ID=O05701;Name=folP;organism=Staphylococcus aureus
+O05701	ResistAI	gene	1	267	.	+	.	ID=O05701;Name=folP;organism=Staphylococcus aureus;db_xref=ResistAI;UniProt:O05701;EMBL:Z84573;coordinate_type=amino_acid
 O05701	ResistAI	CDS	1	267	.	+	0	ID=O05701_CDS;Parent=O05701;product=antibiotic_resistance_protein
 O05701	fpocket	binding_site	1	267	0.516	+	.	ID=O05701_pocket12;Parent=O05701;druggability_score=0.516;druggability_tier=medium
 O05701	fpocket	binding_site	1	267	0.037	+	.	ID=O05701_pocket1;Parent=O05701;druggability_score=0.037;druggability_tier=low
@@ -2859,7 +2860,7 @@ O05701	fpocket	binding_site	1	267	0	+	.	ID=O05701_pocket9;Parent=O05701;druggabi
 O05701	fpocket	binding_site	1	267	0	+	.	ID=O05701_pocket10;Parent=O05701;druggability_score=0.000;druggability_tier=low
 O05701	fpocket	binding_site	1	267	0	+	.	ID=O05701_pocket13;Parent=O05701;druggability_score=0.000;druggability_tier=low
 O05701	fpocket	binding_site	1	267	0	+	.	ID=O05701_pocket15;Parent=O05701;druggability_score=0.000;druggability_tier=low
-C0HMD9	ResistAI	gene	1	263	.	+	.	ID=C0HMD9;Name=sul3;organism=Escherichia coli
+C0HMD9	ResistAI	gene	1	263	.	+	.	ID=C0HMD9;Name=sul3;organism=Escherichia coli;db_xref=ResistAI;UniProt:C0HMD9;EMBL:AJ459418;coordinate_type=amino_acid
 C0HMD9	ResistAI	CDS	1	263	.	+	0	ID=C0HMD9_CDS;Parent=C0HMD9;product=antibiotic_resistance_protein
 C0HMD9	fpocket	binding_site	1	263	0.855	+	.	ID=C0HMD9_pocket3;Parent=C0HMD9;druggability_score=0.855;druggability_tier=high
 C0HMD9	fpocket	binding_site	1	263	0.013	+	.	ID=C0HMD9_pocket5;Parent=C0HMD9;druggability_score=0.013;druggability_tier=low
@@ -2881,7 +2882,7 @@ C0HMD9	fpocket	binding_site	1	263	0	+	.	ID=C0HMD9_pocket13;Parent=C0HMD9;druggab
 C0HMD9	fpocket	binding_site	1	263	0	+	.	ID=C0HMD9_pocket14;Parent=C0HMD9;druggability_score=0.000;druggability_tier=low
 C0HMD9	fpocket	binding_site	1	263	0	+	.	ID=C0HMD9_pocket16;Parent=C0HMD9;druggability_score=0.000;druggability_tier=low
 C0HMD9	fpocket	binding_site	1	263	0	+	.	ID=C0HMD9_pocket17;Parent=C0HMD9;druggability_score=0.000;druggability_tier=low
-P0AC11	ResistAI	gene	1	271	.	+	.	ID=P0AC11;Name=sul2;organism=Escherichia coli
+P0AC11	ResistAI	gene	1	271	.	+	.	ID=P0AC11;Name=sul2;organism=Escherichia coli;db_xref=ResistAI;UniProt:P0AC11;EMBL:M36657;coordinate_type=amino_acid
 P0AC11	ResistAI	CDS	1	271	.	+	0	ID=P0AC11_CDS;Parent=P0AC11;product=antibiotic_resistance_protein
 P0AC11	fpocket	binding_site	1	271	0.322	+	.	ID=P0AC11_pocket11;Parent=P0AC11;druggability_score=0.322;druggability_tier=low
 P0AC11	fpocket	binding_site	1	271	0.133	+	.	ID=P0AC11_pocket8;Parent=P0AC11;druggability_score=0.133;druggability_tier=low
@@ -2894,7 +2895,7 @@ P0AC11	fpocket	binding_site	1	271	0.001	+	.	ID=P0AC11_pocket10;Parent=P0AC11;dru
 P0AC11	fpocket	binding_site	1	271	0	+	.	ID=P0AC11_pocket1;Parent=P0AC11;druggability_score=0.000;druggability_tier=low
 P0AC11	fpocket	binding_site	1	271	0	+	.	ID=P0AC11_pocket4;Parent=P0AC11;druggability_score=0.000;druggability_tier=low
 P0AC11	fpocket	binding_site	1	271	0	+	.	ID=P0AC11_pocket7;Parent=P0AC11;druggability_score=0.000;druggability_tier=low
-P05382	ResistAI	gene	1	314	.	+	.	ID=P05382;Name=sulA;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4)
+P05382	ResistAI	gene	1	314	.	+	.	ID=P05382;Name=sulA;organism=Streptococcus pneumoniae serotype 4 (strain ATCC BAA-334 / TIGR4);db_xref=ResistAI;UniProt:P05382;EMBL:U16156;coordinate_type=amino_acid
 P05382	ResistAI	CDS	1	314	.	+	0	ID=P05382_CDS;Parent=P05382;product=antibiotic_resistance_protein
 P05382	fpocket	binding_site	1	314	0.858	+	.	ID=P05382_pocket15;Parent=P05382;druggability_score=0.858;druggability_tier=high
 P05382	fpocket	binding_site	1	314	0.542	+	.	ID=P05382_pocket3;Parent=P05382;druggability_score=0.542;druggability_tier=medium
@@ -2922,7 +2923,7 @@ P05382	fpocket	binding_site	1	314	0	+	.	ID=P05382_pocket18;Parent=P05382;druggab
 P05382	fpocket	binding_site	1	314	0	+	.	ID=P05382_pocket20;Parent=P05382;druggability_score=0.000;druggability_tier=low
 P05382	fpocket	binding_site	1	314	0	+	.	ID=P05382_pocket21;Parent=P05382;druggability_score=0.000;druggability_tier=low
 P05382	fpocket	binding_site	1	314	0	+	.	ID=P05382_pocket26;Parent=P05382;druggability_score=0.000;druggability_tier=low
-Q49184	ResistAI	gene	1	283	.	+	.	ID=Q49184;Name=sulI;organism=Mycolicibacterium fortuitum
+Q49184	ResistAI	gene	1	283	.	+	.	ID=Q49184;Name=sulI;organism=Mycolicibacterium fortuitum;db_xref=ResistAI;UniProt:Q49184;EMBL:X53635;coordinate_type=amino_acid
 Q49184	ResistAI	CDS	1	283	.	+	0	ID=Q49184_CDS;Parent=Q49184;product=antibiotic_resistance_protein
 Q49184	fpocket	binding_site	1	283	0.604	+	.	ID=Q49184_pocket1;Parent=Q49184;druggability_score=0.604;druggability_tier=medium
 Q49184	fpocket	binding_site	1	283	0.01	+	.	ID=Q49184_pocket2;Parent=Q49184;druggability_score=0.010;druggability_tier=low
@@ -2942,7 +2943,7 @@ Q49184	fpocket	binding_site	1	283	0	+	.	ID=Q49184_pocket5;Parent=Q49184;druggabi
 Q49184	fpocket	binding_site	1	283	0	+	.	ID=Q49184_pocket11;Parent=Q49184;druggability_score=0.000;druggability_tier=low
 Q49184	fpocket	binding_site	1	283	0	+	.	ID=Q49184_pocket16;Parent=Q49184;druggability_score=0.000;druggability_tier=low
 Q49184	fpocket	binding_site	1	283	0	+	.	ID=Q49184_pocket18;Parent=Q49184;druggability_score=0.000;druggability_tier=low
-P0C0G0	ResistAI	gene	1	266	.	+	.	ID=P0C0G0;Name=folP;organism=Streptococcus pyogenes
+P0C0G0	ResistAI	gene	1	266	.	+	.	ID=P0C0G0;Name=folP;organism=Streptococcus pyogenes;db_xref=ResistAI;UniProt:P0C0G0;EMBL:AJ000685;coordinate_type=amino_acid
 P0C0G0	ResistAI	CDS	1	266	.	+	0	ID=P0C0G0_CDS;Parent=P0C0G0;product=antibiotic_resistance_protein
 P0C0G0	fpocket	binding_site	1	266	0.337	+	.	ID=P0C0G0_pocket2;Parent=P0C0G0;druggability_score=0.337;druggability_tier=low
 P0C0G0	fpocket	binding_site	1	266	0.171	+	.	ID=P0C0G0_pocket1;Parent=P0C0G0;druggability_score=0.171;druggability_tier=low
@@ -2955,7 +2956,7 @@ P0C0G0	fpocket	binding_site	1	266	0	+	.	ID=P0C0G0_pocket6;Parent=P0C0G0;druggabi
 P0C0G0	fpocket	binding_site	1	266	0	+	.	ID=P0C0G0_pocket8;Parent=P0C0G0;druggability_score=0.000;druggability_tier=low
 P0C0G0	fpocket	binding_site	1	266	0	+	.	ID=P0C0G0_pocket9;Parent=P0C0G0;druggability_score=0.000;druggability_tier=low
 P0C0G0	fpocket	binding_site	1	266	0	+	.	ID=P0C0G0_pocket11;Parent=P0C0G0;druggability_score=0.000;druggability_tier=low
-P0C0G4	ResistAI	gene	1	119	.	+	.	ID=P0C0G4;Name=folB;organism=Streptococcus pyogenes
+P0C0G4	ResistAI	gene	1	119	.	+	.	ID=P0C0G4;Name=folB;organism=Streptococcus pyogenes;db_xref=ResistAI;UniProt:P0C0G4;EMBL:AJ000685;coordinate_type=amino_acid
 P0C0G4	ResistAI	CDS	1	119	.	+	0	ID=P0C0G4_CDS;Parent=P0C0G4;product=antibiotic_resistance_protein
 P0C0G4	fpocket	binding_site	1	119	0.346	+	.	ID=P0C0G4_pocket2;Parent=P0C0G4;druggability_score=0.346;druggability_tier=low
 P0C0G4	fpocket	binding_site	1	119	0.021	+	.	ID=P0C0G4_pocket1;Parent=P0C0G4;druggability_score=0.021;druggability_tier=low
@@ -2967,7 +2968,7 @@ P0C0G4	fpocket	binding_site	1	119	0.004	+	.	ID=P0C0G4_pocket3;Parent=P0C0G4;drug
 P0C0G4	fpocket	binding_site	1	119	0.001	+	.	ID=P0C0G4_pocket6;Parent=P0C0G4;druggability_score=0.001;druggability_tier=low
 P0C0G4	fpocket	binding_site	1	119	0	+	.	ID=P0C0G4_pocket4;Parent=P0C0G4;druggability_score=0.000;druggability_tier=low
 P0C0G4	fpocket	binding_site	1	119	0	+	.	ID=P0C0G4_pocket5;Parent=P0C0G4;druggability_score=0.000;druggability_tier=low
-P0C0C1	ResistAI	gene	1	194	.	+	.	ID=P0C0C1;Name=folE;organism=Streptococcus pyogenes
+P0C0C1	ResistAI	gene	1	194	.	+	.	ID=P0C0C1;Name=folE;organism=Streptococcus pyogenes;db_xref=ResistAI;UniProt:P0C0C1;EMBL:AJ000685;coordinate_type=amino_acid
 P0C0C1	ResistAI	CDS	1	194	.	+	0	ID=P0C0C1_CDS;Parent=P0C0C1;product=antibiotic_resistance_protein
 P0C0C1	fpocket	binding_site	1	194	0.378	+	.	ID=P0C0C1_pocket6;Parent=P0C0C1;druggability_score=0.378;druggability_tier=low
 P0C0C1	fpocket	binding_site	1	194	0.061	+	.	ID=P0C0C1_pocket1;Parent=P0C0C1;druggability_score=0.061;druggability_tier=low
@@ -2979,7 +2980,7 @@ P0C0C1	fpocket	binding_site	1	194	0.001	+	.	ID=P0C0C1_pocket2;Parent=P0C0C1;drug
 P0C0C1	fpocket	binding_site	1	194	0	+	.	ID=P0C0C1_pocket3;Parent=P0C0C1;druggability_score=0.000;druggability_tier=low
 P0C0C1	fpocket	binding_site	1	194	0	+	.	ID=P0C0C1_pocket4;Parent=P0C0C1;druggability_score=0.000;druggability_tier=low
 P0C0C1	fpocket	binding_site	1	194	0	+	.	ID=P0C0C1_pocket8;Parent=P0C0C1;druggability_score=0.000;druggability_tier=low
-P0C0G2	ResistAI	gene	1	166	.	+	.	ID=P0C0G2;Name=folK;organism=Streptococcus pyogenes
+P0C0G2	ResistAI	gene	1	166	.	+	.	ID=P0C0G2;Name=folK;organism=Streptococcus pyogenes;db_xref=ResistAI;UniProt:P0C0G2;EMBL:AJ312186;coordinate_type=amino_acid
 P0C0G2	ResistAI	CDS	1	166	.	+	0	ID=P0C0G2_CDS;Parent=P0C0G2;product=antibiotic_resistance_protein
 P0C0G2	fpocket	binding_site	1	166	0.847	+	.	ID=P0C0G2_pocket1;Parent=P0C0G2;druggability_score=0.847;druggability_tier=high
 P0C0G2	fpocket	binding_site	1	166	0.202	+	.	ID=P0C0G2_pocket8;Parent=P0C0G2;druggability_score=0.202;druggability_tier=low
