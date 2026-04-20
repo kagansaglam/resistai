@@ -25,35 +25,18 @@ ResistAI automates this process end-to-end:
 
 ## Architecture
 
-### Module 1 — Structural Pipeline
-pathogens.csv
-↓
-FETCH_CARD (UniProt API)
-↓
-RUN_ESMFOLD (ESMFold API + AlphaFold DB)
-↓
-FIND_POCKETS (fpocket — druggability scoring)
-↓
-SUMMARY_REPORT (CSV + PostgreSQL)
-### Module 2 — LLM Research Assistant
-PubMed E-utils API (949 articles, 33 queries)
-↓
-sentence-transformers (all-MiniLM-L6-v2 embeddings)
-↓
-ChromaDB (persistent vector database)
-↓
-RAG engine (semantic retrieval)
-↓
-Llama 3.3 70B via Groq API
-↓
-Streamlit UI
-### Module 3 — Visualisation & Analysis
-results/proteins_annotated.csv
-↓
-Interactive Dashboard (Plotly)     — druggability comparisons
-3D Protein Viewer (3Dmol.js)       — structures + binding pockets
-Research Assistant (Streamlit)     — AI-powered literature Q&A
-Statistical Analysis (scipy)       — ANOVA, pairwise t-tests
+### Module 1 - Structural Pipeline
+
+`pathogens.csv` -> `FETCH_CARD` (UniProt API) -> `RUN_ESMFOLD` (ESMFold + AlphaFold DB) -> `FIND_POCKETS` (fpocket) -> `SUMMARY_REPORT` -> PostgreSQL
+
+### Module 2 - LLM Research Assistant
+
+`PubMed API` (949 articles) -> `sentence-transformers` (embeddings) -> `ChromaDB` (vector DB) -> `RAG engine` -> `Llama 3.3 70B` (Groq) -> `Streamlit UI`
+
+### Module 3 - Visualisation & Analysis
+
+`proteins_annotated.csv` -> `Interactive Dashboard` (Plotly) + `3D Protein Viewer` (3Dmol.js) + `Research Assistant` (Streamlit) + `Statistical Analysis` (scipy)
+
 ---
 
 ## Key Results
