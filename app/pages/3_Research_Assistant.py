@@ -1,5 +1,6 @@
 import streamlit as st
 import chromadb
+import pandas as pd
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 from groq import Groq
@@ -8,14 +9,14 @@ import os
 load_dotenv('/home/kagan/resistai/.env')
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-st.set_page_config(page_title='ResistAI', page_icon='🧬', layout='wide')
-st.title('🧬 ResistAI — Antibiotic Resistance Research Assistant')
-st.caption('Powered by PubMed RAG + Llama 3.3 | 949 articles indexed')
+st.set_page_config(page_title='ResistAI Research Assistant', page_icon='🤖', layout='wide')
+st.title('🤖 ResistAI — Research Assistant')
+st.caption('Powered by 2508 PubMed articles + Llama 3.3 70B')
 
 @st.cache_resource
 def load_rag():
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-    client = chromadb.PersistentClient(path='module2/data/chroma_db')
+    model      = SentenceTransformer('all-MiniLM-L6-v2')
+    client     = chromadb.PersistentClient(path='module2/data/chroma_db')
     collection = client.get_collection('pubmed_articles')
     return model, collection
 
@@ -23,16 +24,16 @@ model, collection = load_rag()
 
 def search_literature(query, n_results=10):
     embedding = model.encode([query]).tolist()
-    results = collection.query(query_embeddings=embedding, n_results=n_results)
-    articles = []
+    results   = collection.query(query_embeddings=embedding, n_results=n_results)
+    articles  = []
     for i, doc in enumerate(results['documents'][0]):
         meta = results['metadatas'][0][i]
         articles.append({
-            'title': doc,
-            'pmid': meta['pmid'],
+            'title':   doc,
+            'pmid':    meta['pmid'],
             'journal': meta['journal'],
-            'year': meta['year'],
-            'score': round(1 - results['distances'][0][i], 3)
+            'year':    meta['year'],
+            'score':   round(1 - results['distances'][0][i], 3)
         })
     return articles
 
@@ -53,45 +54,60 @@ def ask_llm(question, articles):
     return response.choices[0].message.content
 
 with st.sidebar:
-    st.header('About')
-    st.markdown('ResistAI analyses 949 PubMed articles on WHO priority pathogens using semantic search and Llama 3.3.')
-    st.divider()
-    st.header('Protein Summary')
-    proteins = {
-        'Q9HYD3': ('VIM-2',  'P. aeruginosa', 0.755, 'high'),
-        'P25051': ('VanA',   'E. faecium',    0.566, 'medium'),
-        'Q9F663': ('KPC-2',  'K. pneumoniae', 0.427, 'medium'),
-        'Q9KLB7': ('OXA-23', 'A. baumannii',  0.180, 'low'),
-        'B9A8S5': ('NDM-1',  'E. coli',       0.168, 'low'),
-    }
-    for uid, (gene, org, score, tier) in proteins.items():
-        color = {'high': '🟢', 'medium': '🟡', 'low': '🔴'}[tier]
-        st.markdown(f'{color} **{gene}** — {org} (score: {score})')
+    st.header('Search Mode')
+    mode = st.radio('', ['General question', 'Protein-specific'])
     st.divider()
     n_results = st.slider('Articles to retrieve', 5, 20, 10)
+    st.divider()
+    st.markdown(f'**Database:** 2508 PubMed articles')
+    st.markdown('**Model:** Llama 3.3 70B (Groq)')
 
-st.subheader('Ask a research question')
-examples = [
-    'What makes VIM-2 a good drug target?',
-    'Why is NDM-1 considered nearly undruggable?',
-    'What are key structural features of KPC-2 for inhibitor design?',
-    'What is the mechanism of vancomycin resistance in VanA?',
-    'What are recent strategies against carbapenem-resistant bacteria?'
-]
-example = st.selectbox('Example questions', [''] + examples)
-question = st.text_input('Or type your own question')
-final_question = question if question else example
-
-if st.button('Ask ResistAI', type='primary') and final_question:
-    with st.spinner('Searching literature and generating answer...'):
-        articles = search_literature(final_question, n_results=n_results)
-        answer = ask_llm(final_question, articles)
-    st.subheader('Answer')
-    st.markdown(answer)
-    st.subheader(f'Retrieved Literature ({len(articles)} articles)')
-    for a in articles:
-        with st.expander(f"[{a['score']}] {a['title'][:80]}..."):
-            st.markdown(f"**PMID:** [{a['pmid']}](https://pubmed.ncbi.nlm.nih.gov/{a['pmid']})")
-            st.markdown(f"**Journal:** {a['journal']}")
-            st.markdown(f"**Year:** {a['year']}")
-            st.markdown(f"**Relevance score:** {a['score']}")
+if mode == 'Protein-specific':
+    st.subheader('Protein-specific Literature Search')
+    if os.path.exists('results/proteins_annotated.csv'):
+        df = pd.read_csv('results/proteins_annotated.csv')
+        df = df[df['best_score'].notna()].sort_values('best_score', ascending=False)
+        options = {f"{r['gene']} ({r['uniprot_id']}) — score: {r['best_score']:.3f}": r for _, r in df.iterrows()}
+        selected_label = st.selectbox('Select protein', list(options.keys()))
+        row = options[selected_label]
+        st.markdown(f"**Gene:** {row['gene']} | **Organism:** {row['organism']} | **Family:** {row['family']}")
+        auto_query = f"{row['gene']} {row['organism']} antibiotic resistance mechanism drug target druggability"
+        st.info(f'Auto query: {auto_query}')
+        custom_q = st.text_input('Refine question (optional)')
+        final_q  = custom_q if custom_q else auto_query
+        if st.button('Search Literature', type='primary'):
+            with st.spinner('Searching and generating answer...'):
+                articles = search_literature(final_q, n_results=n_results)
+                answer   = ask_llm(final_q, articles)
+            st.subheader('Answer')
+            st.markdown(answer)
+            st.subheader(f'Retrieved Literature ({len(articles)} articles)')
+            for a in articles:
+                with st.expander(f"[{a['score']}] {a['title'][:80]}..."):
+                    st.markdown(f"**PMID:** [{a['pmid']}](https://pubmed.ncbi.nlm.nih.gov/{a['pmid']})")
+                    st.markdown(f"**Journal:** {a['journal']} | **Year:** {a['year']}")
+else:
+    st.subheader('Ask a research question')
+    examples = [
+        'What makes VIM-2 a good drug target?',
+        'Why is NDM-1 considered nearly undruggable?',
+        'What are key structural features of KPC-2 for inhibitor design?',
+        'What is the mechanism of vancomycin resistance in VanA?',
+        'What are recent strategies against carbapenem-resistant bacteria?',
+        'How do efflux pumps contribute to multidrug resistance?',
+        'What novel inhibitors target metallo-beta-lactamases?'
+    ]
+    example  = st.selectbox('Example questions', [''] + examples)
+    question = st.text_input('Or type your own question')
+    final_question = question if question else example
+    if st.button('Ask ResistAI', type='primary') and final_question:
+        with st.spinner('Searching literature and generating answer...'):
+            articles = search_literature(final_question, n_results=n_results)
+            answer   = ask_llm(final_question, articles)
+        st.subheader('Answer')
+        st.markdown(answer)
+        st.subheader(f'Retrieved Literature ({len(articles)} articles)')
+        for a in articles:
+            with st.expander(f"[{a['score']}] {a['title'][:80]}..."):
+                st.markdown(f"**PMID:** [{a['pmid']}](https://pubmed.ncbi.nlm.nih.gov/{a['pmid']})")
+                st.markdown(f"**Journal:** {a['journal']} | **Year:** {a['year']}")
