@@ -91,6 +91,41 @@ ResistAI is freely available at https://github.com/kagansaglam/resistai under th
 
 ---
 
+
+---
+
+## Figures
+
+### Figure 1. Druggability Analysis Overview
+
+![Figure 1](../results/figure1_druggability_analysis.png)
+
+**Figure 1.** Druggability analysis of 144 antibiotic resistance proteins. (A) Box plots showing distribution of best druggability scores across eight resistance families, ordered by mean score. Green and orange dashed lines indicate high (≥0.7) and medium (≥0.4) druggability thresholds, respectively. (B) Histogram of best druggability scores across all 144 proteins. (C) Pie chart showing proportion of proteins in each druggability tier (high: n=48, 33.3%; medium: n=41, 28.5%; low: n=55, 38.2%).
+
+---
+### Figure 2. Top 20 Most Druggable Antibiotic Resistance Proteins
+
+![Figure 2](../results/figure2_top20_proteins.png)
+
+**Figure 2.** Horizontal bar chart showing the 20 highest-scoring antibiotic resistance proteins ranked by best druggability score. Bars are coloured by tier: green (high, ≥0.7), orange (medium, ≥0.4), red (low, <0.4). Druggability scores are shown to three decimal places. InhA homologues from Mycobacterium species dominate the top rankings (scores: 0.908–0.983).
+
+---
+
+### Figure 3. Pocket Druggability Distribution Heatmap
+
+![Figure 3](../results/figure3_heatmap.png)
+
+**Figure 3.** Heatmap showing the total number of high, medium, and low druggability pockets detected per resistance family. Colour intensity represents pocket count. TB resistance proteins and efflux pumps show the highest proportion of high-druggability pockets relative to total pocket count.
+
+---
+### Figure 4. Organism Distribution and Mean Druggability
+
+![Figure 4](../results/figure4_organisms.png)
+
+**Figure 4.** (Left) Bar chart showing the 15 most represented organisms by protein count in the ResistAI dataset. Mycobacterium tuberculosis, Pseudomonas aeruginosa, and Staphylococcus aureus are the most represented. (Right) Mean best druggability score per organism for organisms with at least three proteins. Mycobacterium species consistently show the highest mean druggability scores.
+
+---
+
 ## References
 
 1. Mulani MS, et al. Emerging Strategies to Combat ESKAPE Pathogens in the Era of Antimicrobial Resistance. Front Microbiol. 2019.
