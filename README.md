@@ -3,6 +3,7 @@
 > **An end-to-end computational platform for antibiotic resistance research** — combining protein structure prediction, AI-powered literature mining, and interactive visualisation to identify druggable targets across 144 WHO priority resistance proteins.
 
 [![CI](https://github.com/kagansaglam/resistai/actions/workflows/ci.yml/badge.svg)](https://github.com/kagansaglam/resistai/actions)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19697274.svg)](https://doi.org/10.5281/zenodo.19697274)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)

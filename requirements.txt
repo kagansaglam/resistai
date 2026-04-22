@@ -1,0 +1,17 @@
+requests
+psycopg2-binary
+chromadb
+sentence-transformers
+streamlit
+groq
+python-dotenv
+biopython
+plotly
+pandas
+scipy
+matplotlib
+seaborn
+markdown
+weasyprint
+jupyter
+pypdf2
