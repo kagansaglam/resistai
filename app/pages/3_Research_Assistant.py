@@ -62,13 +62,26 @@ with st.sidebar:
     st.markdown(f'**Database:** 2508 PubMed articles')
     st.markdown('**Model:** Llama 3.3 70B (Groq)')
 
+# Check if protein was selected from Dashboard
+if 'selected_gene' in st.session_state:
+    st.info(f"🔗 Redirected from Dashboard: **{st.session_state['selected_gene']}** ({st.session_state['selected_uniprot']})")
+    mode = 'Protein-specific'
+
 if mode == 'Protein-specific':
     st.subheader('Protein-specific Literature Search')
     if os.path.exists('results/proteins_annotated.csv'):
         df = pd.read_csv('results/proteins_annotated.csv')
         df = df[df['best_score'].notna()].sort_values('best_score', ascending=False)
         options = {f"{r['gene']} ({r['uniprot_id']}) — score: {r['best_score']:.3f}": r for _, r in df.iterrows()}
-        selected_label = st.selectbox('Select protein', list(options.keys()))
+        # Pre-select protein from Dashboard if available
+        default_idx = 0
+        if 'selected_uniprot' in st.session_state:
+            keys = list(options.keys())
+            for i, k in enumerate(keys):
+                if st.session_state['selected_uniprot'] in k:
+                    default_idx = i
+                    break
+        selected_label = st.selectbox('Select protein', list(options.keys()), index=default_idx)
         row = options[selected_label]
         st.markdown(f"**Gene:** {row['gene']} | **Organism:** {row['organism']} | **Family:** {row['family']}")
         auto_query = f"{row['gene']} {row['organism']} antibiotic resistance mechanism drug target druggability"

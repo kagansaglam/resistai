@@ -78,6 +78,7 @@ with col2:
 
 st.divider()
 st.subheader('Full Protein Table')
+st.caption('Click on a protein to view related literature in the Research Assistant')
 search = st.text_input('Search by gene, organism or family')
 filtered = df[df.apply(lambda r: search.lower() in str(r['gene']).lower() or
     search.lower() in str(r['organism']).lower() or
@@ -89,3 +90,19 @@ st.dataframe(filtered[['gene','organism','family','total_pockets',
     'medium_druggability': 'Medium', 'low_druggability': 'Low',
     'best_score': 'Best Score'
 }), use_container_width=True, hide_index=True)
+
+st.divider()
+st.subheader('Quick Literature Search')
+col1, col2 = st.columns([2, 1])
+with col1:
+    options = {f"{r['gene']} ({r['uniprot_id']}) — score: {r['best_score']:.3f}": r for _, r in df.iterrows()}
+    selected_label = st.selectbox('Select protein for literature search', list(options.keys()))
+    row = options[selected_label]
+with col2:
+    st.markdown('##')
+    if st.button('View Literature →', type='primary'):
+        st.session_state['selected_gene']     = row['gene']
+        st.session_state['selected_uniprot']  = row['uniprot_id']
+        st.session_state['selected_organism'] = row['organism']
+        st.session_state['selected_family']   = row['family']
+        st.switch_page('pages/3_Research_Assistant.py')
