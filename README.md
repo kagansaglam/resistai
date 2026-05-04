@@ -1,8 +1,6 @@
-# ResistAI
+# ResistAI — Antibiotic Resistance Research Platform
 
-> **An end-to-end computational platform for antibiotic resistance research** — combining protein structure prediction, AI-powered literature mining, and interactive visualisation to identify druggable targets across 144 WHO priority resistance proteins.
-
-[![CI](https://github.com/kagansaglam/resistai/actions/workflows/ci.yml/badge.svg)](https://github.com/kagansaglam/resistai/actions)
+![CI](https://github.com/kagansaglam/resistai/actions/workflows/ci.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19697274.svg)](https://doi.org/10.5281/zenodo.19697274)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-green)
@@ -10,50 +8,84 @@
 
 ---
 
-## What is ResistAI?
+## Problem
 
-Antibiotic resistance is one of the most critical global health challenges — the WHO estimates it could cause 10 million deaths annually by 2050. Identifying druggable protein targets in resistant pathogens is a key step toward developing new treatments.
+Antibiotic resistance kills ~700,000 people annually and is projected to cause 10 million deaths per year by 2050. Identifying which resistance proteins are druggable — and finding relevant literature fast — remains a critical bottleneck in antimicrobial drug discovery.
 
-ResistAI automates this process end-to-end:
+Existing tools are fragmented: structure prediction, pocket detection, and literature mining require separate workflows, different expertise, and significant manual effort.
+
+## Solution
+
+ResistAI automates the full pipeline in one platform:
 
 1. **Fetches** resistance protein sequences from UniProt across WHO priority pathogens
 2. **Predicts** 3D structures using ESMFold and AlphaFold DB
 3. **Detects** binding pockets and scores druggability using fpocket
-4. **Mines** 949 PubMed articles using semantic search and RAG
+4. **Mines** 2,508 PubMed articles using semantic search (RAG)
 5. **Answers** research questions using Llama 3.3 70B grounded in literature
-6. **Visualises** everything in an interactive multi-page Streamlit application
+6. **Exposes** results via REST API and CLI for downstream integration
+
+## Results
+
+Applied to **144 WHO priority resistance proteins** across 8 resistance families:
+
+| Metric | Value |
+|---|---|
+| High druggability targets (score ≥ 0.7) | **48 proteins (33%)** |
+| Best druggability score | **0.983** (InhA, M. tuberculosis) |
+| ANOVA across resistance families | **F=7.099, p<0.0001** |
+| TB resistance proteins mean score | **0.829** — highest family |
+| Aminoglycoside enzymes mean score | **0.392** — lowest family |
+| PubMed articles indexed | **2,508** |
+
+Key finding: TB resistance proteins and efflux pumps are significantly more druggable than aminoglycoside-modifying enzymes — consistent with known drug discovery challenges in this class.
+
 ---
 
 ## Architecture
 
 ### Module 1 - Structural Pipeline
-
 `pathogens.csv` -> `FETCH_CARD` (UniProt API) -> `RUN_ESMFOLD` (ESMFold + AlphaFold DB) -> `FIND_POCKETS` (fpocket) -> `SUMMARY_REPORT` -> PostgreSQL
 
 ### Module 2 - LLM Research Assistant
-
-`PubMed API` (949 articles) -> `sentence-transformers` (embeddings) -> `ChromaDB` (vector DB) -> `RAG engine` -> `Llama 3.3 70B` (Groq) -> `Streamlit UI`
+`PubMed API` (2,508 articles) -> `sentence-transformers` (embeddings) -> `ChromaDB` (vector DB) -> `RAG engine` -> `Llama 3.3 70B` (Groq) -> `Streamlit UI`
 
 ### Module 3 - Visualisation & Analysis
-
 `proteins_annotated.csv` -> `Interactive Dashboard` (Plotly) + `3D Protein Viewer` (3Dmol.js) + `Research Assistant` (Streamlit) + `Statistical Analysis` (scipy)
 
----
-
-## Key Results
-
-| Metric | Value |
-|---|---|
-| Total proteins analysed | 144 |
-| High druggability (≥0.7) | 48 (33%) |
-| Medium druggability (0.4–0.7) | 41 (28%) |
-| Low druggability (<0.4) | 55 (38%) |
-| Best druggability score | 0.983 |
-| PubMed articles indexed | 949 |
-| GFF3 annotation records | 2988 |
-| ANOVA p-value (family comparison) | <0.0001 |
+### API & CLI
+`FastAPI` REST endpoints + `predict.py` CLI -> github.com/kagansaglam/resistai-api
 
 ---
+
+## API
+
+```bash
+# Get platform statistics
+GET /stats
+
+# List high-druggability proteins
+GET /proteins?tier=high&limit=10
+
+# Get protein details + binding pockets
+GET /proteins/{uniprot_id}
+
+# Search literature
+POST /search
+{"query": "VIM-2 metallo-beta-lactamase inhibitor", "n_results": 10}
+```
+
+Full API docs: https://github.com/kagansaglam/resistai-api
+
+## CLI
+
+```bash
+python predict.py --stats
+python predict.py --protein Q5U7L7
+python predict.py --list --tier high --limit 10
+python predict.py --search "carbapenem resistance KPC inhibitor"
+```
+
 ---
 
 ## Results & Figures
@@ -72,150 +104,51 @@ ResistAI automates this process end-to-end:
 
 ---
 
-## Modules
-
-- **Module 1** — Structural pipeline (Nextflow DSL2 + ESMFold + AlphaFold DB + fpocket + PostgreSQL)
-- **Module 2** — LLM research assistant (PubMed RAG + ChromaDB + Llama 3.3 70B + Streamlit)
-- **Module 3** — Interactive 3D visualisation + comparative druggability dashboard
-
----
-
-## Application Pages
-
-| Page | Description |
-|---|---|
-| Home | Platform overview, protein summary table |
-| Dashboard | Interactive druggability charts, top 20 proteins, tier distribution |
-| 3D Viewer | Rotate/zoom protein structures, visualise binding pockets in colour |
-| Research Assistant | Ask questions, get AI answers grounded in 949 PubMed articles |
-
----
 ## Quick Start
 
 ```bash
 git clone https://github.com/kagansaglam/resistai.git
 cd resistai
 cp .env.example .env
-# Add your API keys (see below)
+# Add your GROQ_API_KEY to .env
 bash setup.sh
 streamlit run app/Home.py
 ```
 
----
-
-## Environment Variables
-
-Create a `.env` file from the template:
+## CLI & API
 
 ```bash
-cp .env.example .env
-```
+# Clone API repo
+git clone https://github.com/kagansaglam/resistai-api.git
+cd resistai-api
+pip install -r requirements.txt
+uvicorn main:app --port 8000
 
-Then add your API keys:
-GROQ_API_KEY=your_groq_api_key_here
-ANTHROPIC_API_KEY=your_anthropic_api_key_here   # optional
-### How to get a GROQ_API_KEY (free)
-
-1. Go to [console.groq.com](https://console.groq.com)
-2. Click **Sign Up** — free account, no credit card required
-3. Navigate to **API Keys** in the left sidebar
-4. Click **Create API Key**
-5. Copy the key and paste it into your `.env` file as `GROQ_API_KEY=...`
-
-> Groq provides free access to Llama 3.3 70B — no usage limits for personal projects.
-
-### How to get an ANTHROPIC_API_KEY (optional)
-
-1. Go to [console.anthropic.com](https://console.anthropic.com)
-2. Sign up and navigate to **API Keys**
-3. Click **Create Key** and copy it
-4. Paste into `.env` as `ANTHROPIC_API_KEY=...`
-
-> The Anthropic key is optional — ResistAI uses Groq by default.
-
----
-
-## Manual Installation
-
-```bash
-# Install Nextflow
-curl -s https://get.nextflow.io | bash
-sudo mv nextflow /usr/local/bin/
-
-# Install Python dependencies
-pip install requests psycopg2-binary chromadb sentence-transformers \
-    streamlit groq python-dotenv biopython plotly pandas scipy matplotlib seaborn
-
-# Install fpocket
-sudo apt install fpocket      # Ubuntu/Debian
-brew install fpocket           # macOS
-```
-
----
-
-## Usage
-
-```bash
-# Module 1 — run structural pipeline
-nextflow run main.nf
-nextflow run main.nf -resume
-
-# Module 1 — run with specific profile
-nextflow run main.nf -profile docker
-nextflow run main.nf -profile slurm
-
-# Module 1 — load results to PostgreSQL
-python3 scripts/load_to_db.py data/pathogens.csv results/pockets/
-
-# Module 1 — export GFF3 annotations
-python3 scripts/export_gff3.py results/sequences/ results/pockets/ results/resistai_annotations.gff3
-# Module 2 — fetch literature and build vector database
-python3 module2/scripts/fetch_pubmed.py
-python3 module2/scripts/build_vectordb.py
-
-# Statistical analysis and figures
-python3 scripts/statistical_analysis.py
-python3 scripts/plot_analysis.py
-
-# Run full application (all modules)
-streamlit run app/Home.py
-
-# Run research assistant only
-streamlit run module2/app.py
+# Use CLI
+python predict.py --stats
+python predict.py --protein Q5U7L7
 ```
 
 ---
 
 ## Tech Stack
 
-**Bioinformatics**
-- Nextflow DSL2 — reproducible pipeline orchestration (local, Docker, SLURM, LSF)
-- ESMFold (Meta) + AlphaFold DB — protein structure prediction
-- fpocket — binding pocket detection and druggability scoring
-- BioPython — sequence handling
-- GFF3 — genomic annotation export with EMBL cross-references
+**Bioinformatics:** Nextflow DSL2 · ESMFold · AlphaFold DB · fpocket · BioPython · GFF3
 
-**AI / ML**
-- sentence-transformers — semantic embeddings (all-MiniLM-L6-v2)
-- ChromaDB — persistent vector database
-- Llama 3.3 70B (Groq) — LLM for research synthesis
-- RAG — retrieval-augmented generation
+**AI / ML:** RAG · ChromaDB · sentence-transformers · Llama 3.3 70B (Groq)
 
-**Statistical Analysis**
-- One-way ANOVA (F=7.099, p<0.0001)
-- Pairwise t-tests across resistance families
-- scipy, pandas, matplotlib, seaborn
+**API & CLI:** FastAPI · predict.py CLI · REST endpoints
 
-**Infrastructure**
-- PostgreSQL — structured results storage
-- Docker — containerised workflows
-- GitHub Actions CI — automated testing
+**Web:** Next.js · Tailwind CSS · Supabase · Vercel · Streamlit · 3Dmol.js · Plotly
+
+**Infrastructure:** PostgreSQL · Docker · GitHub Actions CI · HPC/SLURM · AWS EC2
 
 ---
 
 ## Statistical Results
 
 One-way ANOVA across resistance families: **F=7.099, p<0.0001**
+
 | Family | n | Mean Score | Std |
 |---|---|---|---|
 | TB resistance | 10 | 0.829 | 0.239 |
@@ -230,19 +163,13 @@ One-way ANOVA across resistance families: **F=7.099, p<0.0001**
 
 ## Reproducibility
 
-All results in this repository are fully reproducible:
-
 ```bash
-# Full reproduction from scratch
-bash setup.sh
-
-# Individual steps
-nextflow run main.nf                          # Module 1
-python3 scripts/statistical_analysis.py       # Statistics
-python3 scripts/plot_analysis.py              # Figures 1-4
-python3 scripts/export_gff3.py ...           # GFF3
-python3 module2/scripts/fetch_pubmed.py       # Module 2 literature
-python3 module2/scripts/build_vectordb.py     # Module 2 vector DB
+bash setup.sh                              # full reproduction
+nextflow run main.nf                       # Module 1
+python3 scripts/statistical_analysis.py   # statistics
+python3 scripts/plot_analysis.py          # figures
+python3 module2/scripts/fetch_pubmed.py   # Module 2 literature
+streamlit run app/Home.py                  # full app
 ```
 
 ---
