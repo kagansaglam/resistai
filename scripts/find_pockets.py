@@ -29,7 +29,7 @@ if 'PLACEHOLDER' in content or 'ATOM' not in content:
     sys.exit(0)
 
 result = subprocess.run(
-    ['fpocket', '-f', pdb_file],
+    ['/snap/bin/fpocket', '-f', pdb_file],
     capture_output=True, text=True
 )
 if result.returncode != 0:
