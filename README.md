@@ -6,6 +6,8 @@
 ![Nextflow](https://img.shields.io/badge/Nextflow-DSL2-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+**Live platform:** [resistai.bio](https://resistai.bio)
+
 ---
 
 ## Problem
@@ -19,42 +21,108 @@ Existing tools are fragmented: structure prediction, pocket detection, and liter
 ResistAI automates the full pipeline in one platform:
 
 1. **Fetches** resistance protein sequences from UniProt across WHO priority pathogens
-2. **Predicts** 3D structures using ESMFold and AlphaFold DB
-3. **Detects** binding pockets and scores druggability using fpocket
-4. **Mines** 2,508 PubMed articles using semantic search (RAG)
-5. **Answers** research questions using Llama 3.3 70B grounded in literature
-6. **Exposes** results via REST API and CLI for downstream integration
+2. **Predicts** 3D structures using AlphaFold DB v4
+3. **Generates** protein embeddings using ESM-2 for similarity search and ML classification
+4. **Detects** binding pockets and scores druggability using fpocket + XGBoost
+5. **Mines** 2,508 PubMed articles using semantic search (RAG)
+6. **Answers** research questions using Llama 3.3 70B grounded in literature
+7. **Exposes** results via REST API and web platform for downstream integration
 
 ## Results
 
-Applied to **144 WHO priority resistance proteins** across 8 resistance families:
+Applied to **2,433 AMR resistance proteins** across WHO priority pathogens:
 
 | Metric | Value |
 |---|---|
-| High druggability targets (score ≥ 0.7) | **48 proteins (33%)** |
-| Best druggability score | **0.983** (InhA, M. tuberculosis) |
-| ANOVA across resistance families | **F=7.099, p<0.0001** |
-| TB resistance proteins mean score | **0.829** — highest family |
-| Aminoglycoside enzymes mean score | **0.392** — lowest family |
+| Total proteins analysed | **2,433** |
+| High druggability targets (score ≥ 0.7) | **1,198 proteins (49%)** |
+| Medium druggability targets (0.4–0.7) | **717 proteins (29%)** |
+| Best druggability score | **1.0** |
 | PubMed articles indexed | **2,508** |
-
-Key finding: TB resistance proteins and efflux pumps are significantly more druggable than aminoglycoside-modifying enzymes — consistent with known drug discovery challenges in this class.
 
 ---
 
-## Architecture
+## Pipeline Architecture
 
-### Module 1 - Structural Pipeline
-`pathogens.csv` -> `FETCH_CARD` (UniProt API) -> `RUN_ESMFOLD` (ESMFold + AlphaFold DB) -> `FIND_POCKETS` (fpocket) -> `SUMMARY_REPORT` -> PostgreSQL
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        ResistAI Pipeline                        │
+└─────────────────────────────────────────────────────────────────┘
 
-### Module 2 - LLM Research Assistant
-`PubMed API` (2,508 articles) -> `sentence-transformers` (embeddings) -> `ChromaDB` (vector DB) -> `RAG engine` -> `Llama 3.3 70B` (Groq) -> `Streamlit UI`
+  MODULE 1 — Structural Analysis (Nextflow / Slurm / Docker)
+  ──────────────────────────────────────────────────────────
+  pathogens.csv
+       │
+       ▼
+  FETCH_CARD ──── UniProt API ──── 2,433 protein sequences
+       │
+       ▼
+  DOWNLOAD_STRUCTURES ──── AlphaFold DB v4 ──── PDB files
+       │
+       ▼
+  FIND_POCKETS ──── fpocket ──── binding site geometry
+       │
+       ▼
+  CLASSIFY ──── ESM-2 embeddings + XGBoost ──── druggability score
+       │
+       ▼
+  SUMMARY_REPORT ──── PostgreSQL / Supabase
 
-### Module 3 - Visualisation & Analysis
-`proteins_annotated.csv` -> `Interactive Dashboard` (Plotly) + `3D Protein Viewer` (3Dmol.js) + `Research Assistant` (Streamlit) + `Statistical Analysis` (scipy)
+  MODULE 2 — Literature RAG
+  ─────────────────────────
+  PubMed API (2,508 articles)
+       │
+       ▼
+  sentence-transformers ──── ChromaDB (vector store)
+       │
+       ▼
+  RAG engine ──── Llama 3.3 70B (Groq)
 
-### API & CLI
-`FastAPI` REST endpoints + `predict.py` CLI -> github.com/kagansaglam/resistai-api
+  MODULE 3 — Web Platform
+  ────────────────────────
+  FastAPI (resistai-api.onrender.com)
+       │
+       ▼
+  Next.js + Supabase ──── resistai.bio
+       │
+       ├── Protein search & druggability dashboard
+       ├── ESM-2 similarity search
+       ├── Literature RAG / AI assistant
+       └── Email reports (Resend)
+```
+
+---
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| **Pipeline orchestration** | Nextflow DSL2, Slurm, Docker |
+| **Structure & pockets** | AlphaFold DB v4, fpocket |
+| **Embeddings & ML** | ESM-2, XGBoost |
+| **Literature RAG** | sentence-transformers, ChromaDB, Groq (Llama 3.3 70B) |
+| **API** | FastAPI |
+| **Web frontend** | Next.js, Tailwind CSS, Supabase |
+| **Email** | Resend |
+| **Infrastructure** | Docker, Slurm/HPC, Vercel, Render |
+
+---
+
+## ESM-2 Embeddings
+
+Protein sequences are embedded with **ESM-2** (650M parameter language model) to produce 1,280-dimensional representations. These embeddings are used for:
+
+- **Similarity search** — find structurally/functionally related proteins via cosine similarity stored in ChromaDB
+- **ML classification** — XGBoost druggability classifier trained on fpocket features augmented with ESM-2 embeddings
+- **Clustering** — UMAP projection for visualising resistance family relationships
+
+```bash
+# Generate embeddings
+python scripts/esm_embeddings.py --input data/proteins.fasta --output data/esm2_embeddings.npy
+
+# Query similar proteins
+GET /similar-proteins/{uniprot_id}
+```
 
 ---
 
@@ -64,18 +132,25 @@ Key finding: TB resistance proteins and efflux pumps are significantly more drug
 # Get platform statistics
 GET /stats
 
-# List high-druggability proteins
+# List proteins (filter by tier, family)
 GET /proteins?tier=high&limit=10
 
 # Get protein details + binding pockets
 GET /proteins/{uniprot_id}
 
-# Search literature
+# Semantic literature search
 POST /search
 {"query": "VIM-2 metallo-beta-lactamase inhibitor", "n_results": 10}
+
+# AI research assistant
+POST /ask
+{"question": "Which KPC variants have the best druggability scores?"}
+
+# Find similar proteins by ESM-2 embedding
+GET /similar-proteins/{uniprot_id}
 ```
 
-Full API docs: https://github.com/kagansaglam/resistai-api
+Full API docs: [resistai-api.onrender.com/docs](https://resistai-api.onrender.com/docs)
 
 ## CLI
 
@@ -115,34 +190,6 @@ bash setup.sh
 streamlit run app/Home.py
 ```
 
-## CLI & API
-
-```bash
-# Clone API repo
-git clone https://github.com/kagansaglam/resistai-api.git
-cd resistai-api
-pip install -r requirements.txt
-uvicorn main:app --port 8000
-
-# Use CLI
-python predict.py --stats
-python predict.py --protein Q5U7L7
-```
-
----
-
-## Tech Stack
-
-**Bioinformatics:** Nextflow DSL2 · ESMFold · AlphaFold DB · fpocket · BioPython · GFF3
-
-**AI / ML:** RAG · ChromaDB · sentence-transformers · Llama 3.3 70B (Groq)
-
-**API & CLI:** FastAPI · predict.py CLI · REST endpoints
-
-**Web:** Next.js · Tailwind CSS · Supabase · Vercel · Streamlit · 3Dmol.js · Plotly
-
-**Infrastructure:** PostgreSQL · Docker · GitHub Actions CI · HPC/SLURM · AWS EC2
-
 ---
 
 ## Statistical Results
@@ -166,11 +213,22 @@ One-way ANOVA across resistance families: **F=7.099, p<0.0001**
 ```bash
 bash setup.sh                              # full reproduction
 nextflow run main.nf                       # Module 1
+python3 scripts/esm_embeddings.py         # ESM-2 embeddings
+python3 scripts/train_classifier.py       # XGBoost classifier
 python3 scripts/statistical_analysis.py   # statistics
 python3 scripts/plot_analysis.py          # figures
 python3 module2/scripts/fetch_pubmed.py   # Module 2 literature
 streamlit run app/Home.py                  # full app
 ```
+
+---
+
+## Related Repositories
+
+| Repo | Description |
+|---|---|
+| [resistai-api](https://github.com/kagansaglam/resistai-api) | FastAPI backend — deployed at resistai-api.onrender.com |
+| [resistai-web](https://github.com/kagansaglam/resistai-web) | Next.js web platform — deployed at resistai.bio |
 
 ---
 
