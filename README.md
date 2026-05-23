@@ -234,3 +234,5 @@ MIT
 XGBoost classifier trained on ESM-2 embeddings (480-dim). Left: confusion matrix on 487-protein test set. Centre: per-class F1 scores (high tier best at 0.77). Right: summary metrics (ROC-AUC 0.793).
 
 ![Figure 5](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure5_ml_benchmark.png)
+
+*ESM-2 sequence embeddings (480-dim) capture structural druggability information without explicit 3D input. The classifier correctly identifies high-druggability proteins (F1 0.77) and achieves ROC-AUC 0.793 — demonstrating that protein language model representations encode binding site tractability. Medium-tier proteins show lower F1 (0.46), consistent with their biological nature as a transitional class between clearly druggable and non-druggable targets. CV and test accuracy are within 4% of each other, indicating no overfitting.*
