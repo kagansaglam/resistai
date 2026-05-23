@@ -228,3 +228,6 @@ Kagan Saglam · [resistai.bio](https://resistai.bio)
 ## License
 
 MIT
+
+### Figure 5 — ML Druggability Classifier Benchmark
+![Figure 5](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure5_ml_benchmark.png)
