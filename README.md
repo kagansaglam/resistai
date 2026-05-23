@@ -230,4 +230,7 @@ Kagan Saglam · [resistai.bio](https://resistai.bio)
 MIT
 
 ### Figure 5 — ML Druggability Classifier Benchmark
+
+XGBoost classifier trained on ESM-2 embeddings (480-dim). Left: confusion matrix on 487-protein test set. Centre: per-class F1 scores (high tier best at 0.77). Right: summary metrics (ROC-AUC 0.793).
+
 ![Figure 5](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure5_ml_benchmark.png)
