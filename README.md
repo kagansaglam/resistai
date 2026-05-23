@@ -74,51 +74,21 @@ Per-class performance:
 ---
 
 ## Pipeline Architecture
-┌─────────────────────────────────────────────────────────────────┐
-│                        ResistAI Pipeline                        │
-└─────────────────────────────────────────────────────────────────┘
-MODULE 1 — Structural Analysis (Nextflow DSL2 / Slurm / Docker)
-──────────────────────────────────────────────────────────────
-pathogens.csv (2,433 WHO ESKAPE + TB proteins)
-│
-▼
-FETCH_SEQUENCES ──── UniProt REST API
-│
-▼
-DOWNLOAD_STRUCTURES ──── AlphaFold DB v4 → ESMFold (fallback)
-│
-▼
-FIND_POCKETS ──── fpocket 4.0 ──── cavity geometry + druggability score
-│
-▼
-ESM_EMBEDDINGS ──── esm2_t12_35M_UR50D ──── 480-dim vectors → ChromaDB
-│
-▼
-CLASSIFY ──── XGBoost ──── druggability tier (ROC-AUC 0.793)
-│
-▼
-SUMMARY_REPORT ──── proteins_annotated.csv + embeddings.parquet
-MODULE 2 — Literature RAG
-─────────────────────────
-PubMed E-utilities API (2,508 articles)
-│
-▼
-ChromaDB vector index ──── cosine similarity search
-│
-▼
-Llama 3.3 70B (Groq) ──── PMID-cited research summaries
-MODULE 3 — Production Platform
-───────────────────────────────
-FastAPI (Render) ← resistai-api.onrender.com
-│
-▼
-Next.js + Supabase (Vercel) ← resistai.bio
-│
-├── Protein search & druggability dashboard
-├── ESM-2 similarity search (ChromaDB cosine)
-├── ML druggability prediction (/predict-druggability)
-├── Literature RAG + AI assistant
-└── Email reports (Resend, noreply@resistai.bio)
+
+**Module 1 — Structural Analysis** (Nextflow DSL2, Slurm, Docker)
+
+`UniProt API` → `AlphaFold DB v4` → `fpocket 4.0` → `ESM-2 embeddings` → `XGBoost classifier` → `proteins_annotated.csv`
+
+**Module 2 — Literature RAG**
+
+`PubMed API (2,508 articles)` → `ChromaDB vector index` → `Llama 3.3 70B (Groq)` → `PMID-cited summaries`
+
+**Module 3 — Production Platform**
+
+`FastAPI (Render)` → `Next.js + Supabase (Vercel)` → `resistai.bio`
+
+Features: protein search · druggability dashboard · ESM-2 similarity search · ML prediction · literature RAG · email reports
+
 ---
 
 ## Tech Stack
