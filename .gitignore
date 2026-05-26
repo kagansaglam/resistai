@@ -20,3 +20,5 @@ untitled.py
 *.log
 summary_report.csv
 module2/data/pubmed_articles_backup.json
+*_35M_backup.*
+*_backup.*
