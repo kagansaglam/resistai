@@ -23,7 +23,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests psycopg2-binary
+        run: pip install requests psycopg2-binary pytest pandas scipy
+      - name: Run unit tests
+        run: python -m pytest tests -v
 
       - name: Check Python syntax
         run: |
