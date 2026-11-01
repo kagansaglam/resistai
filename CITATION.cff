@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use ResistAI, please cite it as below."
+title: "ResistAI: An Integrated Computational Platform for Druggability Analysis of Antibiotic Resistance Proteins"
+type: software
+authors:
+  - family-names: Saglam
+    given-names: Kagan
+version: v2
+date-released: 2026-11-01
+doi: 10.5281/zenodo.19697274
+license: MIT
+repository-code: "https://github.com/kagansaglam/resistai"
+url: "https://resistai.bio"
+keywords:
+  - antimicrobial resistance
+  - druggability
+  - AlphaFold
+  - ESM-2
+  - fpocket
+  - bioinformatics

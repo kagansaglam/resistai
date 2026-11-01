@@ -24,7 +24,7 @@ ResistAI automates the full pipeline in one platform:
 2. **Predicts** 3D structures using AlphaFold DB (retrieved via the AlphaFold prediction API; ESMFold fallback)
 3. **Generates** protein embeddings using ESM-2 (480-dim) for similarity search and ML classification
 4. **Detects** binding pockets and scores druggability using fpocket
-5. **Classifies** druggability tier using XGBoost trained on ESM-2 embeddings (ROC-AUC 0.79)
+5. **Classifies** druggability tier using XGBoost trained on ESM-2 embeddings (ROC-AUC 0.79; majority-class baseline accuracy 0.49)
 6. **Mines** 2,508 PubMed articles using semantic RAG search
 7. **Answers** research questions using Llama 3.3 70B grounded in retrieved literature
 8. **Scores any protein on-demand** — for any UniProt ID not in the pre-computed database, the platform retrieves its AlphaFold structure and runs **fpocket live** (containerized with Docker) to compute druggability in real time
@@ -41,9 +41,11 @@ Applied to **2,433 AMR resistance proteins** across WHO priority pathogens:
 | Medium druggability targets (0.4–0.7) | **717 (29%)** |
 | Best druggability score | **1.000** |
 | PubMed articles indexed | **2,508** |
-| ML classifier test accuracy | **0.647** |
-| ML classifier ROC-AUC (OvR weighted) | **0.793** |
+| ML classifier test accuracy (majority baseline 0.493) | **0.649** |
+| ML classifier ROC-AUC (OvR weighted) | **0.791** |
 | ESM-2 similarity search coverage | **2,433 proteins** |
+
+The full per-protein table is in [`results/proteins_annotated_full.csv`](results/proteins_annotated_full.csv). Only 118 of the 2,433 proteins carry a curated resistance-family label; the other 2,315 have the generic UniProt label "antibiotic resistance". Every number above can be recomputed with `python scripts/reproduce_paper_stats.py`.
 
 ---
 
@@ -70,20 +72,23 @@ XGBoost classifier trained on ESM-2 embeddings (480-dim) to predict druggability
 | Features | ESM-2 embeddings (esm2_t12_35M_UR50D) |
 | Training set | 1,946 proteins |
 | Test set | 487 proteins |
-| CV accuracy (5-fold) | 0.647 ± 0.019 |
-| Test accuracy | 0.647 |
-| Test F1 (weighted) | 0.641 |
-| **ROC-AUC (OvR weighted)** | **0.793** |
+| CV accuracy (5-fold, training set) | 0.607 ± 0.014 |
+| Test accuracy | 0.649 |
+| Test F1 (weighted) | 0.644 |
+| **ROC-AUC (OvR weighted)** | **0.791** |
+| Majority-class baseline accuracy | 0.493 |
 
 Per-class performance:
 
 | Class | Precision | Recall | F1 |
 |---|---|---|---|
-| High | 0.74 | 0.80 | **0.77** |
-| Medium | 0.48 | 0.43 | 0.46 |
-| Low | 0.62 | 0.58 | 0.60 |
+| High | 0.75 | 0.81 | **0.78** |
+| Medium | 0.49 | 0.46 | 0.47 |
+| Low | 0.59 | 0.55 | 0.57 |
 
 > Druggability scores are structural proxies computed by fpocket on AlphaFold-predicted structures (Le Guilloux et al. 2009). Thresholds: high ≥ 0.7, medium ≥ 0.4. Experimental validation required.
+>
+> The classifier predicts a tier derived from the same fpocket score, so it measures how well ESM-2 embeddings approximate fpocket, not druggability itself. The train/test split is random (not homology-aware), so performance is likely optimistic. Metrics were recomputed with XGBoost 3.4.1 / scikit-learn 1.9.1 (seed 42); `models/classifier_metrics.json` comes from an earlier training run and differs by less than 0.3 percentage points.
 
 ---
 
@@ -199,20 +204,28 @@ nextflow run main.nf
 
 ### Figure 5 — ML Druggability Classifier Benchmark
 
-XGBoost classifier trained on ESM-2 embeddings (480-dim). Left: confusion matrix on 487-protein test set. Centre: per-class F1 scores (high tier best at 0.77). Right: summary metrics (ROC-AUC 0.793).
+XGBoost classifier trained on ESM-2 embeddings (480-dim). Left: confusion matrix on the 487-protein test set. Right: per-class F1 (high 0.78, medium 0.47, low 0.57). Weighted ROC-AUC 0.791.
 
-![Figure 5](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure5_ml_benchmark.png)
+![Figure 5](https://raw.githubusercontent.com/kagansaglam/resistai/main/results/figure5_ml_benchmark_v2.png)
 
-*ESM-2 sequence embeddings (480-dim) capture structural druggability information without explicit 3D input. The classifier correctly identifies high-druggability proteins (F1 0.77) and achieves ROC-AUC 0.793 — demonstrating that protein language model representations encode binding site tractability. Medium-tier proteins show lower F1 (0.46), consistent with their biological nature as a transitional class between clearly druggable and non-druggable targets. CV and test accuracy are within 4% of each other, indicating no overfitting.*
+*The medium tier is the hardest to predict (F1 0.47). Because the classifier is trained on a label derived from fpocket and the split is random, these results should be read as an approximation benchmark, not as evidence of generalisation to unseen protein families.*
 
 ---
 
 ## Statistical Analysis
 
-One-way ANOVA across resistance families: **F=7.099, p<0.0001**
+One-way ANOVA across the six curated resistance families with at least five proteins (n = 95 of the 118 labelled proteins): **F = 3.88, p = 0.003**. Efflux pumps score significantly higher than β-lactamases, TB resistance, glycopeptide resistance and "other resistance" proteins (Welch's t-test, Bonferroni-adjusted p < 0.05). The families are small and heterogeneous, so this comparison is exploratory.
 
 | Family | n | Mean Score | Std |
 |---|---|---|---|
+| Efflux pump | 23 | 0.785 | 0.211 |
+| Colistin resistance | 18 | 0.661 | 0.218 |
+| TB resistance | 15 | 0.578 | 0.227 |
+| Glycopeptide resistance | 8 | 0.529 | 0.192 |
+| β-lactamase | 12 | 0.504 | 0.306 |
+| Other resistance | 19 | 0.503 | 0.294 |
+
+---|---|---|---|
 | TB resistance | 15 | 0.829 | 0.239 |
 | Efflux pump | 23 | 0.769 | 0.212 |
 | Carbapenemase | 4 | 0.721 | 0.181 |
@@ -242,11 +255,30 @@ End-to-end analyses showing the full pipeline applied to clinically critical tar
 
 ---
 
+## Testing
+
+```bash
+pip install -r requirements.txt pytest
+python -m pytest tests -v
+```
+
+The tests need no network access. They cover the pocket and summary scripts, the tier definition, the consistency of the stored results tables, and the statistics reported in the manuscript.
+
+---
+
+## Contributing and support
+
+Issues and pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Citation
+
+See [CITATION.cff](CITATION.cff) or cite the Zenodo archive: [10.5281/zenodo.19697274](https://doi.org/10.5281/zenodo.19697274).
+
 ## Author
 
 Kagan Saglam · [resistai.bio](https://resistai.bio)
 
 ## License
 
-MIT
+MIT, see [LICENSE](LICENSE).
 
