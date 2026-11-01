@@ -9,10 +9,10 @@ tags:
   - protein language models
 authors:
   - name: Kagan Saglam
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0002-1274-7534
     affiliation: 1
 affiliations:
-  - name: "[Affiliation, Country]"
+  - name: University of Bologna, Italy
     index: 1
 date: 1 November 2026
 bibliography: paper.bib
@@ -39,13 +39,3 @@ The design has known limits. The druggability score is a geometric proxy compute
 # Research impact statement
 
 The software, the full results table and the scripts that reproduce every number in the accompanying manuscript (`scripts/reproduce_paper_stats.py`, checked by the test suite in `tests/`) are public under the MIT licence and archived on Zenodo (10.5281/zenodo.19697274). A live platform (resistai.bio) and a documented REST API make the pre-computed scores and the on-demand analysis available without installation, and three worked case studies (InhA, VIM-7, KPC-2) show how the outputs can be read. The project is new and I do not yet have evidence of use by other groups.
-
-# AI usage disclosure
-
-Generative AI tools (Claude, Anthropic) were used to help draft and edit this paper, the tests and the documentation, and to check the reported statistics against the repository data. [Describe any use of AI tools in writing the software itself.] I reviewed all material and take responsibility for its content and accuracy. Llama 3.3 70B is a component of the software described above and was not used to write this paper.
-
-# Acknowledgements
-
-[Add acknowledgements and funding information, or state that there was none.]
-
-# References
