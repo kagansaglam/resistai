@@ -39,3 +39,9 @@ The design has known limits. The druggability score is a geometric proxy compute
 # Research impact statement
 
 The software, the full results table and the scripts that reproduce every number in the accompanying manuscript (`scripts/reproduce_paper_stats.py`, checked by the test suite in `tests/`) are public under the MIT licence and archived on Zenodo (10.5281/zenodo.19697274). A live platform (resistai.bio) and a documented REST API make the pre-computed scores and the on-demand analysis available without installation, and three worked case studies (InhA, VIM-7, KPC-2) show how the outputs can be read. The project is new and I do not yet have evidence of use by other groups.
+
+# AI usage disclosure
+
+Generative AI tools (Claude, Anthropic) were used to help draft this paper, to write the tests, the reproducibility script and parts of the documentation, and to recompute the reported statistics from the repository data. I reviewed all material and take responsibility for its content and accuracy.
+
+# References
